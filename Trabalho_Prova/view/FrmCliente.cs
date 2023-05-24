@@ -24,6 +24,14 @@ namespace Trabalho_Prova.view
         }
 
         private void FrmCliente_Load(object sender, EventArgs e) {
+            // TODO: esta linha de código carrega dados na tabela 'dB_TrabalhoDataSet.TRABALHO'. Você pode movê-la ou removê-la conforme necessário.
+            this.tRABALHOTableAdapter.Fill(this.dB_TrabalhoDataSet.TRABALHO);
+            // TODO: esta linha de código carrega dados na tabela 'dB_TrabalhoDataSet.CIDADE'. Você pode movê-la ou removê-la conforme necessário.
+            this.cIDADETableAdapter.Fill(this.dB_TrabalhoDataSet.CIDADE);
+            // TODO: esta linha de código carrega dados na tabela 'dB_TrabalhoDataSet.CEP'. Você pode movê-la ou removê-la conforme necessário.
+            this.cEPTableAdapter.Fill(this.dB_TrabalhoDataSet.CEP);
+            // TODO: esta linha de código carrega dados na tabela 'dB_TrabalhoDataSet.BAIRRO'. Você pode movê-la ou removê-la conforme necessário.
+            this.bAIRROTableAdapter.Fill(this.dB_TrabalhoDataSet.BAIRRO);
             // TODO: esta linha de código carrega dados na tabela 'dB_TrabalhoDataSet.RUA'. Você pode movê-la ou removê-la conforme necessário.
             this.rUATableAdapter.Fill(this.dB_TrabalhoDataSet.RUA);
             // TODO: esta linha de código carrega dados na tabela 'dB_TrabalhoDataSet.SEXO'. Você pode movê-la ou removê-la conforme necessário.

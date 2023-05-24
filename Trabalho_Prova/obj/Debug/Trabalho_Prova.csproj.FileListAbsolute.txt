@@ -12,3 +12,8 @@ C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova
 C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmSexo.resources
 C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmCliente.resources
 C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmRua.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmBairro.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmCep.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmCidade.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmUF.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmTrabalho.resources

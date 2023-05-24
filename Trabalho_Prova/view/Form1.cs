@@ -31,5 +31,34 @@ namespace Trabalho_Prova
             FrmRua frm = new FrmRua();
             frm.ShowDialog();
         }
+
+        private void tabelasToolStripMenuItem_Click(object sender, EventArgs e) {
+
+        }
+
+        private void bAIRROToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmBairro frm = new FrmBairro();
+            frm.ShowDialog(); 
+        }
+
+        private void cEPToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmCep frm = new FrmCep();
+            frm.ShowDialog();
+        }
+
+        private void cIDADEToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmCidade frm = new FrmCidade();
+            frm.ShowDialog();
+        }
+
+        private void uFToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmUF frm = new FrmUF();
+            frm.ShowDialog();
+        }
+
+        private void tRABALHOSToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmTrabalho frm = new FrmTrabalho();   
+            frm.ShowDialog();
+        }
     }
 }

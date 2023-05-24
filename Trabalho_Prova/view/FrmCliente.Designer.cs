@@ -26,7 +26,6 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCliente));
             System.Windows.Forms.Label cOD_CLIENTELabel;
             System.Windows.Forms.Label nOME_CLIENTELabel;
             System.Windows.Forms.Label fOTO_CLIENTELabel;
@@ -39,38 +38,45 @@
             System.Windows.Forms.Label cOD_TRABALHO_FKLabel;
             System.Windows.Forms.Label sALARIO_CLIENTELabel;
             System.Windows.Forms.Label nUMEROCASALabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCliente));
             this.dB_TrabalhoDataSet = new Trabalho_Prova.DB_TrabalhoDataSet();
             this.cLIENTEBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cLIENTETableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.CLIENTETableAdapter();
             this.tableAdapterManager = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TableAdapterManager();
+            this.bAIRROTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.BAIRROTableAdapter();
+            this.rUATableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.RUATableAdapter();
+            this.sEXOTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.SEXOTableAdapter();
             this.cLIENTEBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.cLIENTEBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.cOD_CLIENTELabel1 = new System.Windows.Forms.Label();
             this.nOME_CLIENTETextBox = new System.Windows.Forms.TextBox();
             this.fOTO_CLIENTEPictureBox = new System.Windows.Forms.PictureBox();
             this.dATANASC_CLIENTEDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.cOD_SEXO_FKComboBox = new System.Windows.Forms.ComboBox();
+            this.sEXOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cOD_RUA_FKComboBox = new System.Windows.Forms.ComboBox();
+            this.rUABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cOD_BAIRRO_FKComboBox = new System.Windows.Forms.ComboBox();
+            this.bAIRROBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cOD_CEP_FKComboBox = new System.Windows.Forms.ComboBox();
+            this.cEPBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cOD_CIDADE_FKComboBox = new System.Windows.Forms.ComboBox();
+            this.cIDADEBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cOD_TRABALHO_FKComboBox = new System.Windows.Forms.ComboBox();
             this.sALARIO_CLIENTETextBox = new System.Windows.Forms.TextBox();
             this.nUMEROCASATextBox = new System.Windows.Forms.TextBox();
             this.cLIENTEDataGridView = new System.Windows.Forms.DataGridView();
-            this.sEXOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sEXOTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.SEXOTableAdapter();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
@@ -83,8 +89,10 @@
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rUABindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.rUATableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.RUATableAdapter();
+            this.cEPTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.CEPTableAdapter();
+            this.cIDADETableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.CIDADETableAdapter();
+            this.tRABALHOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tRABALHOTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TRABALHOTableAdapter();
             cOD_CLIENTELabel = new System.Windows.Forms.Label();
             nOME_CLIENTELabel = new System.Windows.Forms.Label();
             fOTO_CLIENTELabel = new System.Windows.Forms.Label();
@@ -102,10 +110,122 @@
             ((System.ComponentModel.ISupportInitialize)(this.cLIENTEBindingNavigator)).BeginInit();
             this.cLIENTEBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fOTO_CLIENTEPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cLIENTEDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sEXOBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rUABindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bAIRROBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cEPBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cIDADEBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cLIENTEDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tRABALHOBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // cOD_CLIENTELabel
+            // 
+            cOD_CLIENTELabel.AutoSize = true;
+            cOD_CLIENTELabel.Location = new System.Drawing.Point(21, 68);
+            cOD_CLIENTELabel.Name = "cOD_CLIENTELabel";
+            cOD_CLIENTELabel.Size = new System.Drawing.Size(98, 16);
+            cOD_CLIENTELabel.TabIndex = 1;
+            cOD_CLIENTELabel.Text = "COD CLIENTE:";
+            // 
+            // nOME_CLIENTELabel
+            // 
+            nOME_CLIENTELabel.AutoSize = true;
+            nOME_CLIENTELabel.Location = new System.Drawing.Point(21, 97);
+            nOME_CLIENTELabel.Name = "nOME_CLIENTELabel";
+            nOME_CLIENTELabel.Size = new System.Drawing.Size(109, 16);
+            nOME_CLIENTELabel.TabIndex = 3;
+            nOME_CLIENTELabel.Text = "NOME CLIENTE:";
+            // 
+            // fOTO_CLIENTELabel
+            // 
+            fOTO_CLIENTELabel.AutoSize = true;
+            fOTO_CLIENTELabel.Location = new System.Drawing.Point(21, 122);
+            fOTO_CLIENTELabel.Name = "fOTO_CLIENTELabel";
+            fOTO_CLIENTELabel.Size = new System.Drawing.Size(106, 16);
+            fOTO_CLIENTELabel.TabIndex = 5;
+            fOTO_CLIENTELabel.Text = "FOTO CLIENTE:";
+            // 
+            // dATANASC_CLIENTELabel
+            // 
+            dATANASC_CLIENTELabel.AutoSize = true;
+            dATANASC_CLIENTELabel.Location = new System.Drawing.Point(21, 182);
+            dATANASC_CLIENTELabel.Name = "dATANASC_CLIENTELabel";
+            dATANASC_CLIENTELabel.Size = new System.Drawing.Size(143, 16);
+            dATANASC_CLIENTELabel.TabIndex = 7;
+            dATANASC_CLIENTELabel.Text = "DATANASC CLIENTE:";
+            // 
+            // cOD_SEXO_FKLabel
+            // 
+            cOD_SEXO_FKLabel.AutoSize = true;
+            cOD_SEXO_FKLabel.Location = new System.Drawing.Point(21, 209);
+            cOD_SEXO_FKLabel.Name = "cOD_SEXO_FKLabel";
+            cOD_SEXO_FKLabel.Size = new System.Drawing.Size(97, 16);
+            cOD_SEXO_FKLabel.TabIndex = 9;
+            cOD_SEXO_FKLabel.Text = "COD SEXO FK:";
+            // 
+            // cOD_RUA_FKLabel
+            // 
+            cOD_RUA_FKLabel.AutoSize = true;
+            cOD_RUA_FKLabel.Location = new System.Drawing.Point(21, 239);
+            cOD_RUA_FKLabel.Name = "cOD_RUA_FKLabel";
+            cOD_RUA_FKLabel.Size = new System.Drawing.Size(90, 16);
+            cOD_RUA_FKLabel.TabIndex = 11;
+            cOD_RUA_FKLabel.Text = "COD RUA FK:";
+            // 
+            // cOD_BAIRRO_FKLabel
+            // 
+            cOD_BAIRRO_FKLabel.AutoSize = true;
+            cOD_BAIRRO_FKLabel.Location = new System.Drawing.Point(21, 269);
+            cOD_BAIRRO_FKLabel.Name = "cOD_BAIRRO_FKLabel";
+            cOD_BAIRRO_FKLabel.Size = new System.Drawing.Size(112, 16);
+            cOD_BAIRRO_FKLabel.TabIndex = 13;
+            cOD_BAIRRO_FKLabel.Text = "COD BAIRRO FK:";
+            // 
+            // cOD_CEP_FKLabel
+            // 
+            cOD_CEP_FKLabel.AutoSize = true;
+            cOD_CEP_FKLabel.Location = new System.Drawing.Point(21, 299);
+            cOD_CEP_FKLabel.Name = "cOD_CEP_FKLabel";
+            cOD_CEP_FKLabel.Size = new System.Drawing.Size(88, 16);
+            cOD_CEP_FKLabel.TabIndex = 15;
+            cOD_CEP_FKLabel.Text = "COD CEP FK:";
+            // 
+            // cOD_CIDADE_FKLabel
+            // 
+            cOD_CIDADE_FKLabel.AutoSize = true;
+            cOD_CIDADE_FKLabel.Location = new System.Drawing.Point(21, 329);
+            cOD_CIDADE_FKLabel.Name = "cOD_CIDADE_FKLabel";
+            cOD_CIDADE_FKLabel.Size = new System.Drawing.Size(111, 16);
+            cOD_CIDADE_FKLabel.TabIndex = 17;
+            cOD_CIDADE_FKLabel.Text = "COD CIDADE FK:";
+            // 
+            // cOD_TRABALHO_FKLabel
+            // 
+            cOD_TRABALHO_FKLabel.AutoSize = true;
+            cOD_TRABALHO_FKLabel.Location = new System.Drawing.Point(21, 359);
+            cOD_TRABALHO_FKLabel.Name = "cOD_TRABALHO_FKLabel";
+            cOD_TRABALHO_FKLabel.Size = new System.Drawing.Size(134, 16);
+            cOD_TRABALHO_FKLabel.TabIndex = 19;
+            cOD_TRABALHO_FKLabel.Text = "COD TRABALHO FK:";
+            // 
+            // sALARIO_CLIENTELabel
+            // 
+            sALARIO_CLIENTELabel.AutoSize = true;
+            sALARIO_CLIENTELabel.Location = new System.Drawing.Point(21, 389);
+            sALARIO_CLIENTELabel.Name = "sALARIO_CLIENTELabel";
+            sALARIO_CLIENTELabel.Size = new System.Drawing.Size(126, 16);
+            sALARIO_CLIENTELabel.TabIndex = 21;
+            sALARIO_CLIENTELabel.Text = "SALARIO CLIENTE:";
+            // 
+            // nUMEROCASALabel
+            // 
+            nUMEROCASALabel.AutoSize = true;
+            nUMEROCASALabel.Location = new System.Drawing.Point(21, 417);
+            nUMEROCASALabel.Name = "nUMEROCASALabel";
+            nUMEROCASALabel.Size = new System.Drawing.Size(106, 16);
+            nUMEROCASALabel.TabIndex = 23;
+            nUMEROCASALabel.Text = "NUMEROCASA:";
             // 
             // dB_TrabalhoDataSet
             // 
@@ -125,7 +245,7 @@
             // 
             this.tableAdapterManager.ACESSOTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.BAIRROTableAdapter = null;
+            this.tableAdapterManager.BAIRROTableAdapter = this.bAIRROTableAdapter;
             this.tableAdapterManager.CEPTableAdapter = null;
             this.tableAdapterManager.CIDADETableAdapter = null;
             this.tableAdapterManager.CLIENTETableAdapter = this.cLIENTETableAdapter;
@@ -160,6 +280,18 @@
             this.tableAdapterManager.UpdateOrder = Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.VENDAPRODUTOTableAdapter = null;
             // 
+            // bAIRROTableAdapter
+            // 
+            this.bAIRROTableAdapter.ClearBeforeFill = true;
+            // 
+            // rUATableAdapter
+            // 
+            this.rUATableAdapter.ClearBeforeFill = true;
+            // 
+            // sEXOTableAdapter
+            // 
+            this.sEXOTableAdapter.ClearBeforeFill = true;
+            // 
             // cLIENTEBindingNavigator
             // 
             this.cLIENTEBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
@@ -191,13 +323,38 @@
             this.cLIENTEBindingNavigator.TabIndex = 0;
             this.cLIENTEBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Text = "Adicionar novo";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 24);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Text = "Excluir";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 22);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Mover primeiro";
             // 
             // bindingNavigatorMovePreviousItem
@@ -206,13 +363,13 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 22);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -223,17 +380,10 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posição atual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 20);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -255,44 +405,17 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorAddNewItem.Text = "Adicionar novo";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorDeleteItem.Text = "Excluir";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // cLIENTEBindingNavigatorSaveItem
             // 
             this.cLIENTEBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.cLIENTEBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("cLIENTEBindingNavigatorSaveItem.Image")));
             this.cLIENTEBindingNavigatorSaveItem.Name = "cLIENTEBindingNavigatorSaveItem";
-            this.cLIENTEBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.cLIENTEBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
             this.cLIENTEBindingNavigatorSaveItem.Text = "Salvar Dados";
             this.cLIENTEBindingNavigatorSaveItem.Click += new System.EventHandler(this.cLIENTEBindingNavigatorSaveItem_Click);
-            // 
-            // cOD_CLIENTELabel
-            // 
-            cOD_CLIENTELabel.AutoSize = true;
-            cOD_CLIENTELabel.Location = new System.Drawing.Point(21, 68);
-            cOD_CLIENTELabel.Name = "cOD_CLIENTELabel";
-            cOD_CLIENTELabel.Size = new System.Drawing.Size(98, 16);
-            cOD_CLIENTELabel.TabIndex = 1;
-            cOD_CLIENTELabel.Text = "COD CLIENTE:";
             // 
             // cOD_CLIENTELabel1
             // 
@@ -303,15 +426,6 @@
             this.cOD_CLIENTELabel1.TabIndex = 2;
             this.cOD_CLIENTELabel1.Text = "label1";
             // 
-            // nOME_CLIENTELabel
-            // 
-            nOME_CLIENTELabel.AutoSize = true;
-            nOME_CLIENTELabel.Location = new System.Drawing.Point(21, 97);
-            nOME_CLIENTELabel.Name = "nOME_CLIENTELabel";
-            nOME_CLIENTELabel.Size = new System.Drawing.Size(109, 16);
-            nOME_CLIENTELabel.TabIndex = 3;
-            nOME_CLIENTELabel.Text = "NOME CLIENTE:";
-            // 
             // nOME_CLIENTETextBox
             // 
             this.nOME_CLIENTETextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cLIENTEBindingSource, "NOME_CLIENTE", true));
@@ -319,15 +433,6 @@
             this.nOME_CLIENTETextBox.Name = "nOME_CLIENTETextBox";
             this.nOME_CLIENTETextBox.Size = new System.Drawing.Size(200, 22);
             this.nOME_CLIENTETextBox.TabIndex = 4;
-            // 
-            // fOTO_CLIENTELabel
-            // 
-            fOTO_CLIENTELabel.AutoSize = true;
-            fOTO_CLIENTELabel.Location = new System.Drawing.Point(21, 122);
-            fOTO_CLIENTELabel.Name = "fOTO_CLIENTELabel";
-            fOTO_CLIENTELabel.Size = new System.Drawing.Size(106, 16);
-            fOTO_CLIENTELabel.TabIndex = 5;
-            fOTO_CLIENTELabel.Text = "FOTO CLIENTE:";
             // 
             // fOTO_CLIENTEPictureBox
             // 
@@ -338,15 +443,6 @@
             this.fOTO_CLIENTEPictureBox.TabIndex = 6;
             this.fOTO_CLIENTEPictureBox.TabStop = false;
             // 
-            // dATANASC_CLIENTELabel
-            // 
-            dATANASC_CLIENTELabel.AutoSize = true;
-            dATANASC_CLIENTELabel.Location = new System.Drawing.Point(21, 182);
-            dATANASC_CLIENTELabel.Name = "dATANASC_CLIENTELabel";
-            dATANASC_CLIENTELabel.Size = new System.Drawing.Size(143, 16);
-            dATANASC_CLIENTELabel.TabIndex = 7;
-            dATANASC_CLIENTELabel.Text = "DATANASC CLIENTE:";
-            // 
             // dATANASC_CLIENTEDateTimePicker
             // 
             this.dATANASC_CLIENTEDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.cLIENTEBindingSource, "DATANASC_CLIENTE", true));
@@ -354,15 +450,6 @@
             this.dATANASC_CLIENTEDateTimePicker.Name = "dATANASC_CLIENTEDateTimePicker";
             this.dATANASC_CLIENTEDateTimePicker.Size = new System.Drawing.Size(200, 22);
             this.dATANASC_CLIENTEDateTimePicker.TabIndex = 8;
-            // 
-            // cOD_SEXO_FKLabel
-            // 
-            cOD_SEXO_FKLabel.AutoSize = true;
-            cOD_SEXO_FKLabel.Location = new System.Drawing.Point(21, 209);
-            cOD_SEXO_FKLabel.Name = "cOD_SEXO_FKLabel";
-            cOD_SEXO_FKLabel.Size = new System.Drawing.Size(97, 16);
-            cOD_SEXO_FKLabel.TabIndex = 9;
-            cOD_SEXO_FKLabel.Text = "COD SEXO FK:";
             // 
             // cOD_SEXO_FKComboBox
             // 
@@ -376,14 +463,10 @@
             this.cOD_SEXO_FKComboBox.TabIndex = 10;
             this.cOD_SEXO_FKComboBox.ValueMember = "COD_SEXO";
             // 
-            // cOD_RUA_FKLabel
+            // sEXOBindingSource
             // 
-            cOD_RUA_FKLabel.AutoSize = true;
-            cOD_RUA_FKLabel.Location = new System.Drawing.Point(21, 239);
-            cOD_RUA_FKLabel.Name = "cOD_RUA_FKLabel";
-            cOD_RUA_FKLabel.Size = new System.Drawing.Size(90, 16);
-            cOD_RUA_FKLabel.TabIndex = 11;
-            cOD_RUA_FKLabel.Text = "COD RUA FK:";
+            this.sEXOBindingSource.DataMember = "SEXO";
+            this.sEXOBindingSource.DataSource = this.dB_TrabalhoDataSet;
             // 
             // cOD_RUA_FKComboBox
             // 
@@ -397,86 +480,73 @@
             this.cOD_RUA_FKComboBox.TabIndex = 12;
             this.cOD_RUA_FKComboBox.ValueMember = "COD_RUA";
             // 
-            // cOD_BAIRRO_FKLabel
+            // rUABindingSource
             // 
-            cOD_BAIRRO_FKLabel.AutoSize = true;
-            cOD_BAIRRO_FKLabel.Location = new System.Drawing.Point(21, 269);
-            cOD_BAIRRO_FKLabel.Name = "cOD_BAIRRO_FKLabel";
-            cOD_BAIRRO_FKLabel.Size = new System.Drawing.Size(112, 16);
-            cOD_BAIRRO_FKLabel.TabIndex = 13;
-            cOD_BAIRRO_FKLabel.Text = "COD BAIRRO FK:";
+            this.rUABindingSource.DataMember = "RUA";
+            this.rUABindingSource.DataSource = this.dB_TrabalhoDataSet;
             // 
             // cOD_BAIRRO_FKComboBox
             // 
-            this.cOD_BAIRRO_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cLIENTEBindingSource, "COD_BAIRRO_FK", true));
+            this.cOD_BAIRRO_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.cLIENTEBindingSource, "COD_BAIRRO_FK", true));
+            this.cOD_BAIRRO_FKComboBox.DataSource = this.bAIRROBindingSource;
+            this.cOD_BAIRRO_FKComboBox.DisplayMember = "NOME_BAIRRO";
             this.cOD_BAIRRO_FKComboBox.FormattingEnabled = true;
             this.cOD_BAIRRO_FKComboBox.Location = new System.Drawing.Point(170, 266);
             this.cOD_BAIRRO_FKComboBox.Name = "cOD_BAIRRO_FKComboBox";
             this.cOD_BAIRRO_FKComboBox.Size = new System.Drawing.Size(200, 24);
             this.cOD_BAIRRO_FKComboBox.TabIndex = 14;
+            this.cOD_BAIRRO_FKComboBox.ValueMember = "COD_BAIRRO";
             // 
-            // cOD_CEP_FKLabel
+            // bAIRROBindingSource
             // 
-            cOD_CEP_FKLabel.AutoSize = true;
-            cOD_CEP_FKLabel.Location = new System.Drawing.Point(21, 299);
-            cOD_CEP_FKLabel.Name = "cOD_CEP_FKLabel";
-            cOD_CEP_FKLabel.Size = new System.Drawing.Size(88, 16);
-            cOD_CEP_FKLabel.TabIndex = 15;
-            cOD_CEP_FKLabel.Text = "COD CEP FK:";
+            this.bAIRROBindingSource.DataMember = "BAIRRO";
+            this.bAIRROBindingSource.DataSource = this.dB_TrabalhoDataSet;
             // 
             // cOD_CEP_FKComboBox
             // 
-            this.cOD_CEP_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cLIENTEBindingSource, "COD_CEP_FK", true));
+            this.cOD_CEP_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.cLIENTEBindingSource, "COD_CEP_FK", true));
+            this.cOD_CEP_FKComboBox.DataSource = this.cEPBindingSource;
+            this.cOD_CEP_FKComboBox.DisplayMember = "NUMERO_CEP";
             this.cOD_CEP_FKComboBox.FormattingEnabled = true;
             this.cOD_CEP_FKComboBox.Location = new System.Drawing.Point(170, 296);
             this.cOD_CEP_FKComboBox.Name = "cOD_CEP_FKComboBox";
             this.cOD_CEP_FKComboBox.Size = new System.Drawing.Size(200, 24);
             this.cOD_CEP_FKComboBox.TabIndex = 16;
+            this.cOD_CEP_FKComboBox.ValueMember = "COD_CEP";
             // 
-            // cOD_CIDADE_FKLabel
+            // cEPBindingSource
             // 
-            cOD_CIDADE_FKLabel.AutoSize = true;
-            cOD_CIDADE_FKLabel.Location = new System.Drawing.Point(21, 329);
-            cOD_CIDADE_FKLabel.Name = "cOD_CIDADE_FKLabel";
-            cOD_CIDADE_FKLabel.Size = new System.Drawing.Size(111, 16);
-            cOD_CIDADE_FKLabel.TabIndex = 17;
-            cOD_CIDADE_FKLabel.Text = "COD CIDADE FK:";
+            this.cEPBindingSource.DataMember = "CEP";
+            this.cEPBindingSource.DataSource = this.dB_TrabalhoDataSet;
             // 
             // cOD_CIDADE_FKComboBox
             // 
-            this.cOD_CIDADE_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cLIENTEBindingSource, "COD_CIDADE_FK", true));
+            this.cOD_CIDADE_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.cLIENTEBindingSource, "COD_CIDADE_FK", true));
+            this.cOD_CIDADE_FKComboBox.DataSource = this.cIDADEBindingSource;
+            this.cOD_CIDADE_FKComboBox.DisplayMember = "NOME_CIDADE";
             this.cOD_CIDADE_FKComboBox.FormattingEnabled = true;
             this.cOD_CIDADE_FKComboBox.Location = new System.Drawing.Point(170, 326);
             this.cOD_CIDADE_FKComboBox.Name = "cOD_CIDADE_FKComboBox";
             this.cOD_CIDADE_FKComboBox.Size = new System.Drawing.Size(200, 24);
             this.cOD_CIDADE_FKComboBox.TabIndex = 18;
+            this.cOD_CIDADE_FKComboBox.ValueMember = "COD_CIDADE";
             // 
-            // cOD_TRABALHO_FKLabel
+            // cIDADEBindingSource
             // 
-            cOD_TRABALHO_FKLabel.AutoSize = true;
-            cOD_TRABALHO_FKLabel.Location = new System.Drawing.Point(21, 359);
-            cOD_TRABALHO_FKLabel.Name = "cOD_TRABALHO_FKLabel";
-            cOD_TRABALHO_FKLabel.Size = new System.Drawing.Size(134, 16);
-            cOD_TRABALHO_FKLabel.TabIndex = 19;
-            cOD_TRABALHO_FKLabel.Text = "COD TRABALHO FK:";
+            this.cIDADEBindingSource.DataMember = "CIDADE";
+            this.cIDADEBindingSource.DataSource = this.dB_TrabalhoDataSet;
             // 
             // cOD_TRABALHO_FKComboBox
             // 
-            this.cOD_TRABALHO_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cLIENTEBindingSource, "COD_TRABALHO_FK", true));
+            this.cOD_TRABALHO_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.cLIENTEBindingSource, "COD_TRABALHO_FK", true));
+            this.cOD_TRABALHO_FKComboBox.DataSource = this.tRABALHOBindingSource;
+            this.cOD_TRABALHO_FKComboBox.DisplayMember = "NOME_TRABALHO";
             this.cOD_TRABALHO_FKComboBox.FormattingEnabled = true;
             this.cOD_TRABALHO_FKComboBox.Location = new System.Drawing.Point(170, 356);
             this.cOD_TRABALHO_FKComboBox.Name = "cOD_TRABALHO_FKComboBox";
             this.cOD_TRABALHO_FKComboBox.Size = new System.Drawing.Size(200, 24);
             this.cOD_TRABALHO_FKComboBox.TabIndex = 20;
-            // 
-            // sALARIO_CLIENTELabel
-            // 
-            sALARIO_CLIENTELabel.AutoSize = true;
-            sALARIO_CLIENTELabel.Location = new System.Drawing.Point(21, 389);
-            sALARIO_CLIENTELabel.Name = "sALARIO_CLIENTELabel";
-            sALARIO_CLIENTELabel.Size = new System.Drawing.Size(126, 16);
-            sALARIO_CLIENTELabel.TabIndex = 21;
-            sALARIO_CLIENTELabel.Text = "SALARIO CLIENTE:";
+            this.cOD_TRABALHO_FKComboBox.ValueMember = "COD_TRABALHO";
             // 
             // sALARIO_CLIENTETextBox
             // 
@@ -485,15 +555,6 @@
             this.sALARIO_CLIENTETextBox.Name = "sALARIO_CLIENTETextBox";
             this.sALARIO_CLIENTETextBox.Size = new System.Drawing.Size(200, 22);
             this.sALARIO_CLIENTETextBox.TabIndex = 22;
-            // 
-            // nUMEROCASALabel
-            // 
-            nUMEROCASALabel.AutoSize = true;
-            nUMEROCASALabel.Location = new System.Drawing.Point(21, 417);
-            nUMEROCASALabel.Name = "nUMEROCASALabel";
-            nUMEROCASALabel.Size = new System.Drawing.Size(106, 16);
-            nUMEROCASALabel.TabIndex = 23;
-            nUMEROCASALabel.Text = "NUMEROCASA:";
             // 
             // nUMEROCASATextBox
             // 
@@ -527,15 +588,6 @@
             this.cLIENTEDataGridView.RowTemplate.Height = 24;
             this.cLIENTEDataGridView.Size = new System.Drawing.Size(432, 461);
             this.cLIENTEDataGridView.TabIndex = 25;
-            // 
-            // sEXOBindingSource
-            // 
-            this.sEXOBindingSource.DataMember = "SEXO";
-            this.sEXOBindingSource.DataSource = this.dB_TrabalhoDataSet;
-            // 
-            // sEXOTableAdapter
-            // 
-            this.sEXOTableAdapter.ClearBeforeFill = true;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -634,14 +686,22 @@
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             this.dataGridViewTextBoxColumn11.Width = 125;
             // 
-            // rUABindingSource
+            // cEPTableAdapter
             // 
-            this.rUABindingSource.DataMember = "RUA";
-            this.rUABindingSource.DataSource = this.dB_TrabalhoDataSet;
+            this.cEPTableAdapter.ClearBeforeFill = true;
             // 
-            // rUATableAdapter
+            // cIDADETableAdapter
             // 
-            this.rUATableAdapter.ClearBeforeFill = true;
+            this.cIDADETableAdapter.ClearBeforeFill = true;
+            // 
+            // tRABALHOBindingSource
+            // 
+            this.tRABALHOBindingSource.DataMember = "TRABALHO";
+            this.tRABALHOBindingSource.DataSource = this.dB_TrabalhoDataSet;
+            // 
+            // tRABALHOTableAdapter
+            // 
+            this.tRABALHOTableAdapter.ClearBeforeFill = true;
             // 
             // FrmCliente
             // 
@@ -683,9 +743,13 @@
             this.cLIENTEBindingNavigator.ResumeLayout(false);
             this.cLIENTEBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fOTO_CLIENTEPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cLIENTEDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sEXOBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rUABindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bAIRROBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cEPBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cIDADEBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cLIENTEDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tRABALHOBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -739,5 +803,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private DB_TrabalhoDataSetTableAdapters.RUATableAdapter rUATableAdapter;
         private System.Windows.Forms.BindingSource rUABindingSource;
+        private DB_TrabalhoDataSetTableAdapters.BAIRROTableAdapter bAIRROTableAdapter;
+        private System.Windows.Forms.BindingSource bAIRROBindingSource;
+        private System.Windows.Forms.BindingSource cEPBindingSource;
+        private DB_TrabalhoDataSetTableAdapters.CEPTableAdapter cEPTableAdapter;
+        private System.Windows.Forms.BindingSource cIDADEBindingSource;
+        private DB_TrabalhoDataSetTableAdapters.CIDADETableAdapter cIDADETableAdapter;
+        private System.Windows.Forms.BindingSource tRABALHOBindingSource;
+        private DB_TrabalhoDataSetTableAdapters.TRABALHOTableAdapter tRABALHOTableAdapter;
     }
 }
