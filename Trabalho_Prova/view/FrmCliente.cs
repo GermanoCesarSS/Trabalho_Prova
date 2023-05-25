@@ -21,9 +21,14 @@ namespace Trabalho_Prova.view
             this.cLIENTEBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.dB_TrabalhoDataSet);
 
+            // TODO: esta linha de código carrega dados na tabela 'dB_TrabalhoDataSet.DadosCliente'. Você pode movê-la ou removê-la conforme necessário.
+            this.dadosClienteTableAdapter.Fill(this.dB_TrabalhoDataSet.DadosCliente);
+
         }
 
         private void FrmCliente_Load(object sender, EventArgs e) {
+            // TODO: esta linha de código carrega dados na tabela 'dB_TrabalhoDataSet.DadosCliente'. Você pode movê-la ou removê-la conforme necessário.
+            this.dadosClienteTableAdapter.Fill(this.dB_TrabalhoDataSet.DadosCliente);
             // TODO: esta linha de código carrega dados na tabela 'dB_TrabalhoDataSet.TRABALHO'. Você pode movê-la ou removê-la conforme necessário.
             this.tRABALHOTableAdapter.Fill(this.dB_TrabalhoDataSet.TRABALHO);
             // TODO: esta linha de código carrega dados na tabela 'dB_TrabalhoDataSet.CIDADE'. Você pode movê-la ou removê-la conforme necessário.
@@ -38,6 +43,78 @@ namespace Trabalho_Prova.view
             this.sEXOTableAdapter.Fill(this.dB_TrabalhoDataSet.SEXO);
             // TODO: esta linha de código carrega dados na tabela 'dB_TrabalhoDataSet.CLIENTE'. Você pode movê-la ou removê-la conforme necessário.
             this.cLIENTETableAdapter.Fill(this.dB_TrabalhoDataSet.CLIENTE);
+        
+            
+
+        }
+
+        private void fillByToolStripButton_Click(object sender, EventArgs e) {
+            try {
+                this.cLIENTETableAdapter.FillBy(this.dB_TrabalhoDataSet.CLIENTE);
+            }
+            catch (System.Exception ex) {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void fillByToolStripButton1_Click(object sender, EventArgs e) {
+            try {
+                this.cLIENTETableAdapter.FillBy(this.dB_TrabalhoDataSet.CLIENTE);
+            }
+            catch (System.Exception ex) {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void fillByToolStripButton2_Click(object sender, EventArgs e) {
+            try {
+                this.cLIENTETableAdapter.FillBy(this.dB_TrabalhoDataSet.CLIENTE);
+            }
+            catch (System.Exception ex) {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void fillByToolStripButton_Click_1(object sender, EventArgs e) {
+            try {
+                this.cLIENTETableAdapter.FillBy(this.dB_TrabalhoDataSet.CLIENTE);
+            }
+            catch (System.Exception ex) {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void fillByToolStripButton_Click_2(object sender, EventArgs e) {
+            try {
+                this.cLIENTETableAdapter.FillBy(this.dB_TrabalhoDataSet.CLIENTE);
+            }
+            catch (System.Exception ex) {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void fillByToolStripButton_Click_3(object sender, EventArgs e) {
+            try {
+                this.cLIENTETableAdapter.FillBy(this.dB_TrabalhoDataSet.CLIENTE);
+            }
+            catch (System.Exception ex) {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void fillBy1ToolStripButton_Click(object sender, EventArgs e) {
+            try {
+                this.cLIENTETableAdapter.FillBy1(this.dB_TrabalhoDataSet.CLIENTE);
+            }
+            catch (System.Exception ex) {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
 
         }
     }

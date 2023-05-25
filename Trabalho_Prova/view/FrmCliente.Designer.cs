@@ -29,7 +29,6 @@
             System.Windows.Forms.Label cOD_CLIENTELabel;
             System.Windows.Forms.Label nOME_CLIENTELabel;
             System.Windows.Forms.Label fOTO_CLIENTELabel;
-            System.Windows.Forms.Label dATANASC_CLIENTELabel;
             System.Windows.Forms.Label cOD_SEXO_FKLabel;
             System.Windows.Forms.Label cOD_RUA_FKLabel;
             System.Windows.Forms.Label cOD_BAIRRO_FKLabel;
@@ -38,6 +37,7 @@
             System.Windows.Forms.Label cOD_TRABALHO_FKLabel;
             System.Windows.Forms.Label sALARIO_CLIENTELabel;
             System.Windows.Forms.Label nUMEROCASALabel;
+            System.Windows.Forms.Label dATANASC_CLIENTELabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCliente));
             this.dB_TrabalhoDataSet = new Trabalho_Prova.DB_TrabalhoDataSet();
             this.cLIENTEBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -62,7 +62,6 @@
             this.cOD_CLIENTELabel1 = new System.Windows.Forms.Label();
             this.nOME_CLIENTETextBox = new System.Windows.Forms.TextBox();
             this.fOTO_CLIENTEPictureBox = new System.Windows.Forms.PictureBox();
-            this.dATANASC_CLIENTEDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.cOD_SEXO_FKComboBox = new System.Windows.Forms.ComboBox();
             this.sEXOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cOD_RUA_FKComboBox = new System.Windows.Forms.ComboBox();
@@ -74,9 +73,17 @@
             this.cOD_CIDADE_FKComboBox = new System.Windows.Forms.ComboBox();
             this.cIDADEBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cOD_TRABALHO_FKComboBox = new System.Windows.Forms.ComboBox();
+            this.tRABALHOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sALARIO_CLIENTETextBox = new System.Windows.Forms.TextBox();
             this.nUMEROCASATextBox = new System.Windows.Forms.TextBox();
-            this.cLIENTEDataGridView = new System.Windows.Forms.DataGridView();
+            this.cEPTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.CEPTableAdapter();
+            this.cIDADETableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.CIDADETableAdapter();
+            this.tRABALHOTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TRABALHOTableAdapter();
+            this.dATANASC_CLIENTEDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.dBTrabalhoDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dadosClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dadosClienteTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.DadosClienteTableAdapter();
+            this.dadosClienteDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
@@ -87,16 +94,9 @@
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cEPTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.CEPTableAdapter();
-            this.cIDADETableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.CIDADETableAdapter();
-            this.tRABALHOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tRABALHOTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TRABALHOTableAdapter();
             cOD_CLIENTELabel = new System.Windows.Forms.Label();
             nOME_CLIENTELabel = new System.Windows.Forms.Label();
             fOTO_CLIENTELabel = new System.Windows.Forms.Label();
-            dATANASC_CLIENTELabel = new System.Windows.Forms.Label();
             cOD_SEXO_FKLabel = new System.Windows.Forms.Label();
             cOD_RUA_FKLabel = new System.Windows.Forms.Label();
             cOD_BAIRRO_FKLabel = new System.Windows.Forms.Label();
@@ -105,6 +105,7 @@
             cOD_TRABALHO_FKLabel = new System.Windows.Forms.Label();
             sALARIO_CLIENTELabel = new System.Windows.Forms.Label();
             nUMEROCASALabel = new System.Windows.Forms.Label();
+            dATANASC_CLIENTELabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dB_TrabalhoDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLIENTEBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLIENTEBindingNavigator)).BeginInit();
@@ -115,8 +116,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.bAIRROBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cEPBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cIDADEBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cLIENTEDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRABALHOBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dBTrabalhoDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dadosClienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dadosClienteDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // cOD_CLIENTELabel
@@ -145,15 +148,6 @@
             fOTO_CLIENTELabel.Size = new System.Drawing.Size(106, 16);
             fOTO_CLIENTELabel.TabIndex = 5;
             fOTO_CLIENTELabel.Text = "FOTO CLIENTE:";
-            // 
-            // dATANASC_CLIENTELabel
-            // 
-            dATANASC_CLIENTELabel.AutoSize = true;
-            dATANASC_CLIENTELabel.Location = new System.Drawing.Point(21, 182);
-            dATANASC_CLIENTELabel.Name = "dATANASC_CLIENTELabel";
-            dATANASC_CLIENTELabel.Size = new System.Drawing.Size(143, 16);
-            dATANASC_CLIENTELabel.TabIndex = 7;
-            dATANASC_CLIENTELabel.Text = "DATANASC CLIENTE:";
             // 
             // cOD_SEXO_FKLabel
             // 
@@ -226,6 +220,15 @@
             nUMEROCASALabel.Size = new System.Drawing.Size(106, 16);
             nUMEROCASALabel.TabIndex = 23;
             nUMEROCASALabel.Text = "NUMEROCASA:";
+            // 
+            // dATANASC_CLIENTELabel
+            // 
+            dATANASC_CLIENTELabel.AutoSize = true;
+            dATANASC_CLIENTELabel.Location = new System.Drawing.Point(21, 180);
+            dATANASC_CLIENTELabel.Name = "dATANASC_CLIENTELabel";
+            dATANASC_CLIENTELabel.Size = new System.Drawing.Size(143, 16);
+            dATANASC_CLIENTELabel.TabIndex = 25;
+            dATANASC_CLIENTELabel.Text = "DATANASC CLIENTE:";
             // 
             // dB_TrabalhoDataSet
             // 
@@ -319,7 +322,7 @@
             this.cLIENTEBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.cLIENTEBindingNavigator.Name = "cLIENTEBindingNavigator";
             this.cLIENTEBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.cLIENTEBindingNavigator.Size = new System.Drawing.Size(823, 27);
+            this.cLIENTEBindingNavigator.Size = new System.Drawing.Size(930, 27);
             this.cLIENTEBindingNavigator.TabIndex = 0;
             this.cLIENTEBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -375,6 +378,7 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Posição";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -442,14 +446,6 @@
             this.fOTO_CLIENTEPictureBox.Size = new System.Drawing.Size(200, 50);
             this.fOTO_CLIENTEPictureBox.TabIndex = 6;
             this.fOTO_CLIENTEPictureBox.TabStop = false;
-            // 
-            // dATANASC_CLIENTEDateTimePicker
-            // 
-            this.dATANASC_CLIENTEDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.cLIENTEBindingSource, "DATANASC_CLIENTE", true));
-            this.dATANASC_CLIENTEDateTimePicker.Location = new System.Drawing.Point(170, 178);
-            this.dATANASC_CLIENTEDateTimePicker.Name = "dATANASC_CLIENTEDateTimePicker";
-            this.dATANASC_CLIENTEDateTimePicker.Size = new System.Drawing.Size(200, 22);
-            this.dATANASC_CLIENTEDateTimePicker.TabIndex = 8;
             // 
             // cOD_SEXO_FKComboBox
             // 
@@ -548,6 +544,11 @@
             this.cOD_TRABALHO_FKComboBox.TabIndex = 20;
             this.cOD_TRABALHO_FKComboBox.ValueMember = "COD_TRABALHO";
             // 
+            // tRABALHOBindingSource
+            // 
+            this.tRABALHOBindingSource.DataMember = "TRABALHO";
+            this.tRABALHOBindingSource.DataSource = this.dB_TrabalhoDataSet;
+            // 
             // sALARIO_CLIENTETextBox
             // 
             this.sALARIO_CLIENTETextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cLIENTEBindingSource, "SALARIO_CLIENTE", true));
@@ -564,11 +565,45 @@
             this.nUMEROCASATextBox.Size = new System.Drawing.Size(200, 22);
             this.nUMEROCASATextBox.TabIndex = 24;
             // 
-            // cLIENTEDataGridView
+            // cEPTableAdapter
             // 
-            this.cLIENTEDataGridView.AutoGenerateColumns = false;
-            this.cLIENTEDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.cLIENTEDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cEPTableAdapter.ClearBeforeFill = true;
+            // 
+            // cIDADETableAdapter
+            // 
+            this.cIDADETableAdapter.ClearBeforeFill = true;
+            // 
+            // tRABALHOTableAdapter
+            // 
+            this.tRABALHOTableAdapter.ClearBeforeFill = true;
+            // 
+            // dATANASC_CLIENTEDateTimePicker
+            // 
+            this.dATANASC_CLIENTEDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.cLIENTEBindingSource, "DATANASC_CLIENTE", true));
+            this.dATANASC_CLIENTEDateTimePicker.Location = new System.Drawing.Point(170, 176);
+            this.dATANASC_CLIENTEDateTimePicker.Name = "dATANASC_CLIENTEDateTimePicker";
+            this.dATANASC_CLIENTEDateTimePicker.Size = new System.Drawing.Size(200, 22);
+            this.dATANASC_CLIENTEDateTimePicker.TabIndex = 26;
+            // 
+            // dBTrabalhoDataSetBindingSource
+            // 
+            this.dBTrabalhoDataSetBindingSource.DataSource = this.dB_TrabalhoDataSet;
+            this.dBTrabalhoDataSetBindingSource.Position = 0;
+            // 
+            // dadosClienteBindingSource
+            // 
+            this.dadosClienteBindingSource.DataMember = "DadosCliente";
+            this.dadosClienteBindingSource.DataSource = this.dB_TrabalhoDataSet;
+            // 
+            // dadosClienteTableAdapter
+            // 
+            this.dadosClienteTableAdapter.ClearBeforeFill = true;
+            // 
+            // dadosClienteDataGridView
+            // 
+            this.dadosClienteDataGridView.AutoGenerateColumns = false;
+            this.dadosClienteDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dadosClienteDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewImageColumn1,
@@ -578,16 +613,14 @@
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11});
-            this.cLIENTEDataGridView.DataSource = this.cLIENTEBindingSource;
-            this.cLIENTEDataGridView.Location = new System.Drawing.Point(388, 0);
-            this.cLIENTEDataGridView.Name = "cLIENTEDataGridView";
-            this.cLIENTEDataGridView.RowHeadersWidth = 51;
-            this.cLIENTEDataGridView.RowTemplate.Height = 24;
-            this.cLIENTEDataGridView.Size = new System.Drawing.Size(432, 461);
-            this.cLIENTEDataGridView.TabIndex = 25;
+            this.dataGridViewTextBoxColumn9});
+            this.dadosClienteDataGridView.DataSource = this.dadosClienteBindingSource;
+            this.dadosClienteDataGridView.Location = new System.Drawing.Point(408, 51);
+            this.dadosClienteDataGridView.Name = "dadosClienteDataGridView";
+            this.dadosClienteDataGridView.RowHeadersWidth = 51;
+            this.dadosClienteDataGridView.RowTemplate.Height = 24;
+            this.dadosClienteDataGridView.Size = new System.Drawing.Size(429, 220);
+            this.dadosClienteDataGridView.TabIndex = 26;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -595,7 +628,6 @@
             this.dataGridViewTextBoxColumn1.HeaderText = "COD_CLIENTE";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             this.dataGridViewTextBoxColumn1.Width = 125;
             // 
             // dataGridViewTextBoxColumn2
@@ -624,99 +656,66 @@
             // 
             // dataGridViewTextBoxColumn4
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "COD_SEXO_FK";
-            this.dataGridViewTextBoxColumn4.HeaderText = "COD_SEXO_FK";
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "NOME_SEXO";
+            this.dataGridViewTextBoxColumn4.HeaderText = "NOME_SEXO";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.Width = 125;
             // 
             // dataGridViewTextBoxColumn5
             // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "COD_RUA_FK";
-            this.dataGridViewTextBoxColumn5.HeaderText = "COD_RUA_FK";
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "NOME_BAIRRO";
+            this.dataGridViewTextBoxColumn5.HeaderText = "NOME_BAIRRO";
             this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.Width = 125;
             // 
             // dataGridViewTextBoxColumn6
             // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "COD_BAIRRO_FK";
-            this.dataGridViewTextBoxColumn6.HeaderText = "COD_BAIRRO_FK";
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "NOME_CIDADE";
+            this.dataGridViewTextBoxColumn6.HeaderText = "NOME_CIDADE";
             this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.Width = 125;
             // 
             // dataGridViewTextBoxColumn7
             // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "COD_CEP_FK";
-            this.dataGridViewTextBoxColumn7.HeaderText = "COD_CEP_FK";
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "NOME_RUA";
+            this.dataGridViewTextBoxColumn7.HeaderText = "NOME_RUA";
             this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.Width = 125;
             // 
             // dataGridViewTextBoxColumn8
             // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "COD_CIDADE_FK";
-            this.dataGridViewTextBoxColumn8.HeaderText = "COD_CIDADE_FK";
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "NOME_TRABALHO";
+            this.dataGridViewTextBoxColumn8.HeaderText = "NOME_TRABALHO";
             this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.Width = 125;
             // 
             // dataGridViewTextBoxColumn9
             // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "COD_TRABALHO_FK";
-            this.dataGridViewTextBoxColumn9.HeaderText = "COD_TRABALHO_FK";
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "NUMERO_CEP";
+            this.dataGridViewTextBoxColumn9.HeaderText = "NUMERO_CEP";
             this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             this.dataGridViewTextBoxColumn9.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "SALARIO_CLIENTE";
-            this.dataGridViewTextBoxColumn10.HeaderText = "SALARIO_CLIENTE";
-            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "NUMEROCASA";
-            this.dataGridViewTextBoxColumn11.HeaderText = "NUMEROCASA";
-            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.Width = 125;
-            // 
-            // cEPTableAdapter
-            // 
-            this.cEPTableAdapter.ClearBeforeFill = true;
-            // 
-            // cIDADETableAdapter
-            // 
-            this.cIDADETableAdapter.ClearBeforeFill = true;
-            // 
-            // tRABALHOBindingSource
-            // 
-            this.tRABALHOBindingSource.DataMember = "TRABALHO";
-            this.tRABALHOBindingSource.DataSource = this.dB_TrabalhoDataSet;
-            // 
-            // tRABALHOTableAdapter
-            // 
-            this.tRABALHOTableAdapter.ClearBeforeFill = true;
             // 
             // FrmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(823, 461);
-            this.Controls.Add(this.cLIENTEDataGridView);
+            this.ClientSize = new System.Drawing.Size(930, 606);
+            this.Controls.Add(this.dadosClienteDataGridView);
+            this.Controls.Add(dATANASC_CLIENTELabel);
+            this.Controls.Add(this.dATANASC_CLIENTEDateTimePicker);
             this.Controls.Add(cOD_CLIENTELabel);
             this.Controls.Add(this.cOD_CLIENTELabel1);
             this.Controls.Add(nOME_CLIENTELabel);
             this.Controls.Add(this.nOME_CLIENTETextBox);
             this.Controls.Add(fOTO_CLIENTELabel);
             this.Controls.Add(this.fOTO_CLIENTEPictureBox);
-            this.Controls.Add(dATANASC_CLIENTELabel);
-            this.Controls.Add(this.dATANASC_CLIENTEDateTimePicker);
             this.Controls.Add(cOD_SEXO_FKLabel);
             this.Controls.Add(this.cOD_SEXO_FKComboBox);
             this.Controls.Add(cOD_RUA_FKLabel);
@@ -748,8 +747,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.bAIRROBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cEPBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cIDADEBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cLIENTEDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRABALHOBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dBTrabalhoDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dadosClienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dadosClienteDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -777,7 +778,6 @@
         private System.Windows.Forms.Label cOD_CLIENTELabel1;
         private System.Windows.Forms.TextBox nOME_CLIENTETextBox;
         private System.Windows.Forms.PictureBox fOTO_CLIENTEPictureBox;
-        private System.Windows.Forms.DateTimePicker dATANASC_CLIENTEDateTimePicker;
         private System.Windows.Forms.ComboBox cOD_SEXO_FKComboBox;
         private System.Windows.Forms.ComboBox cOD_RUA_FKComboBox;
         private System.Windows.Forms.ComboBox cOD_BAIRRO_FKComboBox;
@@ -787,20 +787,7 @@
         private System.Windows.Forms.TextBox sALARIO_CLIENTETextBox;
         private System.Windows.Forms.TextBox nUMEROCASATextBox;
         private DB_TrabalhoDataSetTableAdapters.SEXOTableAdapter sEXOTableAdapter;
-        private System.Windows.Forms.DataGridView cLIENTEDataGridView;
         private System.Windows.Forms.BindingSource sEXOBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private DB_TrabalhoDataSetTableAdapters.RUATableAdapter rUATableAdapter;
         private System.Windows.Forms.BindingSource rUABindingSource;
         private DB_TrabalhoDataSetTableAdapters.BAIRROTableAdapter bAIRROTableAdapter;
@@ -811,5 +798,20 @@
         private DB_TrabalhoDataSetTableAdapters.CIDADETableAdapter cIDADETableAdapter;
         private System.Windows.Forms.BindingSource tRABALHOBindingSource;
         private DB_TrabalhoDataSetTableAdapters.TRABALHOTableAdapter tRABALHOTableAdapter;
+        private System.Windows.Forms.DateTimePicker dATANASC_CLIENTEDateTimePicker;
+        private System.Windows.Forms.BindingSource dBTrabalhoDataSetBindingSource;
+        private System.Windows.Forms.BindingSource dadosClienteBindingSource;
+        private DB_TrabalhoDataSetTableAdapters.DadosClienteTableAdapter dadosClienteTableAdapter;
+        private System.Windows.Forms.DataGridView dadosClienteDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
     }
 }
