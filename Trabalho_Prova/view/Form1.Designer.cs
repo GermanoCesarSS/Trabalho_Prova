@@ -33,8 +33,14 @@
             this.cEPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cIDADEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cLIENTEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tRABALHOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cLIENTEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oPERADORAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tELEFONEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fUNCAOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lOJAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fUNCIONARIOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lOGINToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,7 +65,13 @@
             this.uFToolStripMenuItem,
             this.cIDADEToolStripMenuItem,
             this.tRABALHOSToolStripMenuItem,
-            this.cLIENTEToolStripMenuItem});
+            this.cLIENTEToolStripMenuItem,
+            this.oPERADORAToolStripMenuItem,
+            this.tELEFONEToolStripMenuItem,
+            this.fUNCAOToolStripMenuItem,
+            this.lOJAToolStripMenuItem,
+            this.fUNCIONARIOToolStripMenuItem,
+            this.lOGINToolStripMenuItem});
             this.tabelasToolStripMenuItem.Name = "tabelasToolStripMenuItem";
             this.tabelasToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
             this.tabelasToolStripMenuItem.Text = "MENU";
@@ -107,6 +119,13 @@
             this.cIDADEToolStripMenuItem.Text = "CIDADE";
             this.cIDADEToolStripMenuItem.Click += new System.EventHandler(this.cIDADEToolStripMenuItem_Click);
             // 
+            // tRABALHOSToolStripMenuItem
+            // 
+            this.tRABALHOSToolStripMenuItem.Name = "tRABALHOSToolStripMenuItem";
+            this.tRABALHOSToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.tRABALHOSToolStripMenuItem.Text = "TRABALHOS";
+            this.tRABALHOSToolStripMenuItem.Click += new System.EventHandler(this.tRABALHOSToolStripMenuItem_Click);
+            // 
             // cLIENTEToolStripMenuItem
             // 
             this.cLIENTEToolStripMenuItem.Name = "cLIENTEToolStripMenuItem";
@@ -114,12 +133,47 @@
             this.cLIENTEToolStripMenuItem.Text = "CLIENTE";
             this.cLIENTEToolStripMenuItem.Click += new System.EventHandler(this.cLIENTEToolStripMenuItem_Click);
             // 
-            // tRABALHOSToolStripMenuItem
+            // oPERADORAToolStripMenuItem
             // 
-            this.tRABALHOSToolStripMenuItem.Name = "tRABALHOSToolStripMenuItem";
-            this.tRABALHOSToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.tRABALHOSToolStripMenuItem.Text = "TRABALHOS";
-            this.tRABALHOSToolStripMenuItem.Click += new System.EventHandler(this.tRABALHOSToolStripMenuItem_Click);
+            this.oPERADORAToolStripMenuItem.Name = "oPERADORAToolStripMenuItem";
+            this.oPERADORAToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.oPERADORAToolStripMenuItem.Text = "OPERADORA";
+            this.oPERADORAToolStripMenuItem.Click += new System.EventHandler(this.oPERADORAToolStripMenuItem_Click);
+            // 
+            // tELEFONEToolStripMenuItem
+            // 
+            this.tELEFONEToolStripMenuItem.Name = "tELEFONEToolStripMenuItem";
+            this.tELEFONEToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.tELEFONEToolStripMenuItem.Text = "TELEFONE";
+            this.tELEFONEToolStripMenuItem.Click += new System.EventHandler(this.tELEFONEToolStripMenuItem_Click);
+            // 
+            // fUNCAOToolStripMenuItem
+            // 
+            this.fUNCAOToolStripMenuItem.Name = "fUNCAOToolStripMenuItem";
+            this.fUNCAOToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.fUNCAOToolStripMenuItem.Text = "FUNCAO";
+            this.fUNCAOToolStripMenuItem.Click += new System.EventHandler(this.fUNCAOToolStripMenuItem_Click);
+            // 
+            // lOJAToolStripMenuItem
+            // 
+            this.lOJAToolStripMenuItem.Name = "lOJAToolStripMenuItem";
+            this.lOJAToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.lOJAToolStripMenuItem.Text = "LOJA";
+            this.lOJAToolStripMenuItem.Click += new System.EventHandler(this.lOJAToolStripMenuItem_Click);
+            // 
+            // fUNCIONARIOToolStripMenuItem
+            // 
+            this.fUNCIONARIOToolStripMenuItem.Name = "fUNCIONARIOToolStripMenuItem";
+            this.fUNCIONARIOToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.fUNCIONARIOToolStripMenuItem.Text = "FUNCIONARIO";
+            this.fUNCIONARIOToolStripMenuItem.Click += new System.EventHandler(this.fUNCIONARIOToolStripMenuItem_Click);
+            // 
+            // lOGINToolStripMenuItem
+            // 
+            this.lOGINToolStripMenuItem.Name = "lOGINToolStripMenuItem";
+            this.lOGINToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.lOGINToolStripMenuItem.Text = "LOGIN";
+            this.lOGINToolStripMenuItem.Click += new System.EventHandler(this.lOGINToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -149,6 +203,12 @@
         private System.Windows.Forms.ToolStripMenuItem cIDADEToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem uFToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tRABALHOSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem oPERADORAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tELEFONEToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fUNCAOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lOJAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fUNCIONARIOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lOGINToolStripMenuItem;
     }
 }
 

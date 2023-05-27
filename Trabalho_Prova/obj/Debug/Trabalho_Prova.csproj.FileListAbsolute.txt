@@ -17,3 +17,9 @@ C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova
 C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmCidade.resources
 C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmUF.resources
 C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmTrabalho.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmOperadora.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmTelefone.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmFuncao.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmLoja.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmFuncionarios.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmLogin.resources

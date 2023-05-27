@@ -89,6 +89,36 @@
     <Compile Include="view\FrmCliente.Designer.cs">
       <DependentUpon>FrmCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\FrmFuncao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmFuncao.Designer.cs">
+      <DependentUpon>FrmFuncao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FrmFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmFuncionarios.Designer.cs">
+      <DependentUpon>FrmFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FrmLoja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmLoja.Designer.cs">
+      <DependentUpon>FrmLoja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FrmOperadora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmOperadora.Designer.cs">
+      <DependentUpon>FrmOperadora.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\FrmRua.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +130,12 @@
     </Compile>
     <Compile Include="view\FrmSexo.Designer.cs">
       <DependentUpon>FrmSexo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FrmTelefone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmTelefone.Designer.cs">
+      <DependentUpon>FrmTelefone.cs</DependentUpon>
     </Compile>
     <Compile Include="view\FrmTrabalho.cs">
       <SubType>Form</SubType>
@@ -137,11 +173,29 @@
     <EmbeddedResource Include="view\FrmCliente.resx">
       <DependentUpon>FrmCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\FrmFuncao.resx">
+      <DependentUpon>FrmFuncao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FrmFuncionarios.resx">
+      <DependentUpon>FrmFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FrmLoja.resx">
+      <DependentUpon>FrmLoja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FrmOperadora.resx">
+      <DependentUpon>FrmOperadora.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\FrmRua.resx">
       <DependentUpon>FrmRua.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\FrmSexo.resx">
       <DependentUpon>FrmSexo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FrmTelefone.resx">
+      <DependentUpon>FrmTelefone.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\FrmTrabalho.resx">
       <DependentUpon>FrmTrabalho.cs</DependentUpon>

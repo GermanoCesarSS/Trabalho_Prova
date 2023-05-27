@@ -1982,6 +1982,49 @@ SELECT COD_VENDA, DATAVENDA, COD_CLIENTE_FK, COD_FUNCIONARIO_FK FROM VENDAPRODUT
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DadosTelefoneTableAdapter" GeneratorDataComponentClassName="DadosTelefoneTableAdapter" Name="DadosTelefone" UserDataComponentName="DadosTelefoneTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DB_TrabalhoConnectionString (Settings)" DbObjectName="DB_Trabalho.dbo.DadosTelefone" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT NUMERO, COD_TELEFONE, NOME_OPERADORA FROM dbo.DadosTelefone</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NUMERO" DataSetColumn="NUMERO" />
+              <Mapping SourceColumn="COD_TELEFONE" DataSetColumn="COD_TELEFONE" />
+              <Mapping SourceColumn="NOME_OPERADORA" DataSetColumn="NOME_OPERADORA" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DadosFuncionariosTableAdapter" GeneratorDataComponentClassName="DadosFuncionariosTableAdapter" Name="DadosFuncionarios" UserDataComponentName="DadosFuncionariosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DB_TrabalhoConnectionString (Settings)" DbObjectName="DB_Trabalho.dbo.DadosFuncionarios" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT NOME_FUNCIONARIO, COD_FUNCIONARIO, SALARIO, NOME_BAIRRO, NOME_LOJA, NUMERO_CEP, NOME_RUA, NOME_CIDADE, NOME_FUNCAO, NOME_SEXO FROM dbo.DadosFuncionarios</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NOME_FUNCIONARIO" DataSetColumn="NOME_FUNCIONARIO" />
+              <Mapping SourceColumn="COD_FUNCIONARIO" DataSetColumn="COD_FUNCIONARIO" />
+              <Mapping SourceColumn="SALARIO" DataSetColumn="SALARIO" />
+              <Mapping SourceColumn="NOME_BAIRRO" DataSetColumn="NOME_BAIRRO" />
+              <Mapping SourceColumn="NOME_LOJA" DataSetColumn="NOME_LOJA" />
+              <Mapping SourceColumn="NUMERO_CEP" DataSetColumn="NUMERO_CEP" />
+              <Mapping SourceColumn="NOME_RUA" DataSetColumn="NOME_RUA" />
+              <Mapping SourceColumn="NOME_CIDADE" DataSetColumn="NOME_CIDADE" />
+              <Mapping SourceColumn="NOME_FUNCAO" DataSetColumn="NOME_FUNCAO" />
+              <Mapping SourceColumn="NOME_SEXO" DataSetColumn="NOME_SEXO" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -2489,27 +2532,119 @@ SELECT COD_VENDA, DATAVENDA, COD_CLIENTE_FK, COD_FUNCIONARIO_FK FROM VENDAPRODUT
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="DadosCliente" msprop:Generator_RowEvHandlerName="DadosClienteRowChangeEventHandler" msprop:Generator_RowDeletedName="DadosClienteRowDeleted" msprop:Generator_RowDeletingName="DadosClienteRowDeleting" msprop:Generator_RowEvArgName="DadosClienteRowChangeEvent" msprop:Generator_TablePropName="DadosCliente" msprop:Generator_RowChangedName="DadosClienteRowChanged" msprop:Generator_RowChangingName="DadosClienteRowChanging" msprop:Generator_TableClassName="DadosClienteDataTable" msprop:Generator_RowClassName="DadosClienteRow" msprop:Generator_TableVarName="tableDadosCliente" msprop:Generator_UserTableName="DadosCliente">
+        <xs:element name="DadosCliente" msprop:Generator_RowEvHandlerName="DadosClienteRowChangeEventHandler" msprop:Generator_RowDeletedName="DadosClienteRowDeleted" msprop:Generator_RowDeletingName="DadosClienteRowDeleting" msprop:Generator_RowEvArgName="DadosClienteRowChangeEvent" msprop:Generator_TablePropName="DadosCliente" msprop:Generator_RowChangedName="DadosClienteRowChanged" msprop:Generator_UserTableName="DadosCliente" msprop:Generator_RowChangingName="DadosClienteRowChanging" msprop:Generator_RowClassName="DadosClienteRow" msprop:Generator_TableClassName="DadosClienteDataTable" msprop:Generator_TableVarName="tableDadosCliente">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="COD_CLIENTE" msprop:Generator_ColumnPropNameInRow="COD_CLIENTE" msprop:Generator_ColumnPropNameInTable="COD_CLIENTEColumn" msprop:Generator_ColumnVarNameInTable="columnCOD_CLIENTE" msprop:Generator_UserColumnName="COD_CLIENTE" type="xs:int" />
-              <xs:element name="NOME_CLIENTE" msprop:Generator_ColumnPropNameInRow="NOME_CLIENTE" msprop:Generator_ColumnPropNameInTable="NOME_CLIENTEColumn" msprop:Generator_ColumnVarNameInTable="columnNOME_CLIENTE" msprop:Generator_UserColumnName="NOME_CLIENTE">
+              <xs:element name="COD_CLIENTE" msprop:Generator_ColumnPropNameInTable="COD_CLIENTEColumn" msprop:Generator_ColumnPropNameInRow="COD_CLIENTE" msprop:Generator_UserColumnName="COD_CLIENTE" msprop:Generator_ColumnVarNameInTable="columnCOD_CLIENTE" type="xs:int" />
+              <xs:element name="NOME_CLIENTE" msprop:Generator_ColumnPropNameInTable="NOME_CLIENTEColumn" msprop:Generator_ColumnPropNameInRow="NOME_CLIENTE" msprop:Generator_UserColumnName="NOME_CLIENTE" msprop:Generator_ColumnVarNameInTable="columnNOME_CLIENTE">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="80" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FOTO_CLIENTE" msprop:Generator_ColumnPropNameInRow="FOTO_CLIENTE" msprop:Generator_ColumnPropNameInTable="FOTO_CLIENTEColumn" msprop:Generator_ColumnVarNameInTable="columnFOTO_CLIENTE" msprop:Generator_UserColumnName="FOTO_CLIENTE" type="xs:base64Binary" minOccurs="0" />
-              <xs:element name="DATANASC_CLIENTE" msprop:Generator_ColumnPropNameInRow="DATANASC_CLIENTE" msprop:Generator_ColumnPropNameInTable="DATANASC_CLIENTEColumn" msprop:Generator_ColumnVarNameInTable="columnDATANASC_CLIENTE" msprop:Generator_UserColumnName="DATANASC_CLIENTE" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="NOME_SEXO" msprop:Generator_ColumnPropNameInRow="NOME_SEXO" msprop:Generator_ColumnPropNameInTable="NOME_SEXOColumn" msprop:Generator_ColumnVarNameInTable="columnNOME_SEXO" msprop:Generator_UserColumnName="NOME_SEXO">
+              <xs:element name="FOTO_CLIENTE" msprop:Generator_ColumnPropNameInTable="FOTO_CLIENTEColumn" msprop:Generator_ColumnPropNameInRow="FOTO_CLIENTE" msprop:Generator_UserColumnName="FOTO_CLIENTE" msprop:Generator_ColumnVarNameInTable="columnFOTO_CLIENTE" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="DATANASC_CLIENTE" msprop:Generator_ColumnPropNameInTable="DATANASC_CLIENTEColumn" msprop:Generator_ColumnPropNameInRow="DATANASC_CLIENTE" msprop:Generator_UserColumnName="DATANASC_CLIENTE" msprop:Generator_ColumnVarNameInTable="columnDATANASC_CLIENTE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NOME_SEXO" msprop:Generator_ColumnPropNameInTable="NOME_SEXOColumn" msprop:Generator_ColumnPropNameInRow="NOME_SEXO" msprop:Generator_UserColumnName="NOME_SEXO" msprop:Generator_ColumnVarNameInTable="columnNOME_SEXO">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="9" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="NOME_BAIRRO" msprop:Generator_ColumnPropNameInTable="NOME_BAIRROColumn" msprop:Generator_ColumnPropNameInRow="NOME_BAIRRO" msprop:Generator_UserColumnName="NOME_BAIRRO" msprop:Generator_ColumnVarNameInTable="columnNOME_BAIRRO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOME_CIDADE" msprop:Generator_ColumnPropNameInTable="NOME_CIDADEColumn" msprop:Generator_ColumnPropNameInRow="NOME_CIDADE" msprop:Generator_UserColumnName="NOME_CIDADE" msprop:Generator_ColumnVarNameInTable="columnNOME_CIDADE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOME_RUA" msprop:Generator_ColumnPropNameInTable="NOME_RUAColumn" msprop:Generator_ColumnPropNameInRow="NOME_RUA" msprop:Generator_UserColumnName="NOME_RUA" msprop:Generator_ColumnVarNameInTable="columnNOME_RUA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOME_TRABALHO" msprop:Generator_ColumnPropNameInTable="NOME_TRABALHOColumn" msprop:Generator_ColumnPropNameInRow="NOME_TRABALHO" msprop:Generator_UserColumnName="NOME_TRABALHO" msprop:Generator_ColumnVarNameInTable="columnNOME_TRABALHO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NUMERO_CEP" msprop:Generator_ColumnPropNameInTable="NUMERO_CEPColumn" msprop:Generator_ColumnPropNameInRow="NUMERO_CEP" msprop:Generator_UserColumnName="NUMERO_CEP" msprop:Generator_ColumnVarNameInTable="columnNUMERO_CEP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DadosTelefone" msprop:Generator_RowClassName="DadosTelefoneRow" msprop:Generator_RowEvHandlerName="DadosTelefoneRowChangeEventHandler" msprop:Generator_RowDeletedName="DadosTelefoneRowDeleted" msprop:Generator_RowDeletingName="DadosTelefoneRowDeleting" msprop:Generator_RowEvArgName="DadosTelefoneRowChangeEvent" msprop:Generator_TablePropName="DadosTelefone" msprop:Generator_RowChangedName="DadosTelefoneRowChanged" msprop:Generator_UserTableName="DadosTelefone" msprop:Generator_RowChangingName="DadosTelefoneRowChanging" msprop:Generator_TableClassName="DadosTelefoneDataTable" msprop:Generator_TableVarName="tableDadosTelefone">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NUMERO" msprop:Generator_UserColumnName="NUMERO" msprop:Generator_ColumnPropNameInTable="NUMEROColumn" msprop:Generator_ColumnPropNameInRow="NUMERO" msprop:Generator_ColumnVarNameInTable="columnNUMERO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COD_TELEFONE" msprop:Generator_UserColumnName="COD_TELEFONE" msprop:Generator_ColumnPropNameInTable="COD_TELEFONEColumn" msprop:Generator_ColumnPropNameInRow="COD_TELEFONE" msprop:Generator_ColumnVarNameInTable="columnCOD_TELEFONE" type="xs:int" />
+              <xs:element name="NOME_OPERADORA" msprop:Generator_UserColumnName="NOME_OPERADORA" msprop:Generator_ColumnPropNameInTable="NOME_OPERADORAColumn" msprop:Generator_ColumnPropNameInRow="NOME_OPERADORA" msprop:Generator_ColumnVarNameInTable="columnNOME_OPERADORA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DadosFuncionarios" msprop:Generator_RowEvHandlerName="DadosFuncionariosRowChangeEventHandler" msprop:Generator_RowDeletedName="DadosFuncionariosRowDeleted" msprop:Generator_RowDeletingName="DadosFuncionariosRowDeleting" msprop:Generator_RowEvArgName="DadosFuncionariosRowChangeEvent" msprop:Generator_TablePropName="DadosFuncionarios" msprop:Generator_RowChangedName="DadosFuncionariosRowChanged" msprop:Generator_RowChangingName="DadosFuncionariosRowChanging" msprop:Generator_TableClassName="DadosFuncionariosDataTable" msprop:Generator_RowClassName="DadosFuncionariosRow" msprop:Generator_TableVarName="tableDadosFuncionarios" msprop:Generator_UserTableName="DadosFuncionarios">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NOME_FUNCIONARIO" msprop:Generator_ColumnPropNameInRow="NOME_FUNCIONARIO" msprop:Generator_ColumnPropNameInTable="NOME_FUNCIONARIOColumn" msprop:Generator_ColumnVarNameInTable="columnNOME_FUNCIONARIO" msprop:Generator_UserColumnName="NOME_FUNCIONARIO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COD_FUNCIONARIO" msprop:Generator_ColumnPropNameInRow="COD_FUNCIONARIO" msprop:Generator_ColumnPropNameInTable="COD_FUNCIONARIOColumn" msprop:Generator_ColumnVarNameInTable="columnCOD_FUNCIONARIO" msprop:Generator_UserColumnName="COD_FUNCIONARIO" type="xs:int" />
+              <xs:element name="SALARIO" msprop:Generator_ColumnPropNameInRow="SALARIO" msprop:Generator_ColumnPropNameInTable="SALARIOColumn" msprop:Generator_ColumnVarNameInTable="columnSALARIO" msprop:Generator_UserColumnName="SALARIO" type="xs:decimal" />
               <xs:element name="NOME_BAIRRO" msprop:Generator_ColumnPropNameInRow="NOME_BAIRRO" msprop:Generator_ColumnPropNameInTable="NOME_BAIRROColumn" msprop:Generator_ColumnVarNameInTable="columnNOME_BAIRRO" msprop:Generator_UserColumnName="NOME_BAIRRO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOME_LOJA" msprop:Generator_ColumnPropNameInRow="NOME_LOJA" msprop:Generator_ColumnPropNameInTable="NOME_LOJAColumn" msprop:Generator_ColumnVarNameInTable="columnNOME_LOJA" msprop:Generator_UserColumnName="NOME_LOJA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NUMERO_CEP" msprop:Generator_ColumnPropNameInRow="NUMERO_CEP" msprop:Generator_ColumnPropNameInTable="NUMERO_CEPColumn" msprop:Generator_ColumnVarNameInTable="columnNUMERO_CEP" msprop:Generator_UserColumnName="NUMERO_CEP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOME_RUA" msprop:Generator_ColumnPropNameInRow="NOME_RUA" msprop:Generator_ColumnPropNameInTable="NOME_RUAColumn" msprop:Generator_ColumnVarNameInTable="columnNOME_RUA" msprop:Generator_UserColumnName="NOME_RUA">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="80" />
@@ -2523,21 +2658,14 @@ SELECT COD_VENDA, DATAVENDA, COD_CLIENTE_FK, COD_FUNCIONARIO_FK FROM VENDAPRODUT
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="NOME_RUA" msprop:Generator_ColumnPropNameInRow="NOME_RUA" msprop:Generator_ColumnPropNameInTable="NOME_RUAColumn" msprop:Generator_ColumnVarNameInTable="columnNOME_RUA" msprop:Generator_UserColumnName="NOME_RUA">
+              <xs:element name="NOME_FUNCAO" msprop:Generator_ColumnPropNameInRow="NOME_FUNCAO" msprop:Generator_ColumnPropNameInTable="NOME_FUNCAOColumn" msprop:Generator_ColumnVarNameInTable="columnNOME_FUNCAO" msprop:Generator_UserColumnName="NOME_FUNCAO">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="80" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="NOME_TRABALHO" msprop:Generator_ColumnPropNameInRow="NOME_TRABALHO" msprop:Generator_ColumnPropNameInTable="NOME_TRABALHOColumn" msprop:Generator_ColumnVarNameInTable="columnNOME_TRABALHO" msprop:Generator_UserColumnName="NOME_TRABALHO">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="80" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="NUMERO_CEP" msprop:Generator_ColumnPropNameInRow="NUMERO_CEP" msprop:Generator_ColumnPropNameInTable="NUMERO_CEPColumn" msprop:Generator_ColumnVarNameInTable="columnNUMERO_CEP" msprop:Generator_UserColumnName="NUMERO_CEP">
+              <xs:element name="NOME_SEXO" msprop:Generator_ColumnPropNameInRow="NOME_SEXO" msprop:Generator_ColumnPropNameInTable="NOME_SEXOColumn" msprop:Generator_ColumnVarNameInTable="columnNOME_SEXO" msprop:Generator_UserColumnName="NOME_SEXO">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="9" />
@@ -2696,6 +2824,14 @@ SELECT COD_VENDA, DATAVENDA, COD_CLIENTE_FK, COD_FUNCIONARIO_FK FROM VENDAPRODUT
     <xs:unique name="DadosCliente_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:DadosCliente" />
       <xs:field xpath="mstns:COD_CLIENTE" />
+    </xs:unique>
+    <xs:unique name="DadosTelefone_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DadosTelefone" />
+      <xs:field xpath="mstns:COD_TELEFONE" />
+    </xs:unique>
+    <xs:unique name="DadosFuncionarios_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DadosFuncionarios" />
+      <xs:field xpath="mstns:COD_FUNCIONARIO" />
     </xs:unique>
   </xs:element>
   <xs:annotation>

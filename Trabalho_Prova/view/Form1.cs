@@ -60,5 +60,35 @@ namespace Trabalho_Prova
             FrmTrabalho frm = new FrmTrabalho();   
             frm.ShowDialog();
         }
+
+        private void oPERADORAToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmOperadora frm = new FrmOperadora();
+            frm.ShowDialog();
+        }
+
+        private void tELEFONEToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmTelefone frm = new FrmTelefone();
+            frm.ShowDialog();
+        }
+
+        private void fUNCAOToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmFuncao frm = new FrmFuncao();
+            frm.ShowDialog();
+        }
+
+        private void lOJAToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmLoja frm = new FrmLoja();
+            frm.ShowDialog();
+        }
+
+        private void fUNCIONARIOToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmFuncionarios frm = new FrmFuncionarios();
+            frm.ShowDialog();
+        }
+
+        private void lOGINToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmLogin frm = new FrmLogin();
+            frm.ShowDialog();
+        }
     }
 }
