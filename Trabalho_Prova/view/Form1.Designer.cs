@@ -41,6 +41,7 @@
             this.lOJAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fUNCIONARIOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lOGINToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cONTROLELOGINSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,7 +72,8 @@
             this.fUNCAOToolStripMenuItem,
             this.lOJAToolStripMenuItem,
             this.fUNCIONARIOToolStripMenuItem,
-            this.lOGINToolStripMenuItem});
+            this.lOGINToolStripMenuItem,
+            this.cONTROLELOGINSToolStripMenuItem});
             this.tabelasToolStripMenuItem.Name = "tabelasToolStripMenuItem";
             this.tabelasToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
             this.tabelasToolStripMenuItem.Text = "MENU";
@@ -175,6 +177,13 @@
             this.lOGINToolStripMenuItem.Text = "LOGIN";
             this.lOGINToolStripMenuItem.Click += new System.EventHandler(this.lOGINToolStripMenuItem_Click);
             // 
+            // cONTROLELOGINSToolStripMenuItem
+            // 
+            this.cONTROLELOGINSToolStripMenuItem.Name = "cONTROLELOGINSToolStripMenuItem";
+            this.cONTROLELOGINSToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.cONTROLELOGINSToolStripMenuItem.Text = "CONTROLELOGINS";
+            this.cONTROLELOGINSToolStripMenuItem.Click += new System.EventHandler(this.cONTROLELOGINSToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -209,6 +218,7 @@
         private System.Windows.Forms.ToolStripMenuItem lOJAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fUNCIONARIOToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lOGINToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cONTROLELOGINSToolStripMenuItem;
     }
 }
 

@@ -82,67 +82,69 @@
         </ColumnUISetting>
       </ColumnUISettings>
     </TableUISetting>
-    <TableUISetting Name="FUNCAO">
+    <TableUISetting Name="CONTROLE_LOGSISTEMA">
       <ColumnUISettings>
-        <ColumnUISetting Name="COD_FUNCAO">
+        <ColumnUISetting Name="COD_CONTROLE">
           <ControlSettings>
             <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
               <BindableControlInfo Name="Label" Type="System.Windows.Forms.Label" AssemblyName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
             </ControlSetting>
           </ControlSettings>
+        </ColumnUISetting>
+        <ColumnUISetting Name="COD_LOGINS_FK">
+          <ControlSettings>
+            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
+              <BindableControlInfo Name="ComboBox" Type="System.Windows.Forms.ComboBox" AssemblyName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+            </ControlSetting>
+          </ControlSettings>
+        </ColumnUISetting>
+      </ColumnUISettings>
+    </TableUISetting>
+    <TableUISetting Name="FUNCAO">
+      <ColumnUISettings>
+        <ColumnUISetting Name="COD_FUNCAO">
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+              <BindableControlInfo Name="Label" Type="System.Windows.Forms.Label" AssemblyName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+            </ControlSetting></ControlSettings>
         </ColumnUISetting>
       </ColumnUISettings>
     </TableUISetting>
     <TableUISetting Name="FUNCIONARIOS">
       <ColumnUISettings>
         <ColumnUISetting Name="COD_FUNCIONARIO">
-          <ControlSettings>
-            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
               <BindableControlInfo Name="Label" Type="System.Windows.Forms.Label" AssemblyName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-            </ControlSetting>
-          </ControlSettings>
+            </ControlSetting></ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="COD_RUA_FK">
-          <ControlSettings>
-            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
               <BindableControlInfo Name="ComboBox" Type="System.Windows.Forms.ComboBox" AssemblyName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-            </ControlSetting>
-          </ControlSettings>
+            </ControlSetting></ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="COD_BAIRRO_FK">
-          <ControlSettings>
-            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
               <BindableControlInfo Name="ComboBox" Type="System.Windows.Forms.ComboBox" AssemblyName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-            </ControlSetting>
-          </ControlSettings>
+            </ControlSetting></ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="COD_CEP_FK">
-          <ControlSettings>
-            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
               <BindableControlInfo Name="ComboBox" Type="System.Windows.Forms.ComboBox" AssemblyName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-            </ControlSetting>
-          </ControlSettings>
+            </ControlSetting></ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="COD_CIDADE_FK">
-          <ControlSettings>
-            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
               <BindableControlInfo Name="ComboBox" Type="System.Windows.Forms.ComboBox" AssemblyName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-            </ControlSetting>
-          </ControlSettings>
+            </ControlSetting></ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="COD_FUNCAO_FK">
-          <ControlSettings>
-            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
               <BindableControlInfo Name="ComboBox" Type="System.Windows.Forms.ComboBox" AssemblyName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-            </ControlSetting>
-          </ControlSettings>
+            </ControlSetting></ControlSettings>
         </ColumnUISetting>
         <ColumnUISetting Name="COD_LOJA_FK">
-          <ControlSettings>
-            <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
+          <ControlSettings><ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
               <BindableControlInfo Name="ComboBox" Type="System.Windows.Forms.ComboBox" AssemblyName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-            </ControlSetting>
-          </ControlSettings>
+            </ControlSetting></ControlSettings>
         </ColumnUISetting>
       </ColumnUISettings>
     </TableUISetting>
