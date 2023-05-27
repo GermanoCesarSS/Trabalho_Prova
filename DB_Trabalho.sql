@@ -1,4 +1,3 @@
-create database DB_Trabalho;
 
 
 --SEXO = {CODSEXO, NOMESEXO}
