@@ -50,14 +50,15 @@
             this.cOD_TELEFONELabel1 = new System.Windows.Forms.Label();
             this.nUMEROTextBox = new System.Windows.Forms.TextBox();
             this.cOD_OPERADORA_FKComboBox = new System.Windows.Forms.ComboBox();
+            this.oPERADORABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dadosTelefoneBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dadosTelefoneTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.DadosTelefoneTableAdapter();
             this.dadosTelefoneDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.oPERADORABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.oPERADORATableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.OPERADORATableAdapter();
+            this.button2 = new System.Windows.Forms.Button();
             cOD_TELEFONELabel = new System.Windows.Forms.Label();
             nUMEROLabel = new System.Windows.Forms.Label();
             cOD_OPERADORA_FKLabel = new System.Windows.Forms.Label();
@@ -65,9 +66,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.tELEFONEBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tELEFONEBindingNavigator)).BeginInit();
             this.tELEFONEBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.oPERADORABindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dadosTelefoneBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dadosTelefoneDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.oPERADORABindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // cOD_TELEFONELabel
@@ -233,6 +234,7 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Posição";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -304,6 +306,11 @@
             this.cOD_OPERADORA_FKComboBox.TabIndex = 7;
             this.cOD_OPERADORA_FKComboBox.ValueMember = "COD_OPERADORA";
             // 
+            // oPERADORABindingSource
+            // 
+            this.oPERADORABindingSource.DataMember = "OPERADORA";
+            this.oPERADORABindingSource.DataSource = this.dB_TrabalhoDataSet;
+            // 
             // dadosTelefoneBindingSource
             // 
             this.dadosTelefoneBindingSource.DataMember = "DadosTelefone";
@@ -354,20 +361,26 @@
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.Width = 125;
             // 
-            // oPERADORABindingSource
-            // 
-            this.oPERADORABindingSource.DataMember = "OPERADORA";
-            this.oPERADORABindingSource.DataSource = this.dB_TrabalhoDataSet;
-            // 
             // oPERADORATableAdapter
             // 
             this.oPERADORATableAdapter.ClearBeforeFill = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(399, 114);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 33;
+            this.button2.Text = "+";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // FrmTelefone
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(501, 472);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.dadosTelefoneDataGridView);
             this.Controls.Add(cOD_TELEFONELabel);
             this.Controls.Add(this.cOD_TELEFONELabel1);
@@ -384,9 +397,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.tELEFONEBindingNavigator)).EndInit();
             this.tELEFONEBindingNavigator.ResumeLayout(false);
             this.tELEFONEBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.oPERADORABindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dadosTelefoneBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dadosTelefoneDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.oPERADORABindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -422,5 +435,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.BindingSource oPERADORABindingSource;
         private DB_TrabalhoDataSetTableAdapters.OPERADORATableAdapter oPERADORATableAdapter;
+        private System.Windows.Forms.Button button2;
     }
 }

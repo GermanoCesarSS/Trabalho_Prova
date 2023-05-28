@@ -117,5 +117,35 @@ namespace Trabalho_Prova.view
             }
 
         }
+
+        private void button1_Click(object sender, EventArgs e) {
+            FrmSexo frm = new FrmSexo();
+            frm.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e) {
+            FrmRua frm = new FrmRua();
+            frm.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e) {
+            FrmBairro frm = new FrmBairro();
+            frm.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e) {
+            FrmCep frm = new FrmCep();
+            frm.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e) {
+            FrmCidade frm = new FrmCidade();
+            frm.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e) {
+            FrmTrabalho frm = new FrmTrabalho();
+            frm.ShowDialog();
+        }
     }
 }

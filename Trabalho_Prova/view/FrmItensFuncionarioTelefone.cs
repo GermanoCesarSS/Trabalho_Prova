@@ -32,5 +32,15 @@ namespace Trabalho_Prova.view
             this.iTENS_TEL_FUNTableAdapter.Fill(this.dB_TrabalhoDataSet.ITENS_TEL_FUN);
 
         }
+
+        private void button2_Click(object sender, EventArgs e) {
+            FrmTelefone frm = new FrmTelefone();
+            frm.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e) {
+            FrmFuncionarios frm = new FrmFuncionarios();
+            frm.ShowDialog();
+        }
     }
 }

@@ -37,5 +37,10 @@ namespace Trabalho_Prova.view
         private void dadosTelefoneDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e) {
 
         }
+
+        private void button2_Click(object sender, EventArgs e) {
+            FrmOperadora frm = new FrmOperadora();
+            frm.ShowDialog();
+        }
     }
 }

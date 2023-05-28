@@ -32,5 +32,15 @@ namespace Trabalho_Prova.view
             this.iTENS_ACESSOLOGINTableAdapter.Fill(this.dB_TrabalhoDataSet.ITENS_ACESSOLOGIN);
 
         }
+
+        private void button1_Click(object sender, EventArgs e) {
+            FrmAcesso frm = new FrmAcesso();
+            frm.ShowDialog();   
+        }
+
+        private void button2_Click(object sender, EventArgs e) {
+            FrmLogin frm = new FrmLogin();
+            frm.ShowDialog();
+        }
     }
 }

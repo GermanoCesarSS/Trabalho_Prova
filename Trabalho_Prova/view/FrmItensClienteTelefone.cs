@@ -32,5 +32,15 @@ namespace Trabalho_Prova.view
             this.iTENS_TEL_CLITableAdapter.Fill(this.dB_TrabalhoDataSet.ITENS_TEL_CLI);
 
         }
+
+        private void button1_Click(object sender, EventArgs e) {
+            FrmTelefone frm = new FrmTelefone();
+            frm.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e) {
+            FrmCliente frm = new FrmCliente();
+            frm.ShowDialog();
+        }
     }
 }

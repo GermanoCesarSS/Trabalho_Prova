@@ -32,5 +32,15 @@ namespace Trabalho_Prova.view
             this.iTENS_TEL_TRATableAdapter.Fill(this.dB_TrabalhoDataSet.ITENS_TEL_TRA);
 
         }
+
+        private void button1_Click(object sender, EventArgs e) {
+            FrmTelefone frm = new FrmTelefone();
+            frm.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e) {
+            FrmTrabalho frm = new FrmTrabalho();
+            frm.ShowDialog();
+        }
     }
 }

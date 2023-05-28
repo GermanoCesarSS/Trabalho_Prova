@@ -25,6 +25,7 @@
         /// o conteúdo deste método com o editor de código.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tabelasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sexoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,7 +49,10 @@
             this.tELEFONECLIENTEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tELEFONETRABALHOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tELEFONEFUNCIONARIOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -213,21 +217,21 @@
             // aCESSOLOGINToolStripMenuItem
             // 
             this.aCESSOLOGINToolStripMenuItem.Name = "aCESSOLOGINToolStripMenuItem";
-            this.aCESSOLOGINToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.aCESSOLOGINToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
             this.aCESSOLOGINToolStripMenuItem.Text = "ACESSOLOGIN";
             this.aCESSOLOGINToolStripMenuItem.Click += new System.EventHandler(this.aCESSOLOGINToolStripMenuItem_Click);
             // 
             // tELEFONECLIENTEToolStripMenuItem
             // 
             this.tELEFONECLIENTEToolStripMenuItem.Name = "tELEFONECLIENTEToolStripMenuItem";
-            this.tELEFONECLIENTEToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.tELEFONECLIENTEToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
             this.tELEFONECLIENTEToolStripMenuItem.Text = "TELEFONECLIENTE";
             this.tELEFONECLIENTEToolStripMenuItem.Click += new System.EventHandler(this.tELEFONECLIENTEToolStripMenuItem_Click);
             // 
             // tELEFONETRABALHOToolStripMenuItem
             // 
             this.tELEFONETRABALHOToolStripMenuItem.Name = "tELEFONETRABALHOToolStripMenuItem";
-            this.tELEFONETRABALHOToolStripMenuItem.Size = new System.Drawing.Size(235, 26);
+            this.tELEFONETRABALHOToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
             this.tELEFONETRABALHOToolStripMenuItem.Text = "TELEFONETRABALHO";
             this.tELEFONETRABALHOToolStripMenuItem.Click += new System.EventHandler(this.tELEFONETRABALHOToolStripMenuItem_Click);
             // 
@@ -238,17 +242,42 @@
             this.tELEFONEFUNCIONARIOToolStripMenuItem.Text = "TELEFONEFUNCIONARIO";
             this.tELEFONEFUNCIONARIOToolStripMenuItem.Click += new System.EventHandler(this.tELEFONEFUNCIONARIOToolStripMenuItem_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(800, 407);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(157, 378);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(446, 60);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "LOJA DO MARCÃO";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 440);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Principal";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,6 +308,8 @@
         private System.Windows.Forms.ToolStripMenuItem tELEFONECLIENTEToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tELEFONETRABALHOToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tELEFONEFUNCIONARIOToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -30,5 +30,10 @@ namespace Trabalho_Prova.view
             this.cONTROLE_LOGSISTEMATableAdapter.Fill(this.dB_TrabalhoDataSet.CONTROLE_LOGSISTEMA);
 
         }
+
+        private void button1_Click(object sender, EventArgs e) {
+            FrmLogin frm = new FrmLogin();
+            frm.ShowDialog();
+        }
     }
 }
