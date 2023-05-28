@@ -30,5 +30,10 @@ namespace Trabalho_Prova.view
             this.cIDADETableAdapter.Fill(this.dB_TrabalhoDataSet.CIDADE);
 
         }
+
+        private void button1_Click(object sender, EventArgs e) {
+            FrmUF frm = new FrmUF();
+            frm.ShowDialog();
+        }
     }
 }

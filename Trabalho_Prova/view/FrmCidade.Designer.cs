@@ -56,6 +56,7 @@
             this.nOME_CIDADETextBox = new System.Windows.Forms.TextBox();
             this.cOD_UF_FKComboBox = new System.Windows.Forms.ComboBox();
             this.uFBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             cOD_CIDADELabel = new System.Windows.Forms.Label();
             nOME_CIDADELabel = new System.Windows.Forms.Label();
             cOD_UF_FKLabel = new System.Windows.Forms.Label();
@@ -178,7 +179,7 @@
             this.cIDADEBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.cIDADEBindingNavigator.Name = "cIDADEBindingNavigator";
             this.cIDADEBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.cIDADEBindingNavigator.Size = new System.Drawing.Size(452, 27);
+            this.cIDADEBindingNavigator.Size = new System.Drawing.Size(553, 27);
             this.cIDADEBindingNavigator.TabIndex = 0;
             this.cIDADEBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -290,7 +291,7 @@
             this.cIDADEDataGridView.Name = "cIDADEDataGridView";
             this.cIDADEDataGridView.RowHeadersWidth = 51;
             this.cIDADEDataGridView.RowTemplate.Height = 24;
-            this.cIDADEDataGridView.Size = new System.Drawing.Size(434, 220);
+            this.cIDADEDataGridView.Size = new System.Drawing.Size(553, 230);
             this.cIDADEDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -352,11 +353,22 @@
             this.uFBindingSource.DataMember = "UF";
             this.uFBindingSource.DataSource = this.dB_TrabalhoDataSet;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(456, 149);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "+";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmCidade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(452, 512);
+            this.ClientSize = new System.Drawing.Size(553, 512);
+            this.Controls.Add(this.button1);
             this.Controls.Add(cOD_CIDADELabel);
             this.Controls.Add(this.cOD_CIDADELabel1);
             this.Controls.Add(nOME_CIDADELabel);
@@ -408,5 +420,6 @@
         private System.Windows.Forms.ComboBox cOD_UF_FKComboBox;
         private DB_TrabalhoDataSetTableAdapters.UFTableAdapter uFTableAdapter;
         private System.Windows.Forms.BindingSource uFBindingSource;
+        private System.Windows.Forms.Button button1;
     }
 }

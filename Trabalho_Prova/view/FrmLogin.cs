@@ -30,5 +30,10 @@ namespace Trabalho_Prova.view
             this.lOGINSTableAdapter.Fill(this.dB_TrabalhoDataSet.LOGINS);
 
         }
+
+        private void button2_Click(object sender, EventArgs e) {
+            FrmFuncionarios frm = new FrmFuncionarios();
+            frm.ShowDialog();
+        }
     }
 }

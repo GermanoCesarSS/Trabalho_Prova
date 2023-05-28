@@ -59,6 +59,7 @@
             this.lOGINSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dATASDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.hORATextBox = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             cOD_CONTROLELabel = new System.Windows.Forms.Label();
             cOD_LOGINS_FKLabel = new System.Windows.Forms.Label();
             dATASLabel = new System.Windows.Forms.Label();
@@ -207,7 +208,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 28);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 24);
             this.bindingNavigatorCountItem.Text = "de {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
             // 
@@ -217,7 +218,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorDeleteItem.Text = "Excluir";
             // 
             // bindingNavigatorMoveFirstItem
@@ -226,7 +227,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Mover primeiro";
             // 
             // bindingNavigatorMovePreviousItem
@@ -235,13 +236,13 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -256,7 +257,7 @@
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -264,7 +265,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveNextItem.Text = "Mover próximo";
             // 
             // bindingNavigatorMoveLastItem
@@ -273,20 +274,20 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveLastItem.Text = "Mover último";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // cONTROLE_LOGSISTEMABindingNavigatorSaveItem
             // 
             this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("cONTROLE_LOGSISTEMABindingNavigatorSaveItem.Image")));
             this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem.Name = "cONTROLE_LOGSISTEMABindingNavigatorSaveItem";
-            this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 28);
+            this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
             this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem.Text = "Salvar Dados";
             this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem.Click += new System.EventHandler(this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem_Click);
             // 
@@ -300,11 +301,11 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.cONTROLE_LOGSISTEMADataGridView.DataSource = this.cONTROLE_LOGSISTEMABindingSource;
-            this.cONTROLE_LOGSISTEMADataGridView.Location = new System.Drawing.Point(376, 30);
+            this.cONTROLE_LOGSISTEMADataGridView.Location = new System.Drawing.Point(457, 30);
             this.cONTROLE_LOGSISTEMADataGridView.Name = "cONTROLE_LOGSISTEMADataGridView";
             this.cONTROLE_LOGSISTEMADataGridView.RowHeadersWidth = 51;
             this.cONTROLE_LOGSISTEMADataGridView.RowTemplate.Height = 24;
-            this.cONTROLE_LOGSISTEMADataGridView.Size = new System.Drawing.Size(559, 421);
+            this.cONTROLE_LOGSISTEMADataGridView.Size = new System.Drawing.Size(478, 438);
             this.cONTROLE_LOGSISTEMADataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -382,11 +383,22 @@
             this.hORATextBox.Size = new System.Drawing.Size(200, 22);
             this.hORATextBox.TabIndex = 9;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(376, 114);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "+";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmControle_LoginSistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(955, 471);
+            this.Controls.Add(this.button1);
             this.Controls.Add(cOD_CONTROLELabel);
             this.Controls.Add(this.cOD_CONTROLELabel1);
             this.Controls.Add(cOD_LOGINS_FKLabel);
@@ -442,5 +454,6 @@
         private System.Windows.Forms.DateTimePicker dATASDateTimePicker;
         private System.Windows.Forms.TextBox hORATextBox;
         private System.Windows.Forms.BindingSource lOGINSBindingSource;
+        private System.Windows.Forms.Button button1;
     }
 }

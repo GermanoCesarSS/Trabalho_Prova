@@ -26,35 +26,37 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmItensTrabalhoTelefone));
             System.Windows.Forms.Label cOD_TRABALHO_FKLabel;
             System.Windows.Forms.Label cOD_TELEFONE_FKLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmItensTrabalhoTelefone));
             this.dB_TrabalhoDataSet = new Trabalho_Prova.DB_TrabalhoDataSet();
             this.iTENS_TEL_TRABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.iTENS_TEL_TRATableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.ITENS_TEL_TRATableAdapter();
             this.tableAdapterManager = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TableAdapterManager();
+            this.tELEFONETableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TELEFONETableAdapter();
+            this.tRABALHOTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TRABALHOTableAdapter();
             this.iTENS_TEL_TRABindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.iTENS_TEL_TRABindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.iTENS_TEL_TRADataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cOD_TRABALHO_FKComboBox = new System.Windows.Forms.ComboBox();
+            this.tRABALHOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cOD_TELEFONE_FKComboBox = new System.Windows.Forms.ComboBox();
             this.tELEFONEBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tELEFONETableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TELEFONETableAdapter();
-            this.tRABALHOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tRABALHOTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TRABALHOTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             cOD_TRABALHO_FKLabel = new System.Windows.Forms.Label();
             cOD_TELEFONE_FKLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dB_TrabalhoDataSet)).BeginInit();
@@ -62,9 +64,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.iTENS_TEL_TRABindingNavigator)).BeginInit();
             this.iTENS_TEL_TRABindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iTENS_TEL_TRADataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tELEFONEBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRABALHOBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tELEFONEBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // cOD_TRABALHO_FKLabel
+            // 
+            cOD_TRABALHO_FKLabel.AutoSize = true;
+            cOD_TRABALHO_FKLabel.Location = new System.Drawing.Point(12, 62);
+            cOD_TRABALHO_FKLabel.Name = "cOD_TRABALHO_FKLabel";
+            cOD_TRABALHO_FKLabel.Size = new System.Drawing.Size(134, 16);
+            cOD_TRABALHO_FKLabel.TabIndex = 2;
+            cOD_TRABALHO_FKLabel.Text = "COD TRABALHO FK:";
+            // 
+            // cOD_TELEFONE_FKLabel
+            // 
+            cOD_TELEFONE_FKLabel.AutoSize = true;
+            cOD_TELEFONE_FKLabel.Location = new System.Drawing.Point(12, 126);
+            cOD_TELEFONE_FKLabel.Name = "cOD_TELEFONE_FKLabel";
+            cOD_TELEFONE_FKLabel.Size = new System.Drawing.Size(132, 16);
+            cOD_TELEFONE_FKLabel.TabIndex = 4;
+            cOD_TELEFONE_FKLabel.Text = "COD TELEFONE FK:";
             // 
             // dB_TrabalhoDataSet
             // 
@@ -119,6 +139,14 @@
             this.tableAdapterManager.UpdateOrder = Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.VENDAPRODUTOTableAdapter = null;
             // 
+            // tELEFONETableAdapter
+            // 
+            this.tELEFONETableAdapter.ClearBeforeFill = true;
+            // 
+            // tRABALHOTableAdapter
+            // 
+            this.tRABALHOTableAdapter.ClearBeforeFill = true;
+            // 
             // iTENS_TEL_TRABindingNavigator
             // 
             this.iTENS_TEL_TRABindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
@@ -150,13 +178,38 @@
             this.iTENS_TEL_TRABindingNavigator.TabIndex = 0;
             this.iTENS_TEL_TRABindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Text = "Adicionar novo";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 24);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Text = "Excluir";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 22);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Mover primeiro";
             // 
             // bindingNavigatorMovePreviousItem
@@ -165,34 +218,28 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 22);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Posição";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posição atual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 20);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -214,33 +261,15 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorAddNewItem.Text = "Adicionar novo";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorDeleteItem.Text = "Excluir";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // iTENS_TEL_TRABindingNavigatorSaveItem
             // 
             this.iTENS_TEL_TRABindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.iTENS_TEL_TRABindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("iTENS_TEL_TRABindingNavigatorSaveItem.Image")));
             this.iTENS_TEL_TRABindingNavigatorSaveItem.Name = "iTENS_TEL_TRABindingNavigatorSaveItem";
-            this.iTENS_TEL_TRABindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.iTENS_TEL_TRABindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
             this.iTENS_TEL_TRABindingNavigatorSaveItem.Text = "Salvar Dados";
             this.iTENS_TEL_TRABindingNavigatorSaveItem.Click += new System.EventHandler(this.iTENS_TEL_TRABindingNavigatorSaveItem_Click);
             // 
@@ -275,15 +304,6 @@
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.Width = 125;
             // 
-            // cOD_TRABALHO_FKLabel
-            // 
-            cOD_TRABALHO_FKLabel.AutoSize = true;
-            cOD_TRABALHO_FKLabel.Location = new System.Drawing.Point(12, 62);
-            cOD_TRABALHO_FKLabel.Name = "cOD_TRABALHO_FKLabel";
-            cOD_TRABALHO_FKLabel.Size = new System.Drawing.Size(134, 16);
-            cOD_TRABALHO_FKLabel.TabIndex = 2;
-            cOD_TRABALHO_FKLabel.Text = "COD TRABALHO FK:";
-            // 
             // cOD_TRABALHO_FKComboBox
             // 
             this.cOD_TRABALHO_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.iTENS_TEL_TRABindingSource, "COD_TRABALHO_FK", true));
@@ -296,14 +316,10 @@
             this.cOD_TRABALHO_FKComboBox.TabIndex = 3;
             this.cOD_TRABALHO_FKComboBox.ValueMember = "COD_TRABALHO";
             // 
-            // cOD_TELEFONE_FKLabel
+            // tRABALHOBindingSource
             // 
-            cOD_TELEFONE_FKLabel.AutoSize = true;
-            cOD_TELEFONE_FKLabel.Location = new System.Drawing.Point(12, 126);
-            cOD_TELEFONE_FKLabel.Name = "cOD_TELEFONE_FKLabel";
-            cOD_TELEFONE_FKLabel.Size = new System.Drawing.Size(132, 16);
-            cOD_TELEFONE_FKLabel.TabIndex = 4;
-            cOD_TELEFONE_FKLabel.Text = "COD TELEFONE FK:";
+            this.tRABALHOBindingSource.DataMember = "TRABALHO";
+            this.tRABALHOBindingSource.DataSource = this.dB_TrabalhoDataSet;
             // 
             // cOD_TELEFONE_FKComboBox
             // 
@@ -322,24 +338,33 @@
             this.tELEFONEBindingSource.DataMember = "TELEFONE";
             this.tELEFONEBindingSource.DataSource = this.dB_TrabalhoDataSet;
             // 
-            // tELEFONETableAdapter
+            // button1
             // 
-            this.tELEFONETableAdapter.ClearBeforeFill = true;
+            this.button1.Location = new System.Drawing.Point(327, 127);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "+";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // tRABALHOBindingSource
+            // button2
             // 
-            this.tRABALHOBindingSource.DataMember = "TRABALHO";
-            this.tRABALHOBindingSource.DataSource = this.dB_TrabalhoDataSet;
-            // 
-            // tRABALHOTableAdapter
-            // 
-            this.tRABALHOTableAdapter.ClearBeforeFill = true;
+            this.button2.Location = new System.Drawing.Point(327, 63);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 32;
+            this.button2.Text = "+";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // FrmItensTrabalhoTelefone
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 532);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(cOD_TRABALHO_FKLabel);
             this.Controls.Add(this.cOD_TRABALHO_FKComboBox);
             this.Controls.Add(cOD_TELEFONE_FKLabel);
@@ -355,8 +380,8 @@
             this.iTENS_TEL_TRABindingNavigator.ResumeLayout(false);
             this.iTENS_TEL_TRABindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iTENS_TEL_TRADataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tELEFONEBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tRABALHOBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tELEFONEBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -390,5 +415,7 @@
         private System.Windows.Forms.BindingSource tELEFONEBindingSource;
         private DB_TrabalhoDataSetTableAdapters.TRABALHOTableAdapter tRABALHOTableAdapter;
         private System.Windows.Forms.BindingSource tRABALHOBindingSource;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

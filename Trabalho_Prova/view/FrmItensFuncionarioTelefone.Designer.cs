@@ -26,35 +26,37 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmItensFuncionarioTelefone));
             System.Windows.Forms.Label cOD_FUNCIONARIO_FKLabel;
             System.Windows.Forms.Label cOD_TELEFONE_FKLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmItensFuncionarioTelefone));
             this.dB_TrabalhoDataSet = new Trabalho_Prova.DB_TrabalhoDataSet();
             this.iTENS_TEL_FUNBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.iTENS_TEL_FUNTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.ITENS_TEL_FUNTableAdapter();
             this.tableAdapterManager = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TableAdapterManager();
+            this.fUNCIONARIOSTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.FUNCIONARIOSTableAdapter();
+            this.tELEFONETableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TELEFONETableAdapter();
             this.iTENS_TEL_FUNBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.iTENS_TEL_FUNBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.iTENS_TEL_FUNDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cOD_FUNCIONARIO_FKComboBox = new System.Windows.Forms.ComboBox();
+            this.fUNCIONARIOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cOD_TELEFONE_FKComboBox = new System.Windows.Forms.ComboBox();
             this.tELEFONEBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tELEFONETableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TELEFONETableAdapter();
-            this.fUNCIONARIOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fUNCIONARIOSTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.FUNCIONARIOSTableAdapter();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             cOD_FUNCIONARIO_FKLabel = new System.Windows.Forms.Label();
             cOD_TELEFONE_FKLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dB_TrabalhoDataSet)).BeginInit();
@@ -62,9 +64,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.iTENS_TEL_FUNBindingNavigator)).BeginInit();
             this.iTENS_TEL_FUNBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iTENS_TEL_FUNDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tELEFONEBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fUNCIONARIOSBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tELEFONEBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // cOD_FUNCIONARIO_FKLabel
+            // 
+            cOD_FUNCIONARIO_FKLabel.AutoSize = true;
+            cOD_FUNCIONARIO_FKLabel.Location = new System.Drawing.Point(12, 81);
+            cOD_FUNCIONARIO_FKLabel.Name = "cOD_FUNCIONARIO_FKLabel";
+            cOD_FUNCIONARIO_FKLabel.Size = new System.Drawing.Size(153, 16);
+            cOD_FUNCIONARIO_FKLabel.TabIndex = 2;
+            cOD_FUNCIONARIO_FKLabel.Text = "COD FUNCIONARIO FK:";
+            // 
+            // cOD_TELEFONE_FKLabel
+            // 
+            cOD_TELEFONE_FKLabel.AutoSize = true;
+            cOD_TELEFONE_FKLabel.Location = new System.Drawing.Point(12, 111);
+            cOD_TELEFONE_FKLabel.Name = "cOD_TELEFONE_FKLabel";
+            cOD_TELEFONE_FKLabel.Size = new System.Drawing.Size(132, 16);
+            cOD_TELEFONE_FKLabel.TabIndex = 4;
+            cOD_TELEFONE_FKLabel.Text = "COD TELEFONE FK:";
             // 
             // dB_TrabalhoDataSet
             // 
@@ -119,6 +139,14 @@
             this.tableAdapterManager.UpdateOrder = Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.VENDAPRODUTOTableAdapter = null;
             // 
+            // fUNCIONARIOSTableAdapter
+            // 
+            this.fUNCIONARIOSTableAdapter.ClearBeforeFill = true;
+            // 
+            // tELEFONETableAdapter
+            // 
+            this.tELEFONETableAdapter.ClearBeforeFill = true;
+            // 
             // iTENS_TEL_FUNBindingNavigator
             // 
             this.iTENS_TEL_FUNBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
@@ -150,13 +178,38 @@
             this.iTENS_TEL_FUNBindingNavigator.TabIndex = 0;
             this.iTENS_TEL_FUNBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Text = "Adicionar novo";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 24);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Text = "Excluir";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 22);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Mover primeiro";
             // 
             // bindingNavigatorMovePreviousItem
@@ -165,34 +218,28 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 22);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Posição";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posição atual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 20);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -214,33 +261,15 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorAddNewItem.Text = "Adicionar novo";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorDeleteItem.Text = "Excluir";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // iTENS_TEL_FUNBindingNavigatorSaveItem
             // 
             this.iTENS_TEL_FUNBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.iTENS_TEL_FUNBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("iTENS_TEL_FUNBindingNavigatorSaveItem.Image")));
             this.iTENS_TEL_FUNBindingNavigatorSaveItem.Name = "iTENS_TEL_FUNBindingNavigatorSaveItem";
-            this.iTENS_TEL_FUNBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.iTENS_TEL_FUNBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
             this.iTENS_TEL_FUNBindingNavigatorSaveItem.Text = "Salvar Dados";
             this.iTENS_TEL_FUNBindingNavigatorSaveItem.Click += new System.EventHandler(this.iTENS_TEL_FUNBindingNavigatorSaveItem_Click);
             // 
@@ -275,15 +304,6 @@
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.Width = 125;
             // 
-            // cOD_FUNCIONARIO_FKLabel
-            // 
-            cOD_FUNCIONARIO_FKLabel.AutoSize = true;
-            cOD_FUNCIONARIO_FKLabel.Location = new System.Drawing.Point(12, 81);
-            cOD_FUNCIONARIO_FKLabel.Name = "cOD_FUNCIONARIO_FKLabel";
-            cOD_FUNCIONARIO_FKLabel.Size = new System.Drawing.Size(153, 16);
-            cOD_FUNCIONARIO_FKLabel.TabIndex = 2;
-            cOD_FUNCIONARIO_FKLabel.Text = "COD FUNCIONARIO FK:";
-            // 
             // cOD_FUNCIONARIO_FKComboBox
             // 
             this.cOD_FUNCIONARIO_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.iTENS_TEL_FUNBindingSource, "COD_FUNCIONARIO_FK", true));
@@ -296,14 +316,10 @@
             this.cOD_FUNCIONARIO_FKComboBox.TabIndex = 3;
             this.cOD_FUNCIONARIO_FKComboBox.ValueMember = "COD_FUNCIONARIO";
             // 
-            // cOD_TELEFONE_FKLabel
+            // fUNCIONARIOSBindingSource
             // 
-            cOD_TELEFONE_FKLabel.AutoSize = true;
-            cOD_TELEFONE_FKLabel.Location = new System.Drawing.Point(12, 111);
-            cOD_TELEFONE_FKLabel.Name = "cOD_TELEFONE_FKLabel";
-            cOD_TELEFONE_FKLabel.Size = new System.Drawing.Size(132, 16);
-            cOD_TELEFONE_FKLabel.TabIndex = 4;
-            cOD_TELEFONE_FKLabel.Text = "COD TELEFONE FK:";
+            this.fUNCIONARIOSBindingSource.DataMember = "FUNCIONARIOS";
+            this.fUNCIONARIOSBindingSource.DataSource = this.dB_TrabalhoDataSet;
             // 
             // cOD_TELEFONE_FKComboBox
             // 
@@ -322,24 +338,33 @@
             this.tELEFONEBindingSource.DataMember = "TELEFONE";
             this.tELEFONEBindingSource.DataSource = this.dB_TrabalhoDataSet;
             // 
-            // tELEFONETableAdapter
+            // button2
             // 
-            this.tELEFONETableAdapter.ClearBeforeFill = true;
+            this.button2.Location = new System.Drawing.Point(363, 112);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 29;
+            this.button2.Text = "+";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // fUNCIONARIOSBindingSource
+            // button1
             // 
-            this.fUNCIONARIOSBindingSource.DataMember = "FUNCIONARIOS";
-            this.fUNCIONARIOSBindingSource.DataSource = this.dB_TrabalhoDataSet;
-            // 
-            // fUNCIONARIOSTableAdapter
-            // 
-            this.fUNCIONARIOSTableAdapter.ClearBeforeFill = true;
+            this.button1.Location = new System.Drawing.Point(363, 78);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 30;
+            this.button1.Text = "+";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmItensFuncionarioTelefone
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 470);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(cOD_FUNCIONARIO_FKLabel);
             this.Controls.Add(this.cOD_FUNCIONARIO_FKComboBox);
             this.Controls.Add(cOD_TELEFONE_FKLabel);
@@ -355,8 +380,8 @@
             this.iTENS_TEL_FUNBindingNavigator.ResumeLayout(false);
             this.iTENS_TEL_FUNBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iTENS_TEL_FUNDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tELEFONEBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fUNCIONARIOSBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tELEFONEBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -390,5 +415,7 @@
         private System.Windows.Forms.BindingSource tELEFONEBindingSource;
         private DB_TrabalhoDataSetTableAdapters.FUNCIONARIOSTableAdapter fUNCIONARIOSTableAdapter;
         private System.Windows.Forms.BindingSource fUNCIONARIOSBindingSource;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
