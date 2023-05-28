@@ -45,6 +45,9 @@
             this.aCESSOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iTENSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aCESSOLOGINToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tELEFONECLIENTEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tELEFONETRABALHOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tELEFONEFUNCIONARIOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -199,7 +202,10 @@
             // iTENSToolStripMenuItem
             // 
             this.iTENSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aCESSOLOGINToolStripMenuItem});
+            this.aCESSOLOGINToolStripMenuItem,
+            this.tELEFONECLIENTEToolStripMenuItem,
+            this.tELEFONETRABALHOToolStripMenuItem,
+            this.tELEFONEFUNCIONARIOToolStripMenuItem});
             this.iTENSToolStripMenuItem.Name = "iTENSToolStripMenuItem";
             this.iTENSToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
             this.iTENSToolStripMenuItem.Text = "ITENS";
@@ -210,6 +216,27 @@
             this.aCESSOLOGINToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.aCESSOLOGINToolStripMenuItem.Text = "ACESSOLOGIN";
             this.aCESSOLOGINToolStripMenuItem.Click += new System.EventHandler(this.aCESSOLOGINToolStripMenuItem_Click);
+            // 
+            // tELEFONECLIENTEToolStripMenuItem
+            // 
+            this.tELEFONECLIENTEToolStripMenuItem.Name = "tELEFONECLIENTEToolStripMenuItem";
+            this.tELEFONECLIENTEToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.tELEFONECLIENTEToolStripMenuItem.Text = "TELEFONECLIENTE";
+            this.tELEFONECLIENTEToolStripMenuItem.Click += new System.EventHandler(this.tELEFONECLIENTEToolStripMenuItem_Click);
+            // 
+            // tELEFONETRABALHOToolStripMenuItem
+            // 
+            this.tELEFONETRABALHOToolStripMenuItem.Name = "tELEFONETRABALHOToolStripMenuItem";
+            this.tELEFONETRABALHOToolStripMenuItem.Size = new System.Drawing.Size(235, 26);
+            this.tELEFONETRABALHOToolStripMenuItem.Text = "TELEFONETRABALHO";
+            this.tELEFONETRABALHOToolStripMenuItem.Click += new System.EventHandler(this.tELEFONETRABALHOToolStripMenuItem_Click);
+            // 
+            // tELEFONEFUNCIONARIOToolStripMenuItem
+            // 
+            this.tELEFONEFUNCIONARIOToolStripMenuItem.Name = "tELEFONEFUNCIONARIOToolStripMenuItem";
+            this.tELEFONEFUNCIONARIOToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
+            this.tELEFONEFUNCIONARIOToolStripMenuItem.Text = "TELEFONEFUNCIONARIO";
+            this.tELEFONEFUNCIONARIOToolStripMenuItem.Click += new System.EventHandler(this.tELEFONEFUNCIONARIOToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -249,6 +276,9 @@
         private System.Windows.Forms.ToolStripMenuItem aCESSOToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem iTENSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aCESSOLOGINToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tELEFONECLIENTEToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tELEFONETRABALHOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tELEFONEFUNCIONARIOToolStripMenuItem;
     }
 }
 

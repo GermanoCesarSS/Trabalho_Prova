@@ -105,5 +105,20 @@ namespace Trabalho_Prova
             FrmItensAcessoLogin frm = new FrmItensAcessoLogin();
             frm.ShowDialog();
         }
+
+        private void tELEFONECLIENTEToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmItensClienteTelefone frm = new FrmItensClienteTelefone();
+            frm.ShowDialog();
+        }
+
+        private void tELEFONETRABALHOToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmItensTrabalhoTelefone frm = new FrmItensTrabalhoTelefone();  
+            frm.ShowDialog();
+        }
+
+        private void tELEFONEFUNCIONARIOToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmItensFuncionarioTelefone frm = new FrmItensFuncionarioTelefone();    
+            frm.ShowDialog();
+        }
     }
 }

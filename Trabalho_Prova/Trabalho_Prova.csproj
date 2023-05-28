@@ -113,6 +113,24 @@
     <Compile Include="view\FrmItensAcessoLogin.Designer.cs">
       <DependentUpon>FrmItensAcessoLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\FrmItensClienteTelefone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmItensClienteTelefone.Designer.cs">
+      <DependentUpon>FrmItensClienteTelefone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FrmItensFuncionarioTelefone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmItensFuncionarioTelefone.Designer.cs">
+      <DependentUpon>FrmItensFuncionarioTelefone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FrmItensTrabalhoTelefone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmItensTrabalhoTelefone.Designer.cs">
+      <DependentUpon>FrmItensTrabalhoTelefone.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +217,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\FrmItensAcessoLogin.resx">
       <DependentUpon>FrmItensAcessoLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FrmItensClienteTelefone.resx">
+      <DependentUpon>FrmItensClienteTelefone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FrmItensFuncionarioTelefone.resx">
+      <DependentUpon>FrmItensFuncionarioTelefone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FrmItensTrabalhoTelefone.resx">
+      <DependentUpon>FrmItensTrabalhoTelefone.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
