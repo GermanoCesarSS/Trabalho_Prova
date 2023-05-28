@@ -51,6 +51,10 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cOD_ACESSO_FKComboBox = new System.Windows.Forms.ComboBox();
             this.cOD_LOGINS_FKComboBox = new System.Windows.Forms.ComboBox();
+            this.aCESSOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.aCESSOTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.ACESSOTableAdapter();
+            this.lOGINSBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lOGINSTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.LOGINSTableAdapter();
             cOD_ACESSO_FKLabel = new System.Windows.Forms.Label();
             cOD_LOGINS_FKLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dB_TrabalhoDataSet)).BeginInit();
@@ -58,6 +62,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.iTENS_ACESSOLOGINBindingNavigator)).BeginInit();
             this.iTENS_ACESSOLOGINBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iTENS_ACESSOLOGINDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aCESSOBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lOGINSBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dB_TrabalhoDataSet
@@ -76,7 +82,7 @@
             // 
             // tableAdapterManager
             // 
-            this.tableAdapterManager.ACESSOTableAdapter = null;
+            this.tableAdapterManager.ACESSOTableAdapter = this.aCESSOTableAdapter;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.BAIRROTableAdapter = null;
             this.tableAdapterManager.CEPTableAdapter = null;
@@ -96,7 +102,7 @@
             this.tableAdapterManager.ITENS_TEL_LOJATableAdapter = null;
             this.tableAdapterManager.ITENS_TEL_TRATableAdapter = null;
             this.tableAdapterManager.ITENS_VENDAPRODUTOTableAdapter = null;
-            this.tableAdapterManager.LOGINSTableAdapter = null;
+            this.tableAdapterManager.LOGINSTableAdapter = this.lOGINSTableAdapter;
             this.tableAdapterManager.LOJATableAdapter = null;
             this.tableAdapterManager.MARCATableAdapter = null;
             this.tableAdapterManager.OPERADORATableAdapter = null;
@@ -280,12 +286,15 @@
             // 
             // cOD_ACESSO_FKComboBox
             // 
-            this.cOD_ACESSO_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.iTENS_ACESSOLOGINBindingSource, "COD_ACESSO_FK", true));
+            this.cOD_ACESSO_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.iTENS_ACESSOLOGINBindingSource, "COD_ACESSO_FK", true));
+            this.cOD_ACESSO_FKComboBox.DataSource = this.aCESSOBindingSource;
+            this.cOD_ACESSO_FKComboBox.DisplayMember = "NOME_ACESSO";
             this.cOD_ACESSO_FKComboBox.FormattingEnabled = true;
             this.cOD_ACESSO_FKComboBox.Location = new System.Drawing.Point(143, 152);
             this.cOD_ACESSO_FKComboBox.Name = "cOD_ACESSO_FKComboBox";
             this.cOD_ACESSO_FKComboBox.Size = new System.Drawing.Size(121, 24);
             this.cOD_ACESSO_FKComboBox.TabIndex = 3;
+            this.cOD_ACESSO_FKComboBox.ValueMember = "COD_ACESSO";
             // 
             // cOD_LOGINS_FKLabel
             // 
@@ -298,12 +307,33 @@
             // 
             // cOD_LOGINS_FKComboBox
             // 
-            this.cOD_LOGINS_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.iTENS_ACESSOLOGINBindingSource, "COD_LOGINS_FK", true));
+            this.cOD_LOGINS_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.iTENS_ACESSOLOGINBindingSource, "COD_LOGINS_FK", true));
+            this.cOD_LOGINS_FKComboBox.DataSource = this.lOGINSBindingSource;
+            this.cOD_LOGINS_FKComboBox.DisplayMember = "USUARIO";
             this.cOD_LOGINS_FKComboBox.FormattingEnabled = true;
             this.cOD_LOGINS_FKComboBox.Location = new System.Drawing.Point(143, 182);
             this.cOD_LOGINS_FKComboBox.Name = "cOD_LOGINS_FKComboBox";
             this.cOD_LOGINS_FKComboBox.Size = new System.Drawing.Size(121, 24);
             this.cOD_LOGINS_FKComboBox.TabIndex = 5;
+            this.cOD_LOGINS_FKComboBox.ValueMember = "COD_LOGINS";
+            // 
+            // aCESSOBindingSource
+            // 
+            this.aCESSOBindingSource.DataMember = "ACESSO";
+            this.aCESSOBindingSource.DataSource = this.dB_TrabalhoDataSet;
+            // 
+            // aCESSOTableAdapter
+            // 
+            this.aCESSOTableAdapter.ClearBeforeFill = true;
+            // 
+            // lOGINSBindingSource
+            // 
+            this.lOGINSBindingSource.DataMember = "LOGINS";
+            this.lOGINSBindingSource.DataSource = this.dB_TrabalhoDataSet;
+            // 
+            // lOGINSTableAdapter
+            // 
+            this.lOGINSTableAdapter.ClearBeforeFill = true;
             // 
             // FrmItensAcessoLogin
             // 
@@ -325,6 +355,8 @@
             this.iTENS_ACESSOLOGINBindingNavigator.ResumeLayout(false);
             this.iTENS_ACESSOLOGINBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iTENS_ACESSOLOGINDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aCESSOBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lOGINSBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -354,5 +386,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.ComboBox cOD_ACESSO_FKComboBox;
         private System.Windows.Forms.ComboBox cOD_LOGINS_FKComboBox;
+        private DB_TrabalhoDataSetTableAdapters.ACESSOTableAdapter aCESSOTableAdapter;
+        private System.Windows.Forms.BindingSource aCESSOBindingSource;
+        private DB_TrabalhoDataSetTableAdapters.LOGINSTableAdapter lOGINSTableAdapter;
+        private System.Windows.Forms.BindingSource lOGINSBindingSource;
     }
 }

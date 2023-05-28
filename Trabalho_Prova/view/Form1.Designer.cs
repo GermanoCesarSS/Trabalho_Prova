@@ -209,6 +209,7 @@
             this.aCESSOLOGINToolStripMenuItem.Name = "aCESSOLOGINToolStripMenuItem";
             this.aCESSOLOGINToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.aCESSOLOGINToolStripMenuItem.Text = "ACESSOLOGIN";
+            this.aCESSOLOGINToolStripMenuItem.Click += new System.EventHandler(this.aCESSOLOGINToolStripMenuItem_Click);
             // 
             // Form1
             // 

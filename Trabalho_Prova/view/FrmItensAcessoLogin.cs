@@ -24,6 +24,10 @@ namespace Trabalho_Prova.view
         }
 
         private void FrmItensAcessoLogin_Load(object sender, EventArgs e) {
+            // TODO: esta linha de código carrega dados na tabela 'dB_TrabalhoDataSet.LOGINS'. Você pode movê-la ou removê-la conforme necessário.
+            this.lOGINSTableAdapter.Fill(this.dB_TrabalhoDataSet.LOGINS);
+            // TODO: esta linha de código carrega dados na tabela 'dB_TrabalhoDataSet.ACESSO'. Você pode movê-la ou removê-la conforme necessário.
+            this.aCESSOTableAdapter.Fill(this.dB_TrabalhoDataSet.ACESSO);
             // TODO: esta linha de código carrega dados na tabela 'dB_TrabalhoDataSet.ITENS_ACESSOLOGIN'. Você pode movê-la ou removê-la conforme necessário.
             this.iTENS_ACESSOLOGINTableAdapter.Fill(this.dB_TrabalhoDataSet.ITENS_ACESSOLOGIN);
 
