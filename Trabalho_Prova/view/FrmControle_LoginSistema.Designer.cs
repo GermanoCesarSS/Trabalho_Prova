@@ -1,6 +1,6 @@
 ﻿namespace Trabalho_Prova.view
 {
-    partial class FrmLogin
+    partial class FrmControle_LoginSistema
     {
         /// <summary>
         /// Required designer variable.
@@ -26,17 +26,17 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label cOD_LOGINSLabel;
-            System.Windows.Forms.Label uSUARIOLabel;
-            System.Windows.Forms.Label sENHALabel;
-            System.Windows.Forms.Label cOD_FUNCIONARIO_FKLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
+            System.Windows.Forms.Label cOD_CONTROLELabel;
+            System.Windows.Forms.Label cOD_LOGINS_FKLabel;
+            System.Windows.Forms.Label dATASLabel;
+            System.Windows.Forms.Label hORALabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmControle_LoginSistema));
             this.dB_TrabalhoDataSet = new Trabalho_Prova.DB_TrabalhoDataSet();
-            this.lOGINSBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.lOGINSTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.LOGINSTableAdapter();
+            this.cONTROLE_LOGSISTEMABindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cONTROLE_LOGSISTEMATableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.CONTROLE_LOGSISTEMATableAdapter();
             this.tableAdapterManager = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TableAdapterManager();
-            this.fUNCIONARIOSTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.FUNCIONARIOSTableAdapter();
-            this.lOGINSBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.lOGINSTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.LOGINSTableAdapter();
+            this.cONTROLE_LOGSISTEMABindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
@@ -48,78 +48,78 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.lOGINSBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.lOGINSDataGridView = new System.Windows.Forms.DataGridView();
+            this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.cONTROLE_LOGSISTEMADataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cOD_LOGINSLabel1 = new System.Windows.Forms.Label();
-            this.uSUARIOTextBox = new System.Windows.Forms.TextBox();
-            this.sENHATextBox = new System.Windows.Forms.TextBox();
-            this.cOD_FUNCIONARIO_FKComboBox = new System.Windows.Forms.ComboBox();
-            this.fUNCIONARIOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            cOD_LOGINSLabel = new System.Windows.Forms.Label();
-            uSUARIOLabel = new System.Windows.Forms.Label();
-            sENHALabel = new System.Windows.Forms.Label();
-            cOD_FUNCIONARIO_FKLabel = new System.Windows.Forms.Label();
+            this.cOD_CONTROLELabel1 = new System.Windows.Forms.Label();
+            this.cOD_LOGINS_FKComboBox = new System.Windows.Forms.ComboBox();
+            this.lOGINSBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dATASDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.hORATextBox = new System.Windows.Forms.TextBox();
+            cOD_CONTROLELabel = new System.Windows.Forms.Label();
+            cOD_LOGINS_FKLabel = new System.Windows.Forms.Label();
+            dATASLabel = new System.Windows.Forms.Label();
+            hORALabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dB_TrabalhoDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cONTROLE_LOGSISTEMABindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cONTROLE_LOGSISTEMABindingNavigator)).BeginInit();
+            this.cONTROLE_LOGSISTEMABindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cONTROLE_LOGSISTEMADataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOGINSBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lOGINSBindingNavigator)).BeginInit();
-            this.lOGINSBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lOGINSDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fUNCIONARIOSBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // cOD_LOGINSLabel
+            // cOD_CONTROLELabel
             // 
-            cOD_LOGINSLabel.AutoSize = true;
-            cOD_LOGINSLabel.Location = new System.Drawing.Point(12, 139);
-            cOD_LOGINSLabel.Name = "cOD_LOGINSLabel";
-            cOD_LOGINSLabel.Size = new System.Drawing.Size(91, 16);
-            cOD_LOGINSLabel.TabIndex = 2;
-            cOD_LOGINSLabel.Text = "COD LOGINS:";
+            cOD_CONTROLELabel.AutoSize = true;
+            cOD_CONTROLELabel.Location = new System.Drawing.Point(24, 92);
+            cOD_CONTROLELabel.Name = "cOD_CONTROLELabel";
+            cOD_CONTROLELabel.Size = new System.Drawing.Size(116, 16);
+            cOD_CONTROLELabel.TabIndex = 2;
+            cOD_CONTROLELabel.Text = "COD CONTROLE:";
             // 
-            // uSUARIOLabel
+            // cOD_LOGINS_FKLabel
             // 
-            uSUARIOLabel.AutoSize = true;
-            uSUARIOLabel.Location = new System.Drawing.Point(12, 168);
-            uSUARIOLabel.Name = "uSUARIOLabel";
-            uSUARIOLabel.Size = new System.Drawing.Size(71, 16);
-            uSUARIOLabel.TabIndex = 4;
-            uSUARIOLabel.Text = "USUARIO:";
+            cOD_LOGINS_FKLabel.AutoSize = true;
+            cOD_LOGINS_FKLabel.Location = new System.Drawing.Point(24, 121);
+            cOD_LOGINS_FKLabel.Name = "cOD_LOGINS_FKLabel";
+            cOD_LOGINS_FKLabel.Size = new System.Drawing.Size(110, 16);
+            cOD_LOGINS_FKLabel.TabIndex = 4;
+            cOD_LOGINS_FKLabel.Text = "COD LOGINS FK:";
             // 
-            // sENHALabel
+            // dATASLabel
             // 
-            sENHALabel.AutoSize = true;
-            sENHALabel.Location = new System.Drawing.Point(12, 196);
-            sENHALabel.Name = "sENHALabel";
-            sENHALabel.Size = new System.Drawing.Size(57, 16);
-            sENHALabel.TabIndex = 6;
-            sENHALabel.Text = "SENHA:";
+            dATASLabel.AutoSize = true;
+            dATASLabel.Location = new System.Drawing.Point(24, 152);
+            dATASLabel.Name = "dATASLabel";
+            dATASLabel.Size = new System.Drawing.Size(56, 16);
+            dATASLabel.TabIndex = 6;
+            dATASLabel.Text = "DATAS:";
             // 
-            // cOD_FUNCIONARIO_FKLabel
+            // hORALabel
             // 
-            cOD_FUNCIONARIO_FKLabel.AutoSize = true;
-            cOD_FUNCIONARIO_FKLabel.Location = new System.Drawing.Point(12, 224);
-            cOD_FUNCIONARIO_FKLabel.Name = "cOD_FUNCIONARIO_FKLabel";
-            cOD_FUNCIONARIO_FKLabel.Size = new System.Drawing.Size(153, 16);
-            cOD_FUNCIONARIO_FKLabel.TabIndex = 8;
-            cOD_FUNCIONARIO_FKLabel.Text = "COD FUNCIONARIO FK:";
+            hORALabel.AutoSize = true;
+            hORALabel.Location = new System.Drawing.Point(24, 179);
+            hORALabel.Name = "hORALabel";
+            hORALabel.Size = new System.Drawing.Size(49, 16);
+            hORALabel.TabIndex = 8;
+            hORALabel.Text = "HORA:";
             // 
             // dB_TrabalhoDataSet
             // 
             this.dB_TrabalhoDataSet.DataSetName = "DB_TrabalhoDataSet";
             this.dB_TrabalhoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // lOGINSBindingSource
+            // cONTROLE_LOGSISTEMABindingSource
             // 
-            this.lOGINSBindingSource.DataMember = "LOGINS";
-            this.lOGINSBindingSource.DataSource = this.dB_TrabalhoDataSet;
+            this.cONTROLE_LOGSISTEMABindingSource.DataMember = "CONTROLE_LOGSISTEMA";
+            this.cONTROLE_LOGSISTEMABindingSource.DataSource = this.dB_TrabalhoDataSet;
             // 
-            // lOGINSTableAdapter
+            // cONTROLE_LOGSISTEMATableAdapter
             // 
-            this.lOGINSTableAdapter.ClearBeforeFill = true;
+            this.cONTROLE_LOGSISTEMATableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
@@ -130,10 +130,10 @@
             this.tableAdapterManager.CIDADETableAdapter = null;
             this.tableAdapterManager.CLIENTETableAdapter = null;
             this.tableAdapterManager.COMPRAPRODUTOTableAdapter = null;
-            this.tableAdapterManager.CONTROLE_LOGSISTEMATableAdapter = null;
+            this.tableAdapterManager.CONTROLE_LOGSISTEMATableAdapter = this.cONTROLE_LOGSISTEMATableAdapter;
             this.tableAdapterManager.FORNECEDORTableAdapter = null;
             this.tableAdapterManager.FUNCAOTableAdapter = null;
-            this.tableAdapterManager.FUNCIONARIOSTableAdapter = this.fUNCIONARIOSTableAdapter;
+            this.tableAdapterManager.FUNCIONARIOSTableAdapter = null;
             this.tableAdapterManager.IMAGENSTableAdapter = null;
             this.tableAdapterManager.ITENS_ACESSOLOGINTableAdapter = null;
             this.tableAdapterManager.ITENS_COMPRA_PRODUTOTableAdapter = null;
@@ -160,18 +160,18 @@
             this.tableAdapterManager.UpdateOrder = Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.VENDAPRODUTOTableAdapter = null;
             // 
-            // fUNCIONARIOSTableAdapter
+            // lOGINSTableAdapter
             // 
-            this.fUNCIONARIOSTableAdapter.ClearBeforeFill = true;
+            this.lOGINSTableAdapter.ClearBeforeFill = true;
             // 
-            // lOGINSBindingNavigator
+            // cONTROLE_LOGSISTEMABindingNavigator
             // 
-            this.lOGINSBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.lOGINSBindingNavigator.BindingSource = this.lOGINSBindingSource;
-            this.lOGINSBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.lOGINSBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.lOGINSBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.lOGINSBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cONTROLE_LOGSISTEMABindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.cONTROLE_LOGSISTEMABindingNavigator.BindingSource = this.cONTROLE_LOGSISTEMABindingSource;
+            this.cONTROLE_LOGSISTEMABindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.cONTROLE_LOGSISTEMABindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.cONTROLE_LOGSISTEMABindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.cONTROLE_LOGSISTEMABindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -183,17 +183,17 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.lOGINSBindingNavigatorSaveItem});
-            this.lOGINSBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.lOGINSBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.lOGINSBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.lOGINSBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.lOGINSBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.lOGINSBindingNavigator.Name = "lOGINSBindingNavigator";
-            this.lOGINSBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.lOGINSBindingNavigator.Size = new System.Drawing.Size(947, 27);
-            this.lOGINSBindingNavigator.TabIndex = 0;
-            this.lOGINSBindingNavigator.Text = "bindingNavigator1";
+            this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem});
+            this.cONTROLE_LOGSISTEMABindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.cONTROLE_LOGSISTEMABindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.cONTROLE_LOGSISTEMABindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.cONTROLE_LOGSISTEMABindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.cONTROLE_LOGSISTEMABindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.cONTROLE_LOGSISTEMABindingNavigator.Name = "cONTROLE_LOGSISTEMABindingNavigator";
+            this.cONTROLE_LOGSISTEMABindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.cONTROLE_LOGSISTEMABindingNavigator.Size = new System.Drawing.Size(955, 27);
+            this.cONTROLE_LOGSISTEMABindingNavigator.TabIndex = 0;
+            this.cONTROLE_LOGSISTEMABindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -281,36 +281,36 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
-            // lOGINSBindingNavigatorSaveItem
+            // cONTROLE_LOGSISTEMABindingNavigatorSaveItem
             // 
-            this.lOGINSBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.lOGINSBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("lOGINSBindingNavigatorSaveItem.Image")));
-            this.lOGINSBindingNavigatorSaveItem.Name = "lOGINSBindingNavigatorSaveItem";
-            this.lOGINSBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 28);
-            this.lOGINSBindingNavigatorSaveItem.Text = "Salvar Dados";
-            this.lOGINSBindingNavigatorSaveItem.Click += new System.EventHandler(this.lOGINSBindingNavigatorSaveItem_Click);
+            this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("cONTROLE_LOGSISTEMABindingNavigatorSaveItem.Image")));
+            this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem.Name = "cONTROLE_LOGSISTEMABindingNavigatorSaveItem";
+            this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 28);
+            this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem.Text = "Salvar Dados";
+            this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem.Click += new System.EventHandler(this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem_Click);
             // 
-            // lOGINSDataGridView
+            // cONTROLE_LOGSISTEMADataGridView
             // 
-            this.lOGINSDataGridView.AutoGenerateColumns = false;
-            this.lOGINSDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.lOGINSDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cONTROLE_LOGSISTEMADataGridView.AutoGenerateColumns = false;
+            this.cONTROLE_LOGSISTEMADataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.cONTROLE_LOGSISTEMADataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
-            this.lOGINSDataGridView.DataSource = this.lOGINSBindingSource;
-            this.lOGINSDataGridView.Location = new System.Drawing.Point(362, 30);
-            this.lOGINSDataGridView.Name = "lOGINSDataGridView";
-            this.lOGINSDataGridView.RowHeadersWidth = 51;
-            this.lOGINSDataGridView.RowTemplate.Height = 24;
-            this.lOGINSDataGridView.Size = new System.Drawing.Size(565, 419);
-            this.lOGINSDataGridView.TabIndex = 1;
+            this.cONTROLE_LOGSISTEMADataGridView.DataSource = this.cONTROLE_LOGSISTEMABindingSource;
+            this.cONTROLE_LOGSISTEMADataGridView.Location = new System.Drawing.Point(376, 30);
+            this.cONTROLE_LOGSISTEMADataGridView.Name = "cONTROLE_LOGSISTEMADataGridView";
+            this.cONTROLE_LOGSISTEMADataGridView.RowHeadersWidth = 51;
+            this.cONTROLE_LOGSISTEMADataGridView.RowTemplate.Height = 24;
+            this.cONTROLE_LOGSISTEMADataGridView.Size = new System.Drawing.Size(559, 421);
+            this.cONTROLE_LOGSISTEMADataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "COD_LOGINS";
-            this.dataGridViewTextBoxColumn1.HeaderText = "COD_LOGINS";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "COD_CONTROLE";
+            this.dataGridViewTextBoxColumn1.HeaderText = "COD_CONTROLE";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
@@ -318,95 +318,95 @@
             // 
             // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "USUARIO";
-            this.dataGridViewTextBoxColumn2.HeaderText = "USUARIO";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "COD_LOGINS_FK";
+            this.dataGridViewTextBoxColumn2.HeaderText = "COD_LOGINS_FK";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.Width = 125;
             // 
             // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "SENHA";
-            this.dataGridViewTextBoxColumn3.HeaderText = "SENHA";
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "DATAS";
+            this.dataGridViewTextBoxColumn3.HeaderText = "DATAS";
             this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.Width = 125;
             // 
             // dataGridViewTextBoxColumn4
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "COD_FUNCIONARIO_FK";
-            this.dataGridViewTextBoxColumn4.HeaderText = "COD_FUNCIONARIO_FK";
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "HORA";
+            this.dataGridViewTextBoxColumn4.HeaderText = "HORA";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.Width = 125;
             // 
-            // cOD_LOGINSLabel1
+            // cOD_CONTROLELabel1
             // 
-            this.cOD_LOGINSLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.lOGINSBindingSource, "COD_LOGINS", true));
-            this.cOD_LOGINSLabel1.Location = new System.Drawing.Point(186, 139);
-            this.cOD_LOGINSLabel1.Name = "cOD_LOGINSLabel1";
-            this.cOD_LOGINSLabel1.Size = new System.Drawing.Size(121, 23);
-            this.cOD_LOGINSLabel1.TabIndex = 3;
-            this.cOD_LOGINSLabel1.Text = "label1";
+            this.cOD_CONTROLELabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cONTROLE_LOGSISTEMABindingSource, "COD_CONTROLE", true));
+            this.cOD_CONTROLELabel1.Location = new System.Drawing.Point(170, 92);
+            this.cOD_CONTROLELabel1.Name = "cOD_CONTROLELabel1";
+            this.cOD_CONTROLELabel1.Size = new System.Drawing.Size(200, 23);
+            this.cOD_CONTROLELabel1.TabIndex = 3;
+            this.cOD_CONTROLELabel1.Text = "label1";
             // 
-            // uSUARIOTextBox
+            // cOD_LOGINS_FKComboBox
             // 
-            this.uSUARIOTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.lOGINSBindingSource, "USUARIO", true));
-            this.uSUARIOTextBox.Location = new System.Drawing.Point(186, 165);
-            this.uSUARIOTextBox.Name = "uSUARIOTextBox";
-            this.uSUARIOTextBox.Size = new System.Drawing.Size(156, 22);
-            this.uSUARIOTextBox.TabIndex = 5;
+            this.cOD_LOGINS_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.cONTROLE_LOGSISTEMABindingSource, "COD_LOGINS_FK", true));
+            this.cOD_LOGINS_FKComboBox.DataSource = this.lOGINSBindingSource;
+            this.cOD_LOGINS_FKComboBox.DisplayMember = "USUARIO";
+            this.cOD_LOGINS_FKComboBox.FormattingEnabled = true;
+            this.cOD_LOGINS_FKComboBox.Location = new System.Drawing.Point(170, 118);
+            this.cOD_LOGINS_FKComboBox.Name = "cOD_LOGINS_FKComboBox";
+            this.cOD_LOGINS_FKComboBox.Size = new System.Drawing.Size(200, 24);
+            this.cOD_LOGINS_FKComboBox.TabIndex = 5;
+            this.cOD_LOGINS_FKComboBox.ValueMember = "COD_LOGINS";
             // 
-            // sENHATextBox
+            // lOGINSBindingSource
             // 
-            this.sENHATextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.lOGINSBindingSource, "SENHA", true));
-            this.sENHATextBox.Location = new System.Drawing.Point(186, 193);
-            this.sENHATextBox.Name = "sENHATextBox";
-            this.sENHATextBox.Size = new System.Drawing.Size(156, 22);
-            this.sENHATextBox.TabIndex = 7;
+            this.lOGINSBindingSource.DataMember = "LOGINS";
+            this.lOGINSBindingSource.DataSource = this.dB_TrabalhoDataSet;
             // 
-            // cOD_FUNCIONARIO_FKComboBox
+            // dATASDateTimePicker
             // 
-            this.cOD_FUNCIONARIO_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.lOGINSBindingSource, "COD_FUNCIONARIO_FK", true));
-            this.cOD_FUNCIONARIO_FKComboBox.DataSource = this.fUNCIONARIOSBindingSource;
-            this.cOD_FUNCIONARIO_FKComboBox.DisplayMember = "NOME_FUNCIONARIO";
-            this.cOD_FUNCIONARIO_FKComboBox.FormattingEnabled = true;
-            this.cOD_FUNCIONARIO_FKComboBox.Location = new System.Drawing.Point(186, 221);
-            this.cOD_FUNCIONARIO_FKComboBox.Name = "cOD_FUNCIONARIO_FKComboBox";
-            this.cOD_FUNCIONARIO_FKComboBox.Size = new System.Drawing.Size(156, 24);
-            this.cOD_FUNCIONARIO_FKComboBox.TabIndex = 9;
-            this.cOD_FUNCIONARIO_FKComboBox.ValueMember = "COD_FUNCIONARIO";
+            this.dATASDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.cONTROLE_LOGSISTEMABindingSource, "DATAS", true));
+            this.dATASDateTimePicker.Location = new System.Drawing.Point(170, 148);
+            this.dATASDateTimePicker.Name = "dATASDateTimePicker";
+            this.dATASDateTimePicker.Size = new System.Drawing.Size(200, 22);
+            this.dATASDateTimePicker.TabIndex = 7;
             // 
-            // fUNCIONARIOSBindingSource
+            // hORATextBox
             // 
-            this.fUNCIONARIOSBindingSource.DataMember = "FUNCIONARIOS";
-            this.fUNCIONARIOSBindingSource.DataSource = this.dB_TrabalhoDataSet;
+            this.hORATextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cONTROLE_LOGSISTEMABindingSource, "HORA", true));
+            this.hORATextBox.Location = new System.Drawing.Point(170, 176);
+            this.hORATextBox.Name = "hORATextBox";
+            this.hORATextBox.Size = new System.Drawing.Size(200, 22);
+            this.hORATextBox.TabIndex = 9;
             // 
-            // FrmLogin
+            // FrmControle_LoginSistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(947, 469);
-            this.Controls.Add(cOD_LOGINSLabel);
-            this.Controls.Add(this.cOD_LOGINSLabel1);
-            this.Controls.Add(uSUARIOLabel);
-            this.Controls.Add(this.uSUARIOTextBox);
-            this.Controls.Add(sENHALabel);
-            this.Controls.Add(this.sENHATextBox);
-            this.Controls.Add(cOD_FUNCIONARIO_FKLabel);
-            this.Controls.Add(this.cOD_FUNCIONARIO_FKComboBox);
-            this.Controls.Add(this.lOGINSDataGridView);
-            this.Controls.Add(this.lOGINSBindingNavigator);
-            this.Name = "FrmLogin";
-            this.Text = "FrmLogin";
-            this.Load += new System.EventHandler(this.FrmLogin_Load);
+            this.ClientSize = new System.Drawing.Size(955, 471);
+            this.Controls.Add(cOD_CONTROLELabel);
+            this.Controls.Add(this.cOD_CONTROLELabel1);
+            this.Controls.Add(cOD_LOGINS_FKLabel);
+            this.Controls.Add(this.cOD_LOGINS_FKComboBox);
+            this.Controls.Add(dATASLabel);
+            this.Controls.Add(this.dATASDateTimePicker);
+            this.Controls.Add(hORALabel);
+            this.Controls.Add(this.hORATextBox);
+            this.Controls.Add(this.cONTROLE_LOGSISTEMADataGridView);
+            this.Controls.Add(this.cONTROLE_LOGSISTEMABindingNavigator);
+            this.Name = "FrmControle_LoginSistema";
+            this.Text = "FrmControle_LoginSistema";
+            this.Load += new System.EventHandler(this.FrmControle_LoginSistema_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dB_TrabalhoDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cONTROLE_LOGSISTEMABindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cONTROLE_LOGSISTEMABindingNavigator)).EndInit();
+            this.cONTROLE_LOGSISTEMABindingNavigator.ResumeLayout(false);
+            this.cONTROLE_LOGSISTEMABindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cONTROLE_LOGSISTEMADataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOGINSBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lOGINSBindingNavigator)).EndInit();
-            this.lOGINSBindingNavigator.ResumeLayout(false);
-            this.lOGINSBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lOGINSDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fUNCIONARIOSBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -415,10 +415,10 @@
         #endregion
 
         private DB_TrabalhoDataSet dB_TrabalhoDataSet;
-        private System.Windows.Forms.BindingSource lOGINSBindingSource;
-        private DB_TrabalhoDataSetTableAdapters.LOGINSTableAdapter lOGINSTableAdapter;
+        private System.Windows.Forms.BindingSource cONTROLE_LOGSISTEMABindingSource;
+        private DB_TrabalhoDataSetTableAdapters.CONTROLE_LOGSISTEMATableAdapter cONTROLE_LOGSISTEMATableAdapter;
         private DB_TrabalhoDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator lOGINSBindingNavigator;
+        private System.Windows.Forms.BindingNavigator cONTROLE_LOGSISTEMABindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -430,17 +430,17 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton lOGINSBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView lOGINSDataGridView;
+        private System.Windows.Forms.ToolStripButton cONTROLE_LOGSISTEMABindingNavigatorSaveItem;
+        private System.Windows.Forms.DataGridView cONTROLE_LOGSISTEMADataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.Label cOD_LOGINSLabel1;
-        private System.Windows.Forms.TextBox uSUARIOTextBox;
-        private System.Windows.Forms.TextBox sENHATextBox;
-        private System.Windows.Forms.ComboBox cOD_FUNCIONARIO_FKComboBox;
-        private DB_TrabalhoDataSetTableAdapters.FUNCIONARIOSTableAdapter fUNCIONARIOSTableAdapter;
-        private System.Windows.Forms.BindingSource fUNCIONARIOSBindingSource;
+        private DB_TrabalhoDataSetTableAdapters.LOGINSTableAdapter lOGINSTableAdapter;
+        private System.Windows.Forms.Label cOD_CONTROLELabel1;
+        private System.Windows.Forms.ComboBox cOD_LOGINS_FKComboBox;
+        private System.Windows.Forms.DateTimePicker dATASDateTimePicker;
+        private System.Windows.Forms.TextBox hORATextBox;
+        private System.Windows.Forms.BindingSource lOGINSBindingSource;
     }
 }

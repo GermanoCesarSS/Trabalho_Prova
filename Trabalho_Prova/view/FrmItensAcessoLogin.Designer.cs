@@ -1,6 +1,6 @@
 ﻿namespace Trabalho_Prova.view
 {
-    partial class FrmAcesso
+    partial class FrmItensAcessoLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -26,14 +26,14 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAcesso));
-            System.Windows.Forms.Label cOD_ACESSOLabel;
-            System.Windows.Forms.Label nOME_ACESSOLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmItensAcessoLogin));
+            System.Windows.Forms.Label cOD_ACESSO_FKLabel;
+            System.Windows.Forms.Label cOD_LOGINS_FKLabel;
             this.dB_TrabalhoDataSet = new Trabalho_Prova.DB_TrabalhoDataSet();
-            this.aCESSOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.aCESSOTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.ACESSOTableAdapter();
+            this.iTENS_ACESSOLOGINBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.iTENS_ACESSOLOGINTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.ITENS_ACESSOLOGINTableAdapter();
             this.tableAdapterManager = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TableAdapterManager();
-            this.aCESSOBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.iTENS_ACESSOLOGINBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -45,19 +45,25 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.aCESSOBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.aCESSODataGridView = new System.Windows.Forms.DataGridView();
+            this.iTENS_ACESSOLOGINBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.iTENS_ACESSOLOGINDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cOD_ACESSOLabel1 = new System.Windows.Forms.Label();
-            this.nOME_ACESSOTextBox = new System.Windows.Forms.TextBox();
-            cOD_ACESSOLabel = new System.Windows.Forms.Label();
-            nOME_ACESSOLabel = new System.Windows.Forms.Label();
+            this.cOD_ACESSO_FKComboBox = new System.Windows.Forms.ComboBox();
+            this.cOD_LOGINS_FKComboBox = new System.Windows.Forms.ComboBox();
+            this.aCESSOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.aCESSOTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.ACESSOTableAdapter();
+            this.lOGINSBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lOGINSTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.LOGINSTableAdapter();
+            cOD_ACESSO_FKLabel = new System.Windows.Forms.Label();
+            cOD_LOGINS_FKLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dB_TrabalhoDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iTENS_ACESSOLOGINBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iTENS_ACESSOLOGINBindingNavigator)).BeginInit();
+            this.iTENS_ACESSOLOGINBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iTENS_ACESSOLOGINDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aCESSOBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aCESSOBindingNavigator)).BeginInit();
-            this.aCESSOBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.aCESSODataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lOGINSBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dB_TrabalhoDataSet
@@ -65,14 +71,14 @@
             this.dB_TrabalhoDataSet.DataSetName = "DB_TrabalhoDataSet";
             this.dB_TrabalhoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // aCESSOBindingSource
+            // iTENS_ACESSOLOGINBindingSource
             // 
-            this.aCESSOBindingSource.DataMember = "ACESSO";
-            this.aCESSOBindingSource.DataSource = this.dB_TrabalhoDataSet;
+            this.iTENS_ACESSOLOGINBindingSource.DataMember = "ITENS_ACESSOLOGIN";
+            this.iTENS_ACESSOLOGINBindingSource.DataSource = this.dB_TrabalhoDataSet;
             // 
-            // aCESSOTableAdapter
+            // iTENS_ACESSOLOGINTableAdapter
             // 
-            this.aCESSOTableAdapter.ClearBeforeFill = true;
+            this.iTENS_ACESSOLOGINTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
@@ -88,7 +94,7 @@
             this.tableAdapterManager.FUNCAOTableAdapter = null;
             this.tableAdapterManager.FUNCIONARIOSTableAdapter = null;
             this.tableAdapterManager.IMAGENSTableAdapter = null;
-            this.tableAdapterManager.ITENS_ACESSOLOGINTableAdapter = null;
+            this.tableAdapterManager.ITENS_ACESSOLOGINTableAdapter = this.iTENS_ACESSOLOGINTableAdapter;
             this.tableAdapterManager.ITENS_COMPRA_PRODUTOTableAdapter = null;
             this.tableAdapterManager.ITENS_TEL_CLITableAdapter = null;
             this.tableAdapterManager.ITENS_TEL_FORTableAdapter = null;
@@ -96,7 +102,7 @@
             this.tableAdapterManager.ITENS_TEL_LOJATableAdapter = null;
             this.tableAdapterManager.ITENS_TEL_TRATableAdapter = null;
             this.tableAdapterManager.ITENS_VENDAPRODUTOTableAdapter = null;
-            this.tableAdapterManager.LOGINSTableAdapter = null;
+            this.tableAdapterManager.LOGINSTableAdapter = this.lOGINSTableAdapter;
             this.tableAdapterManager.LOJATableAdapter = null;
             this.tableAdapterManager.MARCATableAdapter = null;
             this.tableAdapterManager.OPERADORATableAdapter = null;
@@ -113,14 +119,14 @@
             this.tableAdapterManager.UpdateOrder = Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.VENDAPRODUTOTableAdapter = null;
             // 
-            // aCESSOBindingNavigator
+            // iTENS_ACESSOLOGINBindingNavigator
             // 
-            this.aCESSOBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.aCESSOBindingNavigator.BindingSource = this.aCESSOBindingSource;
-            this.aCESSOBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.aCESSOBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.aCESSOBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.aCESSOBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.iTENS_ACESSOLOGINBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.iTENS_ACESSOLOGINBindingNavigator.BindingSource = this.iTENS_ACESSOLOGINBindingSource;
+            this.iTENS_ACESSOLOGINBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.iTENS_ACESSOLOGINBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.iTENS_ACESSOLOGINBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.iTENS_ACESSOLOGINBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -132,17 +138,17 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.aCESSOBindingNavigatorSaveItem});
-            this.aCESSOBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.aCESSOBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.aCESSOBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.aCESSOBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.aCESSOBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.aCESSOBindingNavigator.Name = "aCESSOBindingNavigator";
-            this.aCESSOBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.aCESSOBindingNavigator.Size = new System.Drawing.Size(370, 27);
-            this.aCESSOBindingNavigator.TabIndex = 0;
-            this.aCESSOBindingNavigator.Text = "bindingNavigator1";
+            this.iTENS_ACESSOLOGINBindingNavigatorSaveItem});
+            this.iTENS_ACESSOLOGINBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.iTENS_ACESSOLOGINBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.iTENS_ACESSOLOGINBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.iTENS_ACESSOLOGINBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.iTENS_ACESSOLOGINBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.iTENS_ACESSOLOGINBindingNavigator.Name = "iTENS_ACESSOLOGINBindingNavigator";
+            this.iTENS_ACESSOLOGINBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.iTENS_ACESSOLOGINBindingNavigator.Size = new System.Drawing.Size(388, 27);
+            this.iTENS_ACESSOLOGINBindingNavigator.TabIndex = 0;
+            this.iTENS_ACESSOLOGINBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -229,102 +235,128 @@
             this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorDeleteItem.Text = "Excluir";
             // 
-            // aCESSOBindingNavigatorSaveItem
+            // iTENS_ACESSOLOGINBindingNavigatorSaveItem
             // 
-            this.aCESSOBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.aCESSOBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("aCESSOBindingNavigatorSaveItem.Image")));
-            this.aCESSOBindingNavigatorSaveItem.Name = "aCESSOBindingNavigatorSaveItem";
-            this.aCESSOBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
-            this.aCESSOBindingNavigatorSaveItem.Text = "Salvar Dados";
-            this.aCESSOBindingNavigatorSaveItem.Click += new System.EventHandler(this.aCESSOBindingNavigatorSaveItem_Click);
+            this.iTENS_ACESSOLOGINBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.iTENS_ACESSOLOGINBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("iTENS_ACESSOLOGINBindingNavigatorSaveItem.Image")));
+            this.iTENS_ACESSOLOGINBindingNavigatorSaveItem.Name = "iTENS_ACESSOLOGINBindingNavigatorSaveItem";
+            this.iTENS_ACESSOLOGINBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.iTENS_ACESSOLOGINBindingNavigatorSaveItem.Text = "Salvar Dados";
+            this.iTENS_ACESSOLOGINBindingNavigatorSaveItem.Click += new System.EventHandler(this.iTENS_ACESSOLOGINBindingNavigatorSaveItem_Click);
             // 
-            // aCESSODataGridView
+            // iTENS_ACESSOLOGINDataGridView
             // 
-            this.aCESSODataGridView.AutoGenerateColumns = false;
-            this.aCESSODataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.aCESSODataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iTENS_ACESSOLOGINDataGridView.AutoGenerateColumns = false;
+            this.iTENS_ACESSOLOGINDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.iTENS_ACESSOLOGINDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
-            this.aCESSODataGridView.DataSource = this.aCESSOBindingSource;
-            this.aCESSODataGridView.Location = new System.Drawing.Point(0, 196);
-            this.aCESSODataGridView.Name = "aCESSODataGridView";
-            this.aCESSODataGridView.RowHeadersWidth = 51;
-            this.aCESSODataGridView.RowTemplate.Height = 24;
-            this.aCESSODataGridView.Size = new System.Drawing.Size(370, 220);
-            this.aCESSODataGridView.TabIndex = 1;
+            this.iTENS_ACESSOLOGINDataGridView.DataSource = this.iTENS_ACESSOLOGINBindingSource;
+            this.iTENS_ACESSOLOGINDataGridView.Location = new System.Drawing.Point(0, 244);
+            this.iTENS_ACESSOLOGINDataGridView.Name = "iTENS_ACESSOLOGINDataGridView";
+            this.iTENS_ACESSOLOGINDataGridView.RowHeadersWidth = 51;
+            this.iTENS_ACESSOLOGINDataGridView.RowTemplate.Height = 24;
+            this.iTENS_ACESSOLOGINDataGridView.Size = new System.Drawing.Size(388, 233);
+            this.iTENS_ACESSOLOGINDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "COD_ACESSO";
-            this.dataGridViewTextBoxColumn1.HeaderText = "COD_ACESSO";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "COD_ACESSO_FK";
+            this.dataGridViewTextBoxColumn1.HeaderText = "COD_ACESSO_FK";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             this.dataGridViewTextBoxColumn1.Width = 125;
             // 
             // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "NOME_ACESSO";
-            this.dataGridViewTextBoxColumn2.HeaderText = "NOME_ACESSO";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "COD_LOGINS_FK";
+            this.dataGridViewTextBoxColumn2.HeaderText = "COD_LOGINS_FK";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.Width = 125;
             // 
-            // cOD_ACESSOLabel
+            // cOD_ACESSO_FKLabel
             // 
-            cOD_ACESSOLabel.AutoSize = true;
-            cOD_ACESSOLabel.Location = new System.Drawing.Point(12, 68);
-            cOD_ACESSOLabel.Name = "cOD_ACESSOLabel";
-            cOD_ACESSOLabel.Size = new System.Drawing.Size(97, 16);
-            cOD_ACESSOLabel.TabIndex = 2;
-            cOD_ACESSOLabel.Text = "COD ACESSO:";
+            cOD_ACESSO_FKLabel.AutoSize = true;
+            cOD_ACESSO_FKLabel.Location = new System.Drawing.Point(21, 155);
+            cOD_ACESSO_FKLabel.Name = "cOD_ACESSO_FKLabel";
+            cOD_ACESSO_FKLabel.Size = new System.Drawing.Size(116, 16);
+            cOD_ACESSO_FKLabel.TabIndex = 2;
+            cOD_ACESSO_FKLabel.Text = "COD ACESSO FK:";
             // 
-            // cOD_ACESSOLabel1
+            // cOD_ACESSO_FKComboBox
             // 
-            this.cOD_ACESSOLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.aCESSOBindingSource, "COD_ACESSO", true));
-            this.cOD_ACESSOLabel1.Location = new System.Drawing.Point(204, 68);
-            this.cOD_ACESSOLabel1.Name = "cOD_ACESSOLabel1";
-            this.cOD_ACESSOLabel1.Size = new System.Drawing.Size(100, 23);
-            this.cOD_ACESSOLabel1.TabIndex = 3;
-            this.cOD_ACESSOLabel1.Text = "label1";
+            this.cOD_ACESSO_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.iTENS_ACESSOLOGINBindingSource, "COD_ACESSO_FK", true));
+            this.cOD_ACESSO_FKComboBox.DataSource = this.aCESSOBindingSource;
+            this.cOD_ACESSO_FKComboBox.DisplayMember = "NOME_ACESSO";
+            this.cOD_ACESSO_FKComboBox.FormattingEnabled = true;
+            this.cOD_ACESSO_FKComboBox.Location = new System.Drawing.Point(143, 152);
+            this.cOD_ACESSO_FKComboBox.Name = "cOD_ACESSO_FKComboBox";
+            this.cOD_ACESSO_FKComboBox.Size = new System.Drawing.Size(121, 24);
+            this.cOD_ACESSO_FKComboBox.TabIndex = 3;
+            this.cOD_ACESSO_FKComboBox.ValueMember = "COD_ACESSO";
             // 
-            // nOME_ACESSOLabel
+            // cOD_LOGINS_FKLabel
             // 
-            nOME_ACESSOLabel.AutoSize = true;
-            nOME_ACESSOLabel.Location = new System.Drawing.Point(12, 97);
-            nOME_ACESSOLabel.Name = "nOME_ACESSOLabel";
-            nOME_ACESSOLabel.Size = new System.Drawing.Size(108, 16);
-            nOME_ACESSOLabel.TabIndex = 4;
-            nOME_ACESSOLabel.Text = "NOME ACESSO:";
+            cOD_LOGINS_FKLabel.AutoSize = true;
+            cOD_LOGINS_FKLabel.Location = new System.Drawing.Point(21, 185);
+            cOD_LOGINS_FKLabel.Name = "cOD_LOGINS_FKLabel";
+            cOD_LOGINS_FKLabel.Size = new System.Drawing.Size(110, 16);
+            cOD_LOGINS_FKLabel.TabIndex = 4;
+            cOD_LOGINS_FKLabel.Text = "COD LOGINS FK:";
             // 
-            // nOME_ACESSOTextBox
+            // cOD_LOGINS_FKComboBox
             // 
-            this.nOME_ACESSOTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.aCESSOBindingSource, "NOME_ACESSO", true));
-            this.nOME_ACESSOTextBox.Location = new System.Drawing.Point(147, 94);
-            this.nOME_ACESSOTextBox.Name = "nOME_ACESSOTextBox";
-            this.nOME_ACESSOTextBox.Size = new System.Drawing.Size(211, 22);
-            this.nOME_ACESSOTextBox.TabIndex = 5;
+            this.cOD_LOGINS_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.iTENS_ACESSOLOGINBindingSource, "COD_LOGINS_FK", true));
+            this.cOD_LOGINS_FKComboBox.DataSource = this.lOGINSBindingSource;
+            this.cOD_LOGINS_FKComboBox.DisplayMember = "USUARIO";
+            this.cOD_LOGINS_FKComboBox.FormattingEnabled = true;
+            this.cOD_LOGINS_FKComboBox.Location = new System.Drawing.Point(143, 182);
+            this.cOD_LOGINS_FKComboBox.Name = "cOD_LOGINS_FKComboBox";
+            this.cOD_LOGINS_FKComboBox.Size = new System.Drawing.Size(121, 24);
+            this.cOD_LOGINS_FKComboBox.TabIndex = 5;
+            this.cOD_LOGINS_FKComboBox.ValueMember = "COD_LOGINS";
             // 
-            // FrmAcesso
+            // aCESSOBindingSource
+            // 
+            this.aCESSOBindingSource.DataMember = "ACESSO";
+            this.aCESSOBindingSource.DataSource = this.dB_TrabalhoDataSet;
+            // 
+            // aCESSOTableAdapter
+            // 
+            this.aCESSOTableAdapter.ClearBeforeFill = true;
+            // 
+            // lOGINSBindingSource
+            // 
+            this.lOGINSBindingSource.DataMember = "LOGINS";
+            this.lOGINSBindingSource.DataSource = this.dB_TrabalhoDataSet;
+            // 
+            // lOGINSTableAdapter
+            // 
+            this.lOGINSTableAdapter.ClearBeforeFill = true;
+            // 
+            // FrmItensAcessoLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(370, 417);
-            this.Controls.Add(cOD_ACESSOLabel);
-            this.Controls.Add(this.cOD_ACESSOLabel1);
-            this.Controls.Add(nOME_ACESSOLabel);
-            this.Controls.Add(this.nOME_ACESSOTextBox);
-            this.Controls.Add(this.aCESSODataGridView);
-            this.Controls.Add(this.aCESSOBindingNavigator);
-            this.Name = "FrmAcesso";
-            this.Text = "FrmAcesso";
-            this.Load += new System.EventHandler(this.FrmAcesso_Load);
+            this.ClientSize = new System.Drawing.Size(388, 479);
+            this.Controls.Add(cOD_ACESSO_FKLabel);
+            this.Controls.Add(this.cOD_ACESSO_FKComboBox);
+            this.Controls.Add(cOD_LOGINS_FKLabel);
+            this.Controls.Add(this.cOD_LOGINS_FKComboBox);
+            this.Controls.Add(this.iTENS_ACESSOLOGINDataGridView);
+            this.Controls.Add(this.iTENS_ACESSOLOGINBindingNavigator);
+            this.Name = "FrmItensAcessoLogin";
+            this.Text = "FrmItensAcessoLogin";
+            this.Load += new System.EventHandler(this.FrmItensAcessoLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dB_TrabalhoDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iTENS_ACESSOLOGINBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iTENS_ACESSOLOGINBindingNavigator)).EndInit();
+            this.iTENS_ACESSOLOGINBindingNavigator.ResumeLayout(false);
+            this.iTENS_ACESSOLOGINBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iTENS_ACESSOLOGINDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aCESSOBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aCESSOBindingNavigator)).EndInit();
-            this.aCESSOBindingNavigator.ResumeLayout(false);
-            this.aCESSOBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.aCESSODataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lOGINSBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -333,10 +365,10 @@
         #endregion
 
         private DB_TrabalhoDataSet dB_TrabalhoDataSet;
-        private System.Windows.Forms.BindingSource aCESSOBindingSource;
-        private DB_TrabalhoDataSetTableAdapters.ACESSOTableAdapter aCESSOTableAdapter;
+        private System.Windows.Forms.BindingSource iTENS_ACESSOLOGINBindingSource;
+        private DB_TrabalhoDataSetTableAdapters.ITENS_ACESSOLOGINTableAdapter iTENS_ACESSOLOGINTableAdapter;
         private DB_TrabalhoDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator aCESSOBindingNavigator;
+        private System.Windows.Forms.BindingNavigator iTENS_ACESSOLOGINBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -348,11 +380,15 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton aCESSOBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView aCESSODataGridView;
+        private System.Windows.Forms.ToolStripButton iTENS_ACESSOLOGINBindingNavigatorSaveItem;
+        private System.Windows.Forms.DataGridView iTENS_ACESSOLOGINDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.Label cOD_ACESSOLabel1;
-        private System.Windows.Forms.TextBox nOME_ACESSOTextBox;
+        private System.Windows.Forms.ComboBox cOD_ACESSO_FKComboBox;
+        private System.Windows.Forms.ComboBox cOD_LOGINS_FKComboBox;
+        private DB_TrabalhoDataSetTableAdapters.ACESSOTableAdapter aCESSOTableAdapter;
+        private System.Windows.Forms.BindingSource aCESSOBindingSource;
+        private DB_TrabalhoDataSetTableAdapters.LOGINSTableAdapter lOGINSTableAdapter;
+        private System.Windows.Forms.BindingSource lOGINSBindingSource;
     }
 }

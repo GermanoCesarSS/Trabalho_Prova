@@ -1,6 +1,6 @@
 ﻿namespace Trabalho_Prova.view
 {
-    partial class FrmAcesso
+    partial class FrmItensClienteTelefone
     {
         /// <summary>
         /// Required designer variable.
@@ -26,14 +26,14 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAcesso));
-            System.Windows.Forms.Label cOD_ACESSOLabel;
-            System.Windows.Forms.Label nOME_ACESSOLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmItensClienteTelefone));
+            System.Windows.Forms.Label cOD_TELEFONE_FKLabel;
+            System.Windows.Forms.Label cOD_CLIENTE_FKLabel;
             this.dB_TrabalhoDataSet = new Trabalho_Prova.DB_TrabalhoDataSet();
-            this.aCESSOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.aCESSOTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.ACESSOTableAdapter();
+            this.iTENS_TEL_CLIBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.iTENS_TEL_CLITableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.ITENS_TEL_CLITableAdapter();
             this.tableAdapterManager = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TableAdapterManager();
-            this.aCESSOBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.iTENS_TEL_CLIBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -45,19 +45,25 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.aCESSOBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.aCESSODataGridView = new System.Windows.Forms.DataGridView();
+            this.iTENS_TEL_CLIBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.iTENS_TEL_CLIDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cOD_ACESSOLabel1 = new System.Windows.Forms.Label();
-            this.nOME_ACESSOTextBox = new System.Windows.Forms.TextBox();
-            cOD_ACESSOLabel = new System.Windows.Forms.Label();
-            nOME_ACESSOLabel = new System.Windows.Forms.Label();
+            this.cOD_TELEFONE_FKComboBox = new System.Windows.Forms.ComboBox();
+            this.cOD_CLIENTE_FKComboBox = new System.Windows.Forms.ComboBox();
+            this.tELEFONEBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tELEFONETableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TELEFONETableAdapter();
+            this.cLIENTEBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cLIENTETableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.CLIENTETableAdapter();
+            cOD_TELEFONE_FKLabel = new System.Windows.Forms.Label();
+            cOD_CLIENTE_FKLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dB_TrabalhoDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aCESSOBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aCESSOBindingNavigator)).BeginInit();
-            this.aCESSOBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.aCESSODataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iTENS_TEL_CLIBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iTENS_TEL_CLIBindingNavigator)).BeginInit();
+            this.iTENS_TEL_CLIBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iTENS_TEL_CLIDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tELEFONEBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cLIENTEBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dB_TrabalhoDataSet
@@ -65,23 +71,23 @@
             this.dB_TrabalhoDataSet.DataSetName = "DB_TrabalhoDataSet";
             this.dB_TrabalhoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // aCESSOBindingSource
+            // iTENS_TEL_CLIBindingSource
             // 
-            this.aCESSOBindingSource.DataMember = "ACESSO";
-            this.aCESSOBindingSource.DataSource = this.dB_TrabalhoDataSet;
+            this.iTENS_TEL_CLIBindingSource.DataMember = "ITENS_TEL_CLI";
+            this.iTENS_TEL_CLIBindingSource.DataSource = this.dB_TrabalhoDataSet;
             // 
-            // aCESSOTableAdapter
+            // iTENS_TEL_CLITableAdapter
             // 
-            this.aCESSOTableAdapter.ClearBeforeFill = true;
+            this.iTENS_TEL_CLITableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
-            this.tableAdapterManager.ACESSOTableAdapter = this.aCESSOTableAdapter;
+            this.tableAdapterManager.ACESSOTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.BAIRROTableAdapter = null;
             this.tableAdapterManager.CEPTableAdapter = null;
             this.tableAdapterManager.CIDADETableAdapter = null;
-            this.tableAdapterManager.CLIENTETableAdapter = null;
+            this.tableAdapterManager.CLIENTETableAdapter = this.cLIENTETableAdapter;
             this.tableAdapterManager.COMPRAPRODUTOTableAdapter = null;
             this.tableAdapterManager.CONTROLE_LOGSISTEMATableAdapter = null;
             this.tableAdapterManager.FORNECEDORTableAdapter = null;
@@ -90,7 +96,7 @@
             this.tableAdapterManager.IMAGENSTableAdapter = null;
             this.tableAdapterManager.ITENS_ACESSOLOGINTableAdapter = null;
             this.tableAdapterManager.ITENS_COMPRA_PRODUTOTableAdapter = null;
-            this.tableAdapterManager.ITENS_TEL_CLITableAdapter = null;
+            this.tableAdapterManager.ITENS_TEL_CLITableAdapter = this.iTENS_TEL_CLITableAdapter;
             this.tableAdapterManager.ITENS_TEL_FORTableAdapter = null;
             this.tableAdapterManager.ITENS_TEL_FUNTableAdapter = null;
             this.tableAdapterManager.ITENS_TEL_LOJATableAdapter = null;
@@ -106,21 +112,21 @@
             this.tableAdapterManager.RUATableAdapter = null;
             this.tableAdapterManager.SEXOTableAdapter = null;
             this.tableAdapterManager.SITUACAOTableAdapter = null;
-            this.tableAdapterManager.TELEFONETableAdapter = null;
+            this.tableAdapterManager.TELEFONETableAdapter = this.tELEFONETableAdapter;
             this.tableAdapterManager.TIPOTableAdapter = null;
             this.tableAdapterManager.TRABALHOTableAdapter = null;
             this.tableAdapterManager.UFTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.VENDAPRODUTOTableAdapter = null;
             // 
-            // aCESSOBindingNavigator
+            // iTENS_TEL_CLIBindingNavigator
             // 
-            this.aCESSOBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.aCESSOBindingNavigator.BindingSource = this.aCESSOBindingSource;
-            this.aCESSOBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.aCESSOBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.aCESSOBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.aCESSOBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.iTENS_TEL_CLIBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.iTENS_TEL_CLIBindingNavigator.BindingSource = this.iTENS_TEL_CLIBindingSource;
+            this.iTENS_TEL_CLIBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.iTENS_TEL_CLIBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.iTENS_TEL_CLIBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.iTENS_TEL_CLIBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -132,17 +138,17 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.aCESSOBindingNavigatorSaveItem});
-            this.aCESSOBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.aCESSOBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.aCESSOBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.aCESSOBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.aCESSOBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.aCESSOBindingNavigator.Name = "aCESSOBindingNavigator";
-            this.aCESSOBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.aCESSOBindingNavigator.Size = new System.Drawing.Size(370, 27);
-            this.aCESSOBindingNavigator.TabIndex = 0;
-            this.aCESSOBindingNavigator.Text = "bindingNavigator1";
+            this.iTENS_TEL_CLIBindingNavigatorSaveItem});
+            this.iTENS_TEL_CLIBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.iTENS_TEL_CLIBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.iTENS_TEL_CLIBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.iTENS_TEL_CLIBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.iTENS_TEL_CLIBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.iTENS_TEL_CLIBindingNavigator.Name = "iTENS_TEL_CLIBindingNavigator";
+            this.iTENS_TEL_CLIBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.iTENS_TEL_CLIBindingNavigator.Size = new System.Drawing.Size(447, 27);
+            this.iTENS_TEL_CLIBindingNavigator.TabIndex = 0;
+            this.iTENS_TEL_CLIBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -229,102 +235,128 @@
             this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorDeleteItem.Text = "Excluir";
             // 
-            // aCESSOBindingNavigatorSaveItem
+            // iTENS_TEL_CLIBindingNavigatorSaveItem
             // 
-            this.aCESSOBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.aCESSOBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("aCESSOBindingNavigatorSaveItem.Image")));
-            this.aCESSOBindingNavigatorSaveItem.Name = "aCESSOBindingNavigatorSaveItem";
-            this.aCESSOBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
-            this.aCESSOBindingNavigatorSaveItem.Text = "Salvar Dados";
-            this.aCESSOBindingNavigatorSaveItem.Click += new System.EventHandler(this.aCESSOBindingNavigatorSaveItem_Click);
+            this.iTENS_TEL_CLIBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.iTENS_TEL_CLIBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("iTENS_TEL_CLIBindingNavigatorSaveItem.Image")));
+            this.iTENS_TEL_CLIBindingNavigatorSaveItem.Name = "iTENS_TEL_CLIBindingNavigatorSaveItem";
+            this.iTENS_TEL_CLIBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.iTENS_TEL_CLIBindingNavigatorSaveItem.Text = "Salvar Dados";
+            this.iTENS_TEL_CLIBindingNavigatorSaveItem.Click += new System.EventHandler(this.iTENS_TEL_CLIBindingNavigatorSaveItem_Click);
             // 
-            // aCESSODataGridView
+            // iTENS_TEL_CLIDataGridView
             // 
-            this.aCESSODataGridView.AutoGenerateColumns = false;
-            this.aCESSODataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.aCESSODataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iTENS_TEL_CLIDataGridView.AutoGenerateColumns = false;
+            this.iTENS_TEL_CLIDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.iTENS_TEL_CLIDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
-            this.aCESSODataGridView.DataSource = this.aCESSOBindingSource;
-            this.aCESSODataGridView.Location = new System.Drawing.Point(0, 196);
-            this.aCESSODataGridView.Name = "aCESSODataGridView";
-            this.aCESSODataGridView.RowHeadersWidth = 51;
-            this.aCESSODataGridView.RowTemplate.Height = 24;
-            this.aCESSODataGridView.Size = new System.Drawing.Size(370, 220);
-            this.aCESSODataGridView.TabIndex = 1;
+            this.iTENS_TEL_CLIDataGridView.DataSource = this.iTENS_TEL_CLIBindingSource;
+            this.iTENS_TEL_CLIDataGridView.Location = new System.Drawing.Point(0, 258);
+            this.iTENS_TEL_CLIDataGridView.Name = "iTENS_TEL_CLIDataGridView";
+            this.iTENS_TEL_CLIDataGridView.RowHeadersWidth = 51;
+            this.iTENS_TEL_CLIDataGridView.RowTemplate.Height = 24;
+            this.iTENS_TEL_CLIDataGridView.Size = new System.Drawing.Size(427, 220);
+            this.iTENS_TEL_CLIDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "COD_ACESSO";
-            this.dataGridViewTextBoxColumn1.HeaderText = "COD_ACESSO";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "COD_TELEFONE_FK";
+            this.dataGridViewTextBoxColumn1.HeaderText = "COD_TELEFONE_FK";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             this.dataGridViewTextBoxColumn1.Width = 125;
             // 
             // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "NOME_ACESSO";
-            this.dataGridViewTextBoxColumn2.HeaderText = "NOME_ACESSO";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "COD_CLIENTE_FK";
+            this.dataGridViewTextBoxColumn2.HeaderText = "COD_CLIENTE_FK";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.Width = 125;
             // 
-            // cOD_ACESSOLabel
+            // cOD_TELEFONE_FKLabel
             // 
-            cOD_ACESSOLabel.AutoSize = true;
-            cOD_ACESSOLabel.Location = new System.Drawing.Point(12, 68);
-            cOD_ACESSOLabel.Name = "cOD_ACESSOLabel";
-            cOD_ACESSOLabel.Size = new System.Drawing.Size(97, 16);
-            cOD_ACESSOLabel.TabIndex = 2;
-            cOD_ACESSOLabel.Text = "COD ACESSO:";
+            cOD_TELEFONE_FKLabel.AutoSize = true;
+            cOD_TELEFONE_FKLabel.Location = new System.Drawing.Point(12, 115);
+            cOD_TELEFONE_FKLabel.Name = "cOD_TELEFONE_FKLabel";
+            cOD_TELEFONE_FKLabel.Size = new System.Drawing.Size(132, 16);
+            cOD_TELEFONE_FKLabel.TabIndex = 2;
+            cOD_TELEFONE_FKLabel.Text = "COD TELEFONE FK:";
             // 
-            // cOD_ACESSOLabel1
+            // cOD_TELEFONE_FKComboBox
             // 
-            this.cOD_ACESSOLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.aCESSOBindingSource, "COD_ACESSO", true));
-            this.cOD_ACESSOLabel1.Location = new System.Drawing.Point(204, 68);
-            this.cOD_ACESSOLabel1.Name = "cOD_ACESSOLabel1";
-            this.cOD_ACESSOLabel1.Size = new System.Drawing.Size(100, 23);
-            this.cOD_ACESSOLabel1.TabIndex = 3;
-            this.cOD_ACESSOLabel1.Text = "label1";
+            this.cOD_TELEFONE_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.iTENS_TEL_CLIBindingSource, "COD_TELEFONE_FK", true));
+            this.cOD_TELEFONE_FKComboBox.DataSource = this.tELEFONEBindingSource;
+            this.cOD_TELEFONE_FKComboBox.DisplayMember = "NUMERO";
+            this.cOD_TELEFONE_FKComboBox.FormattingEnabled = true;
+            this.cOD_TELEFONE_FKComboBox.Location = new System.Drawing.Point(150, 112);
+            this.cOD_TELEFONE_FKComboBox.Name = "cOD_TELEFONE_FKComboBox";
+            this.cOD_TELEFONE_FKComboBox.Size = new System.Drawing.Size(121, 24);
+            this.cOD_TELEFONE_FKComboBox.TabIndex = 3;
+            this.cOD_TELEFONE_FKComboBox.ValueMember = "COD_TELEFONE";
             // 
-            // nOME_ACESSOLabel
+            // cOD_CLIENTE_FKLabel
             // 
-            nOME_ACESSOLabel.AutoSize = true;
-            nOME_ACESSOLabel.Location = new System.Drawing.Point(12, 97);
-            nOME_ACESSOLabel.Name = "nOME_ACESSOLabel";
-            nOME_ACESSOLabel.Size = new System.Drawing.Size(108, 16);
-            nOME_ACESSOLabel.TabIndex = 4;
-            nOME_ACESSOLabel.Text = "NOME ACESSO:";
+            cOD_CLIENTE_FKLabel.AutoSize = true;
+            cOD_CLIENTE_FKLabel.Location = new System.Drawing.Point(12, 145);
+            cOD_CLIENTE_FKLabel.Name = "cOD_CLIENTE_FKLabel";
+            cOD_CLIENTE_FKLabel.Size = new System.Drawing.Size(117, 16);
+            cOD_CLIENTE_FKLabel.TabIndex = 4;
+            cOD_CLIENTE_FKLabel.Text = "COD CLIENTE FK:";
             // 
-            // nOME_ACESSOTextBox
+            // cOD_CLIENTE_FKComboBox
             // 
-            this.nOME_ACESSOTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.aCESSOBindingSource, "NOME_ACESSO", true));
-            this.nOME_ACESSOTextBox.Location = new System.Drawing.Point(147, 94);
-            this.nOME_ACESSOTextBox.Name = "nOME_ACESSOTextBox";
-            this.nOME_ACESSOTextBox.Size = new System.Drawing.Size(211, 22);
-            this.nOME_ACESSOTextBox.TabIndex = 5;
+            this.cOD_CLIENTE_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.iTENS_TEL_CLIBindingSource, "COD_CLIENTE_FK", true));
+            this.cOD_CLIENTE_FKComboBox.DataSource = this.cLIENTEBindingSource;
+            this.cOD_CLIENTE_FKComboBox.DisplayMember = "NOME_CLIENTE";
+            this.cOD_CLIENTE_FKComboBox.FormattingEnabled = true;
+            this.cOD_CLIENTE_FKComboBox.Location = new System.Drawing.Point(150, 142);
+            this.cOD_CLIENTE_FKComboBox.Name = "cOD_CLIENTE_FKComboBox";
+            this.cOD_CLIENTE_FKComboBox.Size = new System.Drawing.Size(121, 24);
+            this.cOD_CLIENTE_FKComboBox.TabIndex = 5;
+            this.cOD_CLIENTE_FKComboBox.ValueMember = "COD_CLIENTE";
             // 
-            // FrmAcesso
+            // tELEFONEBindingSource
+            // 
+            this.tELEFONEBindingSource.DataMember = "TELEFONE";
+            this.tELEFONEBindingSource.DataSource = this.dB_TrabalhoDataSet;
+            // 
+            // tELEFONETableAdapter
+            // 
+            this.tELEFONETableAdapter.ClearBeforeFill = true;
+            // 
+            // cLIENTEBindingSource
+            // 
+            this.cLIENTEBindingSource.DataMember = "CLIENTE";
+            this.cLIENTEBindingSource.DataSource = this.dB_TrabalhoDataSet;
+            // 
+            // cLIENTETableAdapter
+            // 
+            this.cLIENTETableAdapter.ClearBeforeFill = true;
+            // 
+            // FrmItensClienteTelefone
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(370, 417);
-            this.Controls.Add(cOD_ACESSOLabel);
-            this.Controls.Add(this.cOD_ACESSOLabel1);
-            this.Controls.Add(nOME_ACESSOLabel);
-            this.Controls.Add(this.nOME_ACESSOTextBox);
-            this.Controls.Add(this.aCESSODataGridView);
-            this.Controls.Add(this.aCESSOBindingNavigator);
-            this.Name = "FrmAcesso";
-            this.Text = "FrmAcesso";
-            this.Load += new System.EventHandler(this.FrmAcesso_Load);
+            this.ClientSize = new System.Drawing.Size(447, 498);
+            this.Controls.Add(cOD_TELEFONE_FKLabel);
+            this.Controls.Add(this.cOD_TELEFONE_FKComboBox);
+            this.Controls.Add(cOD_CLIENTE_FKLabel);
+            this.Controls.Add(this.cOD_CLIENTE_FKComboBox);
+            this.Controls.Add(this.iTENS_TEL_CLIDataGridView);
+            this.Controls.Add(this.iTENS_TEL_CLIBindingNavigator);
+            this.Name = "FrmItensClienteTelefone";
+            this.Text = "FrmItensClienteTelefone";
+            this.Load += new System.EventHandler(this.FrmItensClienteTelefone_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dB_TrabalhoDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aCESSOBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aCESSOBindingNavigator)).EndInit();
-            this.aCESSOBindingNavigator.ResumeLayout(false);
-            this.aCESSOBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.aCESSODataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iTENS_TEL_CLIBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iTENS_TEL_CLIBindingNavigator)).EndInit();
+            this.iTENS_TEL_CLIBindingNavigator.ResumeLayout(false);
+            this.iTENS_TEL_CLIBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iTENS_TEL_CLIDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tELEFONEBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cLIENTEBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -333,10 +365,10 @@
         #endregion
 
         private DB_TrabalhoDataSet dB_TrabalhoDataSet;
-        private System.Windows.Forms.BindingSource aCESSOBindingSource;
-        private DB_TrabalhoDataSetTableAdapters.ACESSOTableAdapter aCESSOTableAdapter;
+        private System.Windows.Forms.BindingSource iTENS_TEL_CLIBindingSource;
+        private DB_TrabalhoDataSetTableAdapters.ITENS_TEL_CLITableAdapter iTENS_TEL_CLITableAdapter;
         private DB_TrabalhoDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator aCESSOBindingNavigator;
+        private System.Windows.Forms.BindingNavigator iTENS_TEL_CLIBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -348,11 +380,15 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton aCESSOBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView aCESSODataGridView;
+        private System.Windows.Forms.ToolStripButton iTENS_TEL_CLIBindingNavigatorSaveItem;
+        private System.Windows.Forms.DataGridView iTENS_TEL_CLIDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.Label cOD_ACESSOLabel1;
-        private System.Windows.Forms.TextBox nOME_ACESSOTextBox;
+        private System.Windows.Forms.ComboBox cOD_TELEFONE_FKComboBox;
+        private System.Windows.Forms.ComboBox cOD_CLIENTE_FKComboBox;
+        private DB_TrabalhoDataSetTableAdapters.TELEFONETableAdapter tELEFONETableAdapter;
+        private System.Windows.Forms.BindingSource tELEFONEBindingSource;
+        private DB_TrabalhoDataSetTableAdapters.CLIENTETableAdapter cLIENTETableAdapter;
+        private System.Windows.Forms.BindingSource cLIENTEBindingSource;
     }
 }
