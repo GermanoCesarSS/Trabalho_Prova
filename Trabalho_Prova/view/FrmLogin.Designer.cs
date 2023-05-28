@@ -26,39 +26,39 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             System.Windows.Forms.Label cOD_LOGINSLabel;
             System.Windows.Forms.Label uSUARIOLabel;
             System.Windows.Forms.Label sENHALabel;
             System.Windows.Forms.Label cOD_FUNCIONARIO_FKLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.dB_TrabalhoDataSet = new Trabalho_Prova.DB_TrabalhoDataSet();
             this.lOGINSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lOGINSTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.LOGINSTableAdapter();
             this.tableAdapterManager = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TableAdapterManager();
+            this.fUNCIONARIOSTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.FUNCIONARIOSTableAdapter();
             this.lOGINSBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.lOGINSBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.lOGINSDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cOD_LOGINSLabel1 = new System.Windows.Forms.Label();
             this.uSUARIOTextBox = new System.Windows.Forms.TextBox();
             this.sENHATextBox = new System.Windows.Forms.TextBox();
             this.cOD_FUNCIONARIO_FKComboBox = new System.Windows.Forms.ComboBox();
             this.fUNCIONARIOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fUNCIONARIOSTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.FUNCIONARIOSTableAdapter();
             cOD_LOGINSLabel = new System.Windows.Forms.Label();
             uSUARIOLabel = new System.Windows.Forms.Label();
             sENHALabel = new System.Windows.Forms.Label();
@@ -70,6 +70,42 @@
             ((System.ComponentModel.ISupportInitialize)(this.lOGINSDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fUNCIONARIOSBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // cOD_LOGINSLabel
+            // 
+            cOD_LOGINSLabel.AutoSize = true;
+            cOD_LOGINSLabel.Location = new System.Drawing.Point(12, 139);
+            cOD_LOGINSLabel.Name = "cOD_LOGINSLabel";
+            cOD_LOGINSLabel.Size = new System.Drawing.Size(91, 16);
+            cOD_LOGINSLabel.TabIndex = 2;
+            cOD_LOGINSLabel.Text = "COD LOGINS:";
+            // 
+            // uSUARIOLabel
+            // 
+            uSUARIOLabel.AutoSize = true;
+            uSUARIOLabel.Location = new System.Drawing.Point(12, 168);
+            uSUARIOLabel.Name = "uSUARIOLabel";
+            uSUARIOLabel.Size = new System.Drawing.Size(71, 16);
+            uSUARIOLabel.TabIndex = 4;
+            uSUARIOLabel.Text = "USUARIO:";
+            // 
+            // sENHALabel
+            // 
+            sENHALabel.AutoSize = true;
+            sENHALabel.Location = new System.Drawing.Point(12, 196);
+            sENHALabel.Name = "sENHALabel";
+            sENHALabel.Size = new System.Drawing.Size(57, 16);
+            sENHALabel.TabIndex = 6;
+            sENHALabel.Text = "SENHA:";
+            // 
+            // cOD_FUNCIONARIO_FKLabel
+            // 
+            cOD_FUNCIONARIO_FKLabel.AutoSize = true;
+            cOD_FUNCIONARIO_FKLabel.Location = new System.Drawing.Point(12, 224);
+            cOD_FUNCIONARIO_FKLabel.Name = "cOD_FUNCIONARIO_FKLabel";
+            cOD_FUNCIONARIO_FKLabel.Size = new System.Drawing.Size(153, 16);
+            cOD_FUNCIONARIO_FKLabel.TabIndex = 8;
+            cOD_FUNCIONARIO_FKLabel.Text = "COD FUNCIONARIO FK:";
             // 
             // dB_TrabalhoDataSet
             // 
@@ -124,6 +160,10 @@
             this.tableAdapterManager.UpdateOrder = Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.VENDAPRODUTOTableAdapter = null;
             // 
+            // fUNCIONARIOSTableAdapter
+            // 
+            this.fUNCIONARIOSTableAdapter.ClearBeforeFill = true;
+            // 
             // lOGINSBindingNavigator
             // 
             this.lOGINSBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
@@ -155,73 +195,6 @@
             this.lOGINSBindingNavigator.TabIndex = 0;
             this.lOGINSBindingNavigator.Text = "bindingNavigator1";
             // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Mover primeiro";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Posição";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Posição atual";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 20);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveNextItem.Text = "Mover próximo";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveLastItem.Text = "Mover último";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
             // bindingNavigatorAddNewItem
             // 
             this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -231,21 +204,89 @@
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorAddNewItem.Text = "Adicionar novo";
             // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 28);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
+            // 
             // bindingNavigatorDeleteItem
             // 
             this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorDeleteItem.Text = "Excluir";
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveFirstItem.Text = "Mover primeiro";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
+            // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Posição";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Posição atual";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveNextItem.Text = "Mover próximo";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveLastItem.Text = "Mover último";
+            // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // lOGINSBindingNavigatorSaveItem
             // 
             this.lOGINSBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.lOGINSBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("lOGINSBindingNavigatorSaveItem.Image")));
             this.lOGINSBindingNavigatorSaveItem.Name = "lOGINSBindingNavigatorSaveItem";
-            this.lOGINSBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.lOGINSBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 28);
             this.lOGINSBindingNavigatorSaveItem.Text = "Salvar Dados";
             this.lOGINSBindingNavigatorSaveItem.Click += new System.EventHandler(this.lOGINSBindingNavigatorSaveItem_Click);
             // 
@@ -266,30 +307,6 @@
             this.lOGINSDataGridView.Size = new System.Drawing.Size(565, 419);
             this.lOGINSDataGridView.TabIndex = 1;
             // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "COD_FUNCIONARIO_FK";
-            this.dataGridViewTextBoxColumn4.HeaderText = "COD_FUNCIONARIO_FK";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "SENHA";
-            this.dataGridViewTextBoxColumn3.HeaderText = "SENHA";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "USUARIO";
-            this.dataGridViewTextBoxColumn2.HeaderText = "USUARIO";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 125;
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "COD_LOGINS";
@@ -299,14 +316,29 @@
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
             this.dataGridViewTextBoxColumn1.Width = 125;
             // 
-            // cOD_LOGINSLabel
+            // dataGridViewTextBoxColumn2
             // 
-            cOD_LOGINSLabel.AutoSize = true;
-            cOD_LOGINSLabel.Location = new System.Drawing.Point(12, 139);
-            cOD_LOGINSLabel.Name = "cOD_LOGINSLabel";
-            cOD_LOGINSLabel.Size = new System.Drawing.Size(91, 16);
-            cOD_LOGINSLabel.TabIndex = 2;
-            cOD_LOGINSLabel.Text = "COD LOGINS:";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "USUARIO";
+            this.dataGridViewTextBoxColumn2.HeaderText = "USUARIO";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "SENHA";
+            this.dataGridViewTextBoxColumn3.HeaderText = "SENHA";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "COD_FUNCIONARIO_FK";
+            this.dataGridViewTextBoxColumn4.HeaderText = "COD_FUNCIONARIO_FK";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 125;
             // 
             // cOD_LOGINSLabel1
             // 
@@ -317,15 +349,6 @@
             this.cOD_LOGINSLabel1.TabIndex = 3;
             this.cOD_LOGINSLabel1.Text = "label1";
             // 
-            // uSUARIOLabel
-            // 
-            uSUARIOLabel.AutoSize = true;
-            uSUARIOLabel.Location = new System.Drawing.Point(12, 168);
-            uSUARIOLabel.Name = "uSUARIOLabel";
-            uSUARIOLabel.Size = new System.Drawing.Size(71, 16);
-            uSUARIOLabel.TabIndex = 4;
-            uSUARIOLabel.Text = "USUARIO:";
-            // 
             // uSUARIOTextBox
             // 
             this.uSUARIOTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.lOGINSBindingSource, "USUARIO", true));
@@ -334,15 +357,6 @@
             this.uSUARIOTextBox.Size = new System.Drawing.Size(156, 22);
             this.uSUARIOTextBox.TabIndex = 5;
             // 
-            // sENHALabel
-            // 
-            sENHALabel.AutoSize = true;
-            sENHALabel.Location = new System.Drawing.Point(12, 196);
-            sENHALabel.Name = "sENHALabel";
-            sENHALabel.Size = new System.Drawing.Size(57, 16);
-            sENHALabel.TabIndex = 6;
-            sENHALabel.Text = "SENHA:";
-            // 
             // sENHATextBox
             // 
             this.sENHATextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.lOGINSBindingSource, "SENHA", true));
@@ -350,15 +364,6 @@
             this.sENHATextBox.Name = "sENHATextBox";
             this.sENHATextBox.Size = new System.Drawing.Size(156, 22);
             this.sENHATextBox.TabIndex = 7;
-            // 
-            // cOD_FUNCIONARIO_FKLabel
-            // 
-            cOD_FUNCIONARIO_FKLabel.AutoSize = true;
-            cOD_FUNCIONARIO_FKLabel.Location = new System.Drawing.Point(12, 224);
-            cOD_FUNCIONARIO_FKLabel.Name = "cOD_FUNCIONARIO_FKLabel";
-            cOD_FUNCIONARIO_FKLabel.Size = new System.Drawing.Size(153, 16);
-            cOD_FUNCIONARIO_FKLabel.TabIndex = 8;
-            cOD_FUNCIONARIO_FKLabel.Text = "COD FUNCIONARIO FK:";
             // 
             // cOD_FUNCIONARIO_FKComboBox
             // 
@@ -376,10 +381,6 @@
             // 
             this.fUNCIONARIOSBindingSource.DataMember = "FUNCIONARIOS";
             this.fUNCIONARIOSBindingSource.DataSource = this.dB_TrabalhoDataSet;
-            // 
-            // fUNCIONARIOSTableAdapter
-            // 
-            this.fUNCIONARIOSTableAdapter.ClearBeforeFill = true;
             // 
             // FrmLogin
             // 

@@ -107,6 +107,12 @@
     <Compile Include="view\FrmFuncionarios.Designer.cs">
       <DependentUpon>FrmFuncionarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\FrmItensAcessoLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmItensAcessoLogin.Designer.cs">
+      <DependentUpon>FrmItensAcessoLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +173,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="view\FrmAcesso.resx">
+      <DependentUpon>FrmAcesso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\FrmBairro.resx">
       <DependentUpon>FrmBairro.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\FrmFuncionarios.resx">
       <DependentUpon>FrmFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FrmItensAcessoLogin.resx">
+      <DependentUpon>FrmItensAcessoLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

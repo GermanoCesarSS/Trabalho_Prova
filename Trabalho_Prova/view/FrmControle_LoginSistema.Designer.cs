@@ -26,27 +26,28 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmControle_LoginSistema));
             System.Windows.Forms.Label cOD_CONTROLELabel;
             System.Windows.Forms.Label cOD_LOGINS_FKLabel;
             System.Windows.Forms.Label dATASLabel;
             System.Windows.Forms.Label hORALabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmControle_LoginSistema));
             this.dB_TrabalhoDataSet = new Trabalho_Prova.DB_TrabalhoDataSet();
             this.cONTROLE_LOGSISTEMABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cONTROLE_LOGSISTEMATableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.CONTROLE_LOGSISTEMATableAdapter();
             this.tableAdapterManager = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TableAdapterManager();
+            this.lOGINSTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.LOGINSTableAdapter();
             this.cONTROLE_LOGSISTEMABindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.cONTROLE_LOGSISTEMADataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,10 +56,9 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cOD_CONTROLELabel1 = new System.Windows.Forms.Label();
             this.cOD_LOGINS_FKComboBox = new System.Windows.Forms.ComboBox();
+            this.lOGINSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dATASDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.hORATextBox = new System.Windows.Forms.TextBox();
-            this.lOGINSBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.lOGINSTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.LOGINSTableAdapter();
             cOD_CONTROLELabel = new System.Windows.Forms.Label();
             cOD_LOGINS_FKLabel = new System.Windows.Forms.Label();
             dATASLabel = new System.Windows.Forms.Label();
@@ -70,6 +70,42 @@
             ((System.ComponentModel.ISupportInitialize)(this.cONTROLE_LOGSISTEMADataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOGINSBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // cOD_CONTROLELabel
+            // 
+            cOD_CONTROLELabel.AutoSize = true;
+            cOD_CONTROLELabel.Location = new System.Drawing.Point(24, 92);
+            cOD_CONTROLELabel.Name = "cOD_CONTROLELabel";
+            cOD_CONTROLELabel.Size = new System.Drawing.Size(116, 16);
+            cOD_CONTROLELabel.TabIndex = 2;
+            cOD_CONTROLELabel.Text = "COD CONTROLE:";
+            // 
+            // cOD_LOGINS_FKLabel
+            // 
+            cOD_LOGINS_FKLabel.AutoSize = true;
+            cOD_LOGINS_FKLabel.Location = new System.Drawing.Point(24, 121);
+            cOD_LOGINS_FKLabel.Name = "cOD_LOGINS_FKLabel";
+            cOD_LOGINS_FKLabel.Size = new System.Drawing.Size(110, 16);
+            cOD_LOGINS_FKLabel.TabIndex = 4;
+            cOD_LOGINS_FKLabel.Text = "COD LOGINS FK:";
+            // 
+            // dATASLabel
+            // 
+            dATASLabel.AutoSize = true;
+            dATASLabel.Location = new System.Drawing.Point(24, 152);
+            dATASLabel.Name = "dATASLabel";
+            dATASLabel.Size = new System.Drawing.Size(56, 16);
+            dATASLabel.TabIndex = 6;
+            dATASLabel.Text = "DATAS:";
+            // 
+            // hORALabel
+            // 
+            hORALabel.AutoSize = true;
+            hORALabel.Location = new System.Drawing.Point(24, 179);
+            hORALabel.Name = "hORALabel";
+            hORALabel.Size = new System.Drawing.Size(49, 16);
+            hORALabel.TabIndex = 8;
+            hORALabel.Text = "HORA:";
             // 
             // dB_TrabalhoDataSet
             // 
@@ -124,6 +160,10 @@
             this.tableAdapterManager.UpdateOrder = Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.VENDAPRODUTOTableAdapter = null;
             // 
+            // lOGINSTableAdapter
+            // 
+            this.lOGINSTableAdapter.ClearBeforeFill = true;
+            // 
             // cONTROLE_LOGSISTEMABindingNavigator
             // 
             this.cONTROLE_LOGSISTEMABindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
@@ -155,73 +195,6 @@
             this.cONTROLE_LOGSISTEMABindingNavigator.TabIndex = 0;
             this.cONTROLE_LOGSISTEMABindingNavigator.Text = "bindingNavigator1";
             // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Mover primeiro";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Posição";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Posição atual";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 20);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveNextItem.Text = "Mover próximo";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveLastItem.Text = "Mover último";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
             // bindingNavigatorAddNewItem
             // 
             this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -231,21 +204,89 @@
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorAddNewItem.Text = "Adicionar novo";
             // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 28);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
+            // 
             // bindingNavigatorDeleteItem
             // 
             this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorDeleteItem.Text = "Excluir";
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveFirstItem.Text = "Mover primeiro";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
+            // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Posição";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Posição atual";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveNextItem.Text = "Mover próximo";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveLastItem.Text = "Mover último";
+            // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // cONTROLE_LOGSISTEMABindingNavigatorSaveItem
             // 
             this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("cONTROLE_LOGSISTEMABindingNavigatorSaveItem.Image")));
             this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem.Name = "cONTROLE_LOGSISTEMABindingNavigatorSaveItem";
-            this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 28);
             this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem.Text = "Salvar Dados";
             this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem.Click += new System.EventHandler(this.cONTROLE_LOGSISTEMABindingNavigatorSaveItem_Click);
             // 
@@ -299,15 +340,6 @@
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.Width = 125;
             // 
-            // cOD_CONTROLELabel
-            // 
-            cOD_CONTROLELabel.AutoSize = true;
-            cOD_CONTROLELabel.Location = new System.Drawing.Point(24, 92);
-            cOD_CONTROLELabel.Name = "cOD_CONTROLELabel";
-            cOD_CONTROLELabel.Size = new System.Drawing.Size(116, 16);
-            cOD_CONTROLELabel.TabIndex = 2;
-            cOD_CONTROLELabel.Text = "COD CONTROLE:";
-            // 
             // cOD_CONTROLELabel1
             // 
             this.cOD_CONTROLELabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cONTROLE_LOGSISTEMABindingSource, "COD_CONTROLE", true));
@@ -316,15 +348,6 @@
             this.cOD_CONTROLELabel1.Size = new System.Drawing.Size(200, 23);
             this.cOD_CONTROLELabel1.TabIndex = 3;
             this.cOD_CONTROLELabel1.Text = "label1";
-            // 
-            // cOD_LOGINS_FKLabel
-            // 
-            cOD_LOGINS_FKLabel.AutoSize = true;
-            cOD_LOGINS_FKLabel.Location = new System.Drawing.Point(24, 121);
-            cOD_LOGINS_FKLabel.Name = "cOD_LOGINS_FKLabel";
-            cOD_LOGINS_FKLabel.Size = new System.Drawing.Size(110, 16);
-            cOD_LOGINS_FKLabel.TabIndex = 4;
-            cOD_LOGINS_FKLabel.Text = "COD LOGINS FK:";
             // 
             // cOD_LOGINS_FKComboBox
             // 
@@ -338,14 +361,10 @@
             this.cOD_LOGINS_FKComboBox.TabIndex = 5;
             this.cOD_LOGINS_FKComboBox.ValueMember = "COD_LOGINS";
             // 
-            // dATASLabel
+            // lOGINSBindingSource
             // 
-            dATASLabel.AutoSize = true;
-            dATASLabel.Location = new System.Drawing.Point(24, 152);
-            dATASLabel.Name = "dATASLabel";
-            dATASLabel.Size = new System.Drawing.Size(56, 16);
-            dATASLabel.TabIndex = 6;
-            dATASLabel.Text = "DATAS:";
+            this.lOGINSBindingSource.DataMember = "LOGINS";
+            this.lOGINSBindingSource.DataSource = this.dB_TrabalhoDataSet;
             // 
             // dATASDateTimePicker
             // 
@@ -355,15 +374,6 @@
             this.dATASDateTimePicker.Size = new System.Drawing.Size(200, 22);
             this.dATASDateTimePicker.TabIndex = 7;
             // 
-            // hORALabel
-            // 
-            hORALabel.AutoSize = true;
-            hORALabel.Location = new System.Drawing.Point(24, 179);
-            hORALabel.Name = "hORALabel";
-            hORALabel.Size = new System.Drawing.Size(49, 16);
-            hORALabel.TabIndex = 8;
-            hORALabel.Text = "HORA:";
-            // 
             // hORATextBox
             // 
             this.hORATextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cONTROLE_LOGSISTEMABindingSource, "HORA", true));
@@ -371,15 +381,6 @@
             this.hORATextBox.Name = "hORATextBox";
             this.hORATextBox.Size = new System.Drawing.Size(200, 22);
             this.hORATextBox.TabIndex = 9;
-            // 
-            // lOGINSBindingSource
-            // 
-            this.lOGINSBindingSource.DataMember = "LOGINS";
-            this.lOGINSBindingSource.DataSource = this.dB_TrabalhoDataSet;
-            // 
-            // lOGINSTableAdapter
-            // 
-            this.lOGINSTableAdapter.ClearBeforeFill = true;
             // 
             // FrmControle_LoginSistema
             // 

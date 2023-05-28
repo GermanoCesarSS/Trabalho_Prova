@@ -95,5 +95,10 @@ namespace Trabalho_Prova
             FrmControle_LoginSistema frm = new FrmControle_LoginSistema();
             frm.ShowDialog();
         }
+
+        private void aCESSOToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmAcesso frm = new FrmAcesso();
+            frm.ShowDialog();
+        }
     }
 }
