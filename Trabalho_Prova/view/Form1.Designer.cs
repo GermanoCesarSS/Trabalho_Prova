@@ -44,11 +44,23 @@
             this.lOGINToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cONTROLELOGINSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aCESSOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pRODUTOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mARCAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tIPOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fORNECEDORToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pARCELACOMPRAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sITUACAOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cOMPRAPRODUTOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vENDAPRODUTOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pARCELAVENDAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iMAGENSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iTENSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aCESSOLOGINToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tELEFONECLIENTEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tELEFONETRABALHOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tELEFONEFUNCIONARIOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tELEFONELOJAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tELEFONEFORNECEDORToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
@@ -63,7 +75,7 @@
             this.iTENSToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -85,9 +97,19 @@
             this.fUNCIONARIOToolStripMenuItem,
             this.lOGINToolStripMenuItem,
             this.cONTROLELOGINSToolStripMenuItem,
-            this.aCESSOToolStripMenuItem});
+            this.aCESSOToolStripMenuItem,
+            this.pRODUTOToolStripMenuItem,
+            this.mARCAToolStripMenuItem,
+            this.tIPOToolStripMenuItem,
+            this.fORNECEDORToolStripMenuItem,
+            this.pARCELACOMPRAToolStripMenuItem,
+            this.sITUACAOToolStripMenuItem,
+            this.cOMPRAPRODUTOToolStripMenuItem,
+            this.vENDAPRODUTOToolStripMenuItem,
+            this.pARCELAVENDAToolStripMenuItem,
+            this.iMAGENSToolStripMenuItem});
             this.tabelasToolStripMenuItem.Name = "tabelasToolStripMenuItem";
-            this.tabelasToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
+            this.tabelasToolStripMenuItem.Size = new System.Drawing.Size(65, 26);
             this.tabelasToolStripMenuItem.Text = "MENU";
             this.tabelasToolStripMenuItem.Click += new System.EventHandler(this.tabelasToolStripMenuItem_Click);
             // 
@@ -203,13 +225,85 @@
             this.aCESSOToolStripMenuItem.Text = "ACESSO";
             this.aCESSOToolStripMenuItem.Click += new System.EventHandler(this.aCESSOToolStripMenuItem_Click);
             // 
+            // pRODUTOToolStripMenuItem
+            // 
+            this.pRODUTOToolStripMenuItem.Name = "pRODUTOToolStripMenuItem";
+            this.pRODUTOToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.pRODUTOToolStripMenuItem.Text = "PRODUTO";
+            this.pRODUTOToolStripMenuItem.Click += new System.EventHandler(this.pRODUTOToolStripMenuItem_Click_1);
+            // 
+            // mARCAToolStripMenuItem
+            // 
+            this.mARCAToolStripMenuItem.Name = "mARCAToolStripMenuItem";
+            this.mARCAToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.mARCAToolStripMenuItem.Text = "MARCA";
+            this.mARCAToolStripMenuItem.Click += new System.EventHandler(this.mARCAToolStripMenuItem_Click);
+            // 
+            // tIPOToolStripMenuItem
+            // 
+            this.tIPOToolStripMenuItem.Name = "tIPOToolStripMenuItem";
+            this.tIPOToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.tIPOToolStripMenuItem.Text = "TIPO";
+            this.tIPOToolStripMenuItem.Click += new System.EventHandler(this.tIPOToolStripMenuItem_Click);
+            // 
+            // fORNECEDORToolStripMenuItem
+            // 
+            this.fORNECEDORToolStripMenuItem.Name = "fORNECEDORToolStripMenuItem";
+            this.fORNECEDORToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.fORNECEDORToolStripMenuItem.Text = "FORNECEDOR";
+            this.fORNECEDORToolStripMenuItem.Click += new System.EventHandler(this.fORNECEDORToolStripMenuItem_Click);
+            // 
+            // pARCELACOMPRAToolStripMenuItem
+            // 
+            this.pARCELACOMPRAToolStripMenuItem.Name = "pARCELACOMPRAToolStripMenuItem";
+            this.pARCELACOMPRAToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.pARCELACOMPRAToolStripMenuItem.Text = "PARCELA COMPRA";
+            this.pARCELACOMPRAToolStripMenuItem.Click += new System.EventHandler(this.pARCELACOMPRAToolStripMenuItem_Click);
+            // 
+            // sITUACAOToolStripMenuItem
+            // 
+            this.sITUACAOToolStripMenuItem.Name = "sITUACAOToolStripMenuItem";
+            this.sITUACAOToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.sITUACAOToolStripMenuItem.Text = "SITUACAO";
+            this.sITUACAOToolStripMenuItem.Click += new System.EventHandler(this.sITUACAOToolStripMenuItem_Click);
+            // 
+            // cOMPRAPRODUTOToolStripMenuItem
+            // 
+            this.cOMPRAPRODUTOToolStripMenuItem.Name = "cOMPRAPRODUTOToolStripMenuItem";
+            this.cOMPRAPRODUTOToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.cOMPRAPRODUTOToolStripMenuItem.Text = "COMPRA PRODUTO";
+            this.cOMPRAPRODUTOToolStripMenuItem.Click += new System.EventHandler(this.cOMPRAPRODUTOToolStripMenuItem_Click);
+            // 
+            // vENDAPRODUTOToolStripMenuItem
+            // 
+            this.vENDAPRODUTOToolStripMenuItem.Name = "vENDAPRODUTOToolStripMenuItem";
+            this.vENDAPRODUTOToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.vENDAPRODUTOToolStripMenuItem.Text = "VENDA PRODUTO";
+            this.vENDAPRODUTOToolStripMenuItem.Click += new System.EventHandler(this.vENDAPRODUTOToolStripMenuItem_Click);
+            // 
+            // pARCELAVENDAToolStripMenuItem
+            // 
+            this.pARCELAVENDAToolStripMenuItem.Name = "pARCELAVENDAToolStripMenuItem";
+            this.pARCELAVENDAToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.pARCELAVENDAToolStripMenuItem.Text = "PARCELA VENDA";
+            this.pARCELAVENDAToolStripMenuItem.Click += new System.EventHandler(this.pARCELAVENDAToolStripMenuItem_Click);
+            // 
+            // iMAGENSToolStripMenuItem
+            // 
+            this.iMAGENSToolStripMenuItem.Name = "iMAGENSToolStripMenuItem";
+            this.iMAGENSToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.iMAGENSToolStripMenuItem.Text = "IMAGENS";
+            this.iMAGENSToolStripMenuItem.Click += new System.EventHandler(this.iMAGENSToolStripMenuItem_Click);
+            // 
             // iTENSToolStripMenuItem
             // 
             this.iTENSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aCESSOLOGINToolStripMenuItem,
             this.tELEFONECLIENTEToolStripMenuItem,
             this.tELEFONETRABALHOToolStripMenuItem,
-            this.tELEFONEFUNCIONARIOToolStripMenuItem});
+            this.tELEFONEFUNCIONARIOToolStripMenuItem,
+            this.tELEFONELOJAToolStripMenuItem,
+            this.tELEFONEFORNECEDORToolStripMenuItem});
             this.iTENSToolStripMenuItem.Name = "iTENSToolStripMenuItem";
             this.iTENSToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
             this.iTENSToolStripMenuItem.Text = "ITENS";
@@ -242,8 +336,25 @@
             this.tELEFONEFUNCIONARIOToolStripMenuItem.Text = "TELEFONEFUNCIONARIO";
             this.tELEFONEFUNCIONARIOToolStripMenuItem.Click += new System.EventHandler(this.tELEFONEFUNCIONARIOToolStripMenuItem_Click);
             // 
+            // tELEFONELOJAToolStripMenuItem
+            // 
+            this.tELEFONELOJAToolStripMenuItem.Name = "tELEFONELOJAToolStripMenuItem";
+            this.tELEFONELOJAToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
+            this.tELEFONELOJAToolStripMenuItem.Text = "TELEFONELOJA";
+            this.tELEFONELOJAToolStripMenuItem.Click += new System.EventHandler(this.tELEFONELOJAToolStripMenuItem_Click);
+            // 
+            // tELEFONEFORNECEDORToolStripMenuItem
+            // 
+            this.tELEFONEFORNECEDORToolStripMenuItem.Name = "tELEFONEFORNECEDORToolStripMenuItem";
+            this.tELEFONEFORNECEDORToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
+            this.tELEFONEFORNECEDORToolStripMenuItem.Text = "TELEFONEFORNECEDOR";
+            this.tELEFONEFORNECEDORToolStripMenuItem.Click += new System.EventHandler(this.tELEFONEFORNECEDORToolStripMenuItem_Click);
+            // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 31);
             this.pictureBox1.Name = "pictureBox1";
@@ -254,13 +365,14 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(157, 378);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(446, 60);
+            this.label1.Size = new System.Drawing.Size(435, 59);
             this.label1.TabIndex = 3;
             this.label1.Text = "LOJA DO MARCÃO";
             // 
@@ -310,6 +422,18 @@
         private System.Windows.Forms.ToolStripMenuItem tELEFONEFUNCIONARIOToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem tELEFONELOJAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pRODUTOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mARCAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tIPOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fORNECEDORToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pARCELACOMPRAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sITUACAOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tELEFONEFORNECEDORToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cOMPRAPRODUTOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem vENDAPRODUTOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pARCELAVENDAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem iMAGENSToolStripMenuItem;
     }
 }
 

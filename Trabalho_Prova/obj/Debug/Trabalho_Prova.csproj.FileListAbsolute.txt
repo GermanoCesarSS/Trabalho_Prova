@@ -29,3 +29,17 @@ C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova
 C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmItensClienteTelefone.resources
 C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmItensTrabalhoTelefone.resources
 C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmItensFuncionarioTelefone.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmItensTelefoneLoja.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmMarca.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmProduto.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmTipo.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmFornecedor.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmParcelaCompra.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmSituacao.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.CompraProduto.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmItensTelefoneFornecedor.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmItensCompraProduto.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmImagens.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmItensVendaProduto.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmParcelaVenda.resources
+C:\Users\manoa\Área de Trabalho\funec\3°SEMESTRE\DAD I\Projetos\Trabalho_Prova\Trabalho_Prova\obj\Debug\Trabalho_Prova.view.FrmVendaProduto.resources
