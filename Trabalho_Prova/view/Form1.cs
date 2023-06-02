@@ -120,5 +120,80 @@ namespace Trabalho_Prova
             FrmItensFuncionarioTelefone frm = new FrmItensFuncionarioTelefone();    
             frm.ShowDialog();
         }
+
+        private void tELEFONELOJAToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmItensTelefoneLoja frm = new FrmItensTelefoneLoja();
+            frm.ShowDialog();
+        }
+
+        private void pRODUTOToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmProduto frm = new FrmProduto();
+            frm.ShowDialog();
+        }
+
+        private void pRODUTOToolStripMenuItem_Click_1(object sender, EventArgs e) {
+            FrmProduto frm = new FrmProduto();
+            frm.ShowDialog();   
+        }
+
+        private void mARCAToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmMarca frm = new FrmMarca();
+            frm.ShowDialog();
+        }
+
+        private void tIPOToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmTipo frm = new FrmTipo();
+            frm.ShowDialog();
+        }
+
+        private void fORNECEDORToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmFornecedor frm = new FrmFornecedor();
+            frm.ShowDialog();
+        }
+
+        private void pARCELACOMPRAToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmParcelaCompra frm = new FrmParcelaCompra();
+            frm.ShowDialog();
+        }
+
+        private void sITUACAOToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmSituacao frm = new FrmSituacao();
+            frm.ShowDialog();
+        }
+
+        private void tELEFONEFORNECEDORToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmItensTelefoneFornecedor frm = new FrmItensTelefoneFornecedor();
+            frm.ShowDialog();
+        }
+
+        private void cOMPRAPRODUTOToolStripMenuItem_Click(object sender, EventArgs e) {
+            CompraProduto frm = new CompraProduto();
+            frm.ShowDialog();
+        }
+
+        private void cOMPRAPRODUTOToolStripMenuItem1_Click(object sender, EventArgs e) {
+            CompraProduto frm = new CompraProduto();
+            frm.ShowDialog();
+        }
+
+        private void vENDAPRODUTOToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmVendaProduto frm = new FrmVendaProduto();
+            frm.ShowDialog();
+        }
+
+        private void pARCELAVENDAToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmParcelaCompra frm = new FrmParcelaCompra();
+            frm.ShowDialog();
+        }
+
+        private void iMAGENSToolStripMenuItem_Click(object sender, EventArgs e) {
+            FrmImagens frm = new FrmImagens();
+            frm.ShowDialog();
+        }
+
+        private void vENDAPRODUTOToolStripMenuItem1_Click(object sender, EventArgs e) {
+           FrmVendaProduto frm =new FrmVendaProduto();
+            frm.ShowDialog();
+        }
     }
 }
