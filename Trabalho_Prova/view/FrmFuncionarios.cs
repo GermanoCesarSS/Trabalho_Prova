@@ -70,5 +70,9 @@ namespace Trabalho_Prova.view
             FrmLogin frm = new FrmLogin();
             frm.ShowDialog();
         }
+
+        private void fUNCIONARIOSDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e) {
+
+        }
     }
 }

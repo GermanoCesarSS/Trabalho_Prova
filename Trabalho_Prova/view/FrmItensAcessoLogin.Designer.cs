@@ -57,6 +57,7 @@
             this.lOGINSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             cOD_ACESSO_FKLabel = new System.Windows.Forms.Label();
             cOD_LOGINS_FKLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dB_TrabalhoDataSet)).BeginInit();
@@ -66,6 +67,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iTENS_ACESSOLOGINDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aCESSOBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOGINSBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // cOD_ACESSO_FKLabel
@@ -174,7 +176,7 @@
             this.iTENS_ACESSOLOGINBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.iTENS_ACESSOLOGINBindingNavigator.Name = "iTENS_ACESSOLOGINBindingNavigator";
             this.iTENS_ACESSOLOGINBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.iTENS_ACESSOLOGINBindingNavigator.Size = new System.Drawing.Size(388, 27);
+            this.iTENS_ACESSOLOGINBindingNavigator.Size = new System.Drawing.Size(388, 31);
             this.iTENS_ACESSOLOGINBindingNavigator.TabIndex = 0;
             this.iTENS_ACESSOLOGINBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -184,7 +186,7 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorAddNewItem.Text = "Adicionar novo";
             // 
             // bindingNavigatorCountItem
@@ -358,11 +360,23 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.Menu;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(41, 34);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(302, 112);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 34;
+            this.pictureBox2.TabStop = false;
+            // 
             // FrmItensAcessoLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(388, 479);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(cOD_ACESSO_FKLabel);
@@ -382,6 +396,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iTENS_ACESSOLOGINDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aCESSOBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOGINSBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -417,5 +432,6 @@
         private System.Windows.Forms.BindingSource lOGINSBindingSource;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

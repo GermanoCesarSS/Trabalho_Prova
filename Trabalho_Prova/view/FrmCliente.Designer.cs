@@ -61,7 +61,6 @@
             this.cLIENTEBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.cOD_CLIENTELabel1 = new System.Windows.Forms.Label();
             this.nOME_CLIENTETextBox = new System.Windows.Forms.TextBox();
-            this.fOTO_CLIENTEPictureBox = new System.Windows.Forms.PictureBox();
             this.cOD_SEXO_FKComboBox = new System.Windows.Forms.ComboBox();
             this.sEXOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cOD_RUA_FKComboBox = new System.Windows.Forms.ComboBox();
@@ -83,7 +82,16 @@
             this.dBTrabalhoDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dadosClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dadosClienteTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.DadosClienteTableAdapter();
-            this.dadosClienteDataGridView = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cLIENTEDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
@@ -94,12 +102,8 @@
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             cOD_CLIENTELabel = new System.Windows.Forms.Label();
             nOME_CLIENTELabel = new System.Windows.Forms.Label();
             fOTO_CLIENTELabel = new System.Windows.Forms.Label();
@@ -116,7 +120,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.cLIENTEBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLIENTEBindingNavigator)).BeginInit();
             this.cLIENTEBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fOTO_CLIENTEPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sEXOBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rUABindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bAIRROBindingSource)).BeginInit();
@@ -125,7 +128,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.tRABALHOBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dBTrabalhoDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dadosClienteBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dadosClienteDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cLIENTEDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // cOD_CLIENTELabel
@@ -149,7 +154,7 @@
             // fOTO_CLIENTELabel
             // 
             fOTO_CLIENTELabel.AutoSize = true;
-            fOTO_CLIENTELabel.Location = new System.Drawing.Point(21, 122);
+            fOTO_CLIENTELabel.Location = new System.Drawing.Point(21, 405);
             fOTO_CLIENTELabel.Name = "fOTO_CLIENTELabel";
             fOTO_CLIENTELabel.Size = new System.Drawing.Size(106, 16);
             fOTO_CLIENTELabel.TabIndex = 5;
@@ -158,7 +163,7 @@
             // cOD_SEXO_FKLabel
             // 
             cOD_SEXO_FKLabel.AutoSize = true;
-            cOD_SEXO_FKLabel.Location = new System.Drawing.Point(21, 209);
+            cOD_SEXO_FKLabel.Location = new System.Drawing.Point(21, 155);
             cOD_SEXO_FKLabel.Name = "cOD_SEXO_FKLabel";
             cOD_SEXO_FKLabel.Size = new System.Drawing.Size(97, 16);
             cOD_SEXO_FKLabel.TabIndex = 9;
@@ -167,7 +172,7 @@
             // cOD_RUA_FKLabel
             // 
             cOD_RUA_FKLabel.AutoSize = true;
-            cOD_RUA_FKLabel.Location = new System.Drawing.Point(21, 239);
+            cOD_RUA_FKLabel.Location = new System.Drawing.Point(21, 185);
             cOD_RUA_FKLabel.Name = "cOD_RUA_FKLabel";
             cOD_RUA_FKLabel.Size = new System.Drawing.Size(90, 16);
             cOD_RUA_FKLabel.TabIndex = 11;
@@ -176,7 +181,7 @@
             // cOD_BAIRRO_FKLabel
             // 
             cOD_BAIRRO_FKLabel.AutoSize = true;
-            cOD_BAIRRO_FKLabel.Location = new System.Drawing.Point(21, 269);
+            cOD_BAIRRO_FKLabel.Location = new System.Drawing.Point(21, 215);
             cOD_BAIRRO_FKLabel.Name = "cOD_BAIRRO_FKLabel";
             cOD_BAIRRO_FKLabel.Size = new System.Drawing.Size(112, 16);
             cOD_BAIRRO_FKLabel.TabIndex = 13;
@@ -185,7 +190,7 @@
             // cOD_CEP_FKLabel
             // 
             cOD_CEP_FKLabel.AutoSize = true;
-            cOD_CEP_FKLabel.Location = new System.Drawing.Point(21, 299);
+            cOD_CEP_FKLabel.Location = new System.Drawing.Point(21, 245);
             cOD_CEP_FKLabel.Name = "cOD_CEP_FKLabel";
             cOD_CEP_FKLabel.Size = new System.Drawing.Size(88, 16);
             cOD_CEP_FKLabel.TabIndex = 15;
@@ -194,7 +199,7 @@
             // cOD_CIDADE_FKLabel
             // 
             cOD_CIDADE_FKLabel.AutoSize = true;
-            cOD_CIDADE_FKLabel.Location = new System.Drawing.Point(21, 329);
+            cOD_CIDADE_FKLabel.Location = new System.Drawing.Point(21, 275);
             cOD_CIDADE_FKLabel.Name = "cOD_CIDADE_FKLabel";
             cOD_CIDADE_FKLabel.Size = new System.Drawing.Size(111, 16);
             cOD_CIDADE_FKLabel.TabIndex = 17;
@@ -203,7 +208,7 @@
             // cOD_TRABALHO_FKLabel
             // 
             cOD_TRABALHO_FKLabel.AutoSize = true;
-            cOD_TRABALHO_FKLabel.Location = new System.Drawing.Point(21, 359);
+            cOD_TRABALHO_FKLabel.Location = new System.Drawing.Point(21, 305);
             cOD_TRABALHO_FKLabel.Name = "cOD_TRABALHO_FKLabel";
             cOD_TRABALHO_FKLabel.Size = new System.Drawing.Size(134, 16);
             cOD_TRABALHO_FKLabel.TabIndex = 19;
@@ -212,7 +217,7 @@
             // sALARIO_CLIENTELabel
             // 
             sALARIO_CLIENTELabel.AutoSize = true;
-            sALARIO_CLIENTELabel.Location = new System.Drawing.Point(21, 389);
+            sALARIO_CLIENTELabel.Location = new System.Drawing.Point(21, 335);
             sALARIO_CLIENTELabel.Name = "sALARIO_CLIENTELabel";
             sALARIO_CLIENTELabel.Size = new System.Drawing.Size(126, 16);
             sALARIO_CLIENTELabel.TabIndex = 21;
@@ -221,7 +226,7 @@
             // nUMEROCASALabel
             // 
             nUMEROCASALabel.AutoSize = true;
-            nUMEROCASALabel.Location = new System.Drawing.Point(21, 417);
+            nUMEROCASALabel.Location = new System.Drawing.Point(21, 363);
             nUMEROCASALabel.Name = "nUMEROCASALabel";
             nUMEROCASALabel.Size = new System.Drawing.Size(106, 16);
             nUMEROCASALabel.TabIndex = 23;
@@ -230,7 +235,7 @@
             // dATANASC_CLIENTELabel
             // 
             dATANASC_CLIENTELabel.AutoSize = true;
-            dATANASC_CLIENTELabel.Location = new System.Drawing.Point(21, 180);
+            dATANASC_CLIENTELabel.Location = new System.Drawing.Point(21, 126);
             dATANASC_CLIENTELabel.Name = "dATANASC_CLIENTELabel";
             dATANASC_CLIENTELabel.Size = new System.Drawing.Size(143, 16);
             dATANASC_CLIENTELabel.TabIndex = 25;
@@ -328,7 +333,7 @@
             this.cLIENTEBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.cLIENTEBindingNavigator.Name = "cLIENTEBindingNavigator";
             this.cLIENTEBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.cLIENTEBindingNavigator.Size = new System.Drawing.Size(930, 27);
+            this.cLIENTEBindingNavigator.Size = new System.Drawing.Size(1026, 27);
             this.cLIENTEBindingNavigator.TabIndex = 0;
             this.cLIENTEBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -444,22 +449,13 @@
             this.nOME_CLIENTETextBox.Size = new System.Drawing.Size(200, 22);
             this.nOME_CLIENTETextBox.TabIndex = 4;
             // 
-            // fOTO_CLIENTEPictureBox
-            // 
-            this.fOTO_CLIENTEPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.cLIENTEBindingSource, "FOTO_CLIENTE", true));
-            this.fOTO_CLIENTEPictureBox.Location = new System.Drawing.Point(170, 122);
-            this.fOTO_CLIENTEPictureBox.Name = "fOTO_CLIENTEPictureBox";
-            this.fOTO_CLIENTEPictureBox.Size = new System.Drawing.Size(200, 50);
-            this.fOTO_CLIENTEPictureBox.TabIndex = 6;
-            this.fOTO_CLIENTEPictureBox.TabStop = false;
-            // 
             // cOD_SEXO_FKComboBox
             // 
             this.cOD_SEXO_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.cLIENTEBindingSource, "COD_SEXO_FK", true));
             this.cOD_SEXO_FKComboBox.DataSource = this.sEXOBindingSource;
             this.cOD_SEXO_FKComboBox.DisplayMember = "NOME_SEXO";
             this.cOD_SEXO_FKComboBox.FormattingEnabled = true;
-            this.cOD_SEXO_FKComboBox.Location = new System.Drawing.Point(170, 206);
+            this.cOD_SEXO_FKComboBox.Location = new System.Drawing.Point(170, 152);
             this.cOD_SEXO_FKComboBox.Name = "cOD_SEXO_FKComboBox";
             this.cOD_SEXO_FKComboBox.Size = new System.Drawing.Size(200, 24);
             this.cOD_SEXO_FKComboBox.TabIndex = 10;
@@ -476,7 +472,7 @@
             this.cOD_RUA_FKComboBox.DataSource = this.rUABindingSource;
             this.cOD_RUA_FKComboBox.DisplayMember = "NOME_RUA";
             this.cOD_RUA_FKComboBox.FormattingEnabled = true;
-            this.cOD_RUA_FKComboBox.Location = new System.Drawing.Point(170, 236);
+            this.cOD_RUA_FKComboBox.Location = new System.Drawing.Point(170, 182);
             this.cOD_RUA_FKComboBox.Name = "cOD_RUA_FKComboBox";
             this.cOD_RUA_FKComboBox.Size = new System.Drawing.Size(200, 24);
             this.cOD_RUA_FKComboBox.TabIndex = 12;
@@ -493,7 +489,7 @@
             this.cOD_BAIRRO_FKComboBox.DataSource = this.bAIRROBindingSource;
             this.cOD_BAIRRO_FKComboBox.DisplayMember = "NOME_BAIRRO";
             this.cOD_BAIRRO_FKComboBox.FormattingEnabled = true;
-            this.cOD_BAIRRO_FKComboBox.Location = new System.Drawing.Point(170, 266);
+            this.cOD_BAIRRO_FKComboBox.Location = new System.Drawing.Point(170, 212);
             this.cOD_BAIRRO_FKComboBox.Name = "cOD_BAIRRO_FKComboBox";
             this.cOD_BAIRRO_FKComboBox.Size = new System.Drawing.Size(200, 24);
             this.cOD_BAIRRO_FKComboBox.TabIndex = 14;
@@ -510,7 +506,7 @@
             this.cOD_CEP_FKComboBox.DataSource = this.cEPBindingSource;
             this.cOD_CEP_FKComboBox.DisplayMember = "NUMERO_CEP";
             this.cOD_CEP_FKComboBox.FormattingEnabled = true;
-            this.cOD_CEP_FKComboBox.Location = new System.Drawing.Point(170, 296);
+            this.cOD_CEP_FKComboBox.Location = new System.Drawing.Point(170, 242);
             this.cOD_CEP_FKComboBox.Name = "cOD_CEP_FKComboBox";
             this.cOD_CEP_FKComboBox.Size = new System.Drawing.Size(200, 24);
             this.cOD_CEP_FKComboBox.TabIndex = 16;
@@ -525,13 +521,12 @@
             // 
             this.cOD_CIDADE_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.cLIENTEBindingSource, "COD_CIDADE_FK", true));
             this.cOD_CIDADE_FKComboBox.DataSource = this.cIDADEBindingSource;
-            this.cOD_CIDADE_FKComboBox.DisplayMember = "NOME_CIDADE";
             this.cOD_CIDADE_FKComboBox.FormattingEnabled = true;
-            this.cOD_CIDADE_FKComboBox.Location = new System.Drawing.Point(170, 326);
+            this.cOD_CIDADE_FKComboBox.Location = new System.Drawing.Point(170, 272);
             this.cOD_CIDADE_FKComboBox.Name = "cOD_CIDADE_FKComboBox";
             this.cOD_CIDADE_FKComboBox.Size = new System.Drawing.Size(200, 24);
             this.cOD_CIDADE_FKComboBox.TabIndex = 18;
-            this.cOD_CIDADE_FKComboBox.ValueMember = "COD_CIDADE";
+            this.cOD_CIDADE_FKComboBox.ValueMember = "COD_CLIENTE";
             // 
             // cIDADEBindingSource
             // 
@@ -544,7 +539,7 @@
             this.cOD_TRABALHO_FKComboBox.DataSource = this.tRABALHOBindingSource;
             this.cOD_TRABALHO_FKComboBox.DisplayMember = "NOME_TRABALHO";
             this.cOD_TRABALHO_FKComboBox.FormattingEnabled = true;
-            this.cOD_TRABALHO_FKComboBox.Location = new System.Drawing.Point(170, 356);
+            this.cOD_TRABALHO_FKComboBox.Location = new System.Drawing.Point(170, 302);
             this.cOD_TRABALHO_FKComboBox.Name = "cOD_TRABALHO_FKComboBox";
             this.cOD_TRABALHO_FKComboBox.Size = new System.Drawing.Size(200, 24);
             this.cOD_TRABALHO_FKComboBox.TabIndex = 20;
@@ -558,7 +553,7 @@
             // sALARIO_CLIENTETextBox
             // 
             this.sALARIO_CLIENTETextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cLIENTEBindingSource, "SALARIO_CLIENTE", true));
-            this.sALARIO_CLIENTETextBox.Location = new System.Drawing.Point(170, 386);
+            this.sALARIO_CLIENTETextBox.Location = new System.Drawing.Point(170, 332);
             this.sALARIO_CLIENTETextBox.Name = "sALARIO_CLIENTETextBox";
             this.sALARIO_CLIENTETextBox.Size = new System.Drawing.Size(200, 22);
             this.sALARIO_CLIENTETextBox.TabIndex = 22;
@@ -566,7 +561,7 @@
             // nUMEROCASATextBox
             // 
             this.nUMEROCASATextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cLIENTEBindingSource, "NUMEROCASA", true));
-            this.nUMEROCASATextBox.Location = new System.Drawing.Point(170, 414);
+            this.nUMEROCASATextBox.Location = new System.Drawing.Point(170, 360);
             this.nUMEROCASATextBox.Name = "nUMEROCASATextBox";
             this.nUMEROCASATextBox.Size = new System.Drawing.Size(200, 22);
             this.nUMEROCASATextBox.TabIndex = 24;
@@ -586,7 +581,7 @@
             // dATANASC_CLIENTEDateTimePicker
             // 
             this.dATANASC_CLIENTEDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.cLIENTEBindingSource, "DATANASC_CLIENTE", true));
-            this.dATANASC_CLIENTEDateTimePicker.Location = new System.Drawing.Point(170, 176);
+            this.dATANASC_CLIENTEDateTimePicker.Location = new System.Drawing.Point(170, 122);
             this.dATANASC_CLIENTEDateTimePicker.Name = "dATANASC_CLIENTEDateTimePicker";
             this.dATANASC_CLIENTEDateTimePicker.Size = new System.Drawing.Size(200, 22);
             this.dATANASC_CLIENTEDateTimePicker.TabIndex = 26;
@@ -605,11 +600,103 @@
             // 
             this.dadosClienteTableAdapter.ClearBeforeFill = true;
             // 
-            // dadosClienteDataGridView
+            // button1
             // 
-            this.dadosClienteDataGridView.AutoGenerateColumns = false;
-            this.dadosClienteDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dadosClienteDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.button1.Location = new System.Drawing.Point(393, 155);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "+";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(393, 185);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 28;
+            this.button2.Text = "+";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(393, 215);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 29;
+            this.button3.Text = "+";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(393, 245);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 30;
+            this.button4.Text = "+";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(393, 275);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 31;
+            this.button5.Text = "+";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(393, 305);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 32;
+            this.button6.Text = "+";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.Menu;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(363, 30);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(108, 57);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 33;
+            this.pictureBox2.TabStop = false;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(173, 402);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(197, 23);
+            this.button7.TabIndex = 34;
+            this.button7.Text = "INSERIR IMAGEM";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.cLIENTEBindingSource, "FOTO_CLIENTE", true));
+            this.pictureBox1.Location = new System.Drawing.Point(173, 470);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(197, 112);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 37;
+            this.pictureBox1.TabStop = false;
+            // 
+            // cLIENTEDataGridView
+            // 
+            this.cLIENTEDataGridView.AllowUserToOrderColumns = true;
+            this.cLIENTEDataGridView.AutoGenerateColumns = false;
+            this.cLIENTEDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.cLIENTEDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewImageColumn1,
@@ -619,14 +706,16 @@
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9});
-            this.dadosClienteDataGridView.DataSource = this.dadosClienteBindingSource;
-            this.dadosClienteDataGridView.Location = new System.Drawing.Point(474, 40);
-            this.dadosClienteDataGridView.Name = "dadosClienteDataGridView";
-            this.dadosClienteDataGridView.RowHeadersWidth = 51;
-            this.dadosClienteDataGridView.RowTemplate.Height = 24;
-            this.dadosClienteDataGridView.Size = new System.Drawing.Size(456, 554);
-            this.dadosClienteDataGridView.TabIndex = 26;
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11});
+            this.cLIENTEDataGridView.DataSource = this.cLIENTEBindingSource;
+            this.cLIENTEDataGridView.Location = new System.Drawing.Point(491, 0);
+            this.cLIENTEDataGridView.Name = "cLIENTEDataGridView";
+            this.cLIENTEDataGridView.RowHeadersWidth = 51;
+            this.cLIENTEDataGridView.RowTemplate.Height = 24;
+            this.cLIENTEDataGridView.Size = new System.Drawing.Size(535, 601);
+            this.cLIENTEDataGridView.TabIndex = 37;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -634,6 +723,7 @@
             this.dataGridViewTextBoxColumn1.HeaderText = "COD_CLIENTE";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             this.dataGridViewTextBoxColumn1.Width = 125;
             // 
             // dataGridViewTextBoxColumn2
@@ -648,9 +738,9 @@
             // 
             this.dataGridViewImageColumn1.DataPropertyName = "FOTO_CLIENTE";
             this.dataGridViewImageColumn1.HeaderText = "FOTO_CLIENTE";
-            this.dataGridViewImageColumn1.MinimumWidth = 6;
+            this.dataGridViewImageColumn1.MinimumWidth = 50;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Width = 125;
+            this.dataGridViewImageColumn1.Width = 225;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -662,124 +752,83 @@
             // 
             // dataGridViewTextBoxColumn4
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "NOME_SEXO";
-            this.dataGridViewTextBoxColumn4.HeaderText = "NOME_SEXO";
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "COD_SEXO_FK";
+            this.dataGridViewTextBoxColumn4.HeaderText = "COD_SEXO_FK";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.Width = 125;
             // 
             // dataGridViewTextBoxColumn5
             // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "NOME_BAIRRO";
-            this.dataGridViewTextBoxColumn5.HeaderText = "NOME_BAIRRO";
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "COD_RUA_FK";
+            this.dataGridViewTextBoxColumn5.HeaderText = "COD_RUA_FK";
             this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.Width = 125;
             // 
             // dataGridViewTextBoxColumn6
             // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "NOME_CIDADE";
-            this.dataGridViewTextBoxColumn6.HeaderText = "NOME_CIDADE";
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "COD_BAIRRO_FK";
+            this.dataGridViewTextBoxColumn6.HeaderText = "COD_BAIRRO_FK";
             this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.Width = 125;
             // 
             // dataGridViewTextBoxColumn7
             // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "NOME_RUA";
-            this.dataGridViewTextBoxColumn7.HeaderText = "NOME_RUA";
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "COD_CEP_FK";
+            this.dataGridViewTextBoxColumn7.HeaderText = "COD_CEP_FK";
             this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.Width = 125;
             // 
             // dataGridViewTextBoxColumn8
             // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "NOME_TRABALHO";
-            this.dataGridViewTextBoxColumn8.HeaderText = "NOME_TRABALHO";
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "COD_CIDADE_FK";
+            this.dataGridViewTextBoxColumn8.HeaderText = "COD_CIDADE_FK";
             this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.Width = 125;
             // 
             // dataGridViewTextBoxColumn9
             // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "NUMERO_CEP";
-            this.dataGridViewTextBoxColumn9.HeaderText = "NUMERO_CEP";
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "COD_TRABALHO_FK";
+            this.dataGridViewTextBoxColumn9.HeaderText = "COD_TRABALHO_FK";
             this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             this.dataGridViewTextBoxColumn9.Width = 125;
             // 
-            // button1
+            // dataGridViewTextBoxColumn10
             // 
-            this.button1.Location = new System.Drawing.Point(393, 209);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "SALARIO_CLIENTE";
+            this.dataGridViewTextBoxColumn10.HeaderText = "SALARIO_CLIENTE";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.Width = 125;
             // 
-            // button2
+            // dataGridViewTextBoxColumn11
             // 
-            this.button2.Location = new System.Drawing.Point(393, 239);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 28;
-            this.button2.Text = "+";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(393, 269);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 29;
-            this.button3.Text = "+";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(393, 299);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 30;
-            this.button4.Text = "+";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(393, 329);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 31;
-            this.button5.Text = "+";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(393, 359);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 32;
-            this.button6.Text = "+";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "NUMEROCASA";
+            this.dataGridViewTextBoxColumn11.HeaderText = "NUMEROCASA";
+            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.Width = 125;
             // 
             // FrmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(930, 606);
+            this.ClientSize = new System.Drawing.Size(1026, 606);
+            this.Controls.Add(this.cLIENTEDataGridView);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dadosClienteDataGridView);
             this.Controls.Add(dATANASC_CLIENTELabel);
             this.Controls.Add(this.dATANASC_CLIENTEDateTimePicker);
             this.Controls.Add(cOD_CLIENTELabel);
@@ -787,7 +836,6 @@
             this.Controls.Add(nOME_CLIENTELabel);
             this.Controls.Add(this.nOME_CLIENTETextBox);
             this.Controls.Add(fOTO_CLIENTELabel);
-            this.Controls.Add(this.fOTO_CLIENTEPictureBox);
             this.Controls.Add(cOD_SEXO_FKLabel);
             this.Controls.Add(this.cOD_SEXO_FKComboBox);
             this.Controls.Add(cOD_RUA_FKLabel);
@@ -813,7 +861,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.cLIENTEBindingNavigator)).EndInit();
             this.cLIENTEBindingNavigator.ResumeLayout(false);
             this.cLIENTEBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fOTO_CLIENTEPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sEXOBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rUABindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bAIRROBindingSource)).EndInit();
@@ -822,7 +869,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.tRABALHOBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dBTrabalhoDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dadosClienteBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dadosClienteDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cLIENTEDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -849,7 +898,6 @@
         private System.Windows.Forms.ToolStripButton cLIENTEBindingNavigatorSaveItem;
         private System.Windows.Forms.Label cOD_CLIENTELabel1;
         private System.Windows.Forms.TextBox nOME_CLIENTETextBox;
-        private System.Windows.Forms.PictureBox fOTO_CLIENTEPictureBox;
         private System.Windows.Forms.ComboBox cOD_SEXO_FKComboBox;
         private System.Windows.Forms.ComboBox cOD_RUA_FKComboBox;
         private System.Windows.Forms.ComboBox cOD_BAIRRO_FKComboBox;
@@ -874,7 +922,16 @@
         private System.Windows.Forms.BindingSource dBTrabalhoDataSetBindingSource;
         private System.Windows.Forms.BindingSource dadosClienteBindingSource;
         private DB_TrabalhoDataSetTableAdapters.DadosClienteTableAdapter dadosClienteTableAdapter;
-        private System.Windows.Forms.DataGridView dadosClienteDataGridView;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridView cLIENTEDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
@@ -885,11 +942,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
     }
 }

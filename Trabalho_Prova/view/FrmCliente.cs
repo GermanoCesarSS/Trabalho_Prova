@@ -15,6 +15,22 @@ namespace Trabalho_Prova.view
         public FrmCliente() {
             InitializeComponent();
         }
+        private void button7_Click(object sender, EventArgs e) {
+            String imagLoction = "";
+            try {
+                OpenFileDialog dialog = new OpenFileDialog();
+                dialog.Filter = "jpg files(.*jpg)|*.jpg| PNG files(.*png)|*.png| All Files(*.*)|*.*";
+
+                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK) {
+                    imagLoction = dialog.FileName;
+                    pictureBox1.ImageLocation = imagLoction;
+                }
+
+            }
+            catch (Exception) {
+                MessageBox.Show("ERRO", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
         private void cLIENTEBindingNavigatorSaveItem_Click(object sender, EventArgs e) {
             this.Validate();

@@ -60,11 +60,17 @@
             this.nOME_FUNCIONARIOTextBox = new System.Windows.Forms.TextBox();
             this.nUMEROCASATextBox = new System.Windows.Forms.TextBox();
             this.cOD_RUA_FKComboBox = new System.Windows.Forms.ComboBox();
+            this.rUABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cOD_BAIRRO_FKComboBox = new System.Windows.Forms.ComboBox();
+            this.bAIRROBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cOD_CEP_FKComboBox = new System.Windows.Forms.ComboBox();
+            this.cEPBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cOD_CIDADE_FKComboBox = new System.Windows.Forms.ComboBox();
+            this.cIDADEBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cOD_FUNCAO_FKComboBox = new System.Windows.Forms.ComboBox();
+            this.fUNCAOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cOD_LOJA_FKComboBox = new System.Windows.Forms.ComboBox();
+            this.lOJABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sALARIOTextBox = new System.Windows.Forms.TextBox();
             this.fUNCIONARIOSDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -83,18 +89,13 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.rUABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.rUATableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.RUATableAdapter();
-            this.bAIRROBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bAIRROTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.BAIRROTableAdapter();
-            this.cEPBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cEPTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.CEPTableAdapter();
-            this.cIDADEBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cIDADETableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.CIDADETableAdapter();
-            this.fUNCAOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fUNCAOTableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.FUNCAOTableAdapter();
-            this.lOJABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lOJATableAdapter = new Trabalho_Prova.DB_TrabalhoDataSetTableAdapters.LOJATableAdapter();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             cOD_FUNCIONARIOLabel = new System.Windows.Forms.Label();
             nOME_FUNCIONARIOLabel = new System.Windows.Forms.Label();
             nUMEROCASALabel = new System.Windows.Forms.Label();
@@ -110,13 +111,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.fUNCIONARIOSBindingNavigator)).BeginInit();
             this.fUNCIONARIOSBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dadosFuncionariosBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fUNCIONARIOSDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rUABindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bAIRROBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cEPBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cIDADEBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fUNCAOBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOJABindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fUNCIONARIOSDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // cOD_FUNCIONARIOLabel
@@ -434,6 +436,11 @@
             this.cOD_RUA_FKComboBox.TabIndex = 9;
             this.cOD_RUA_FKComboBox.ValueMember = "COD_RUA";
             // 
+            // rUABindingSource
+            // 
+            this.rUABindingSource.DataMember = "RUA";
+            this.rUABindingSource.DataSource = this.dB_TrabalhoDataSet;
+            // 
             // cOD_BAIRRO_FKComboBox
             // 
             this.cOD_BAIRRO_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.fUNCIONARIOSBindingSource, "COD_BAIRRO_FK", true));
@@ -445,6 +452,11 @@
             this.cOD_BAIRRO_FKComboBox.Size = new System.Drawing.Size(121, 24);
             this.cOD_BAIRRO_FKComboBox.TabIndex = 11;
             this.cOD_BAIRRO_FKComboBox.ValueMember = "COD_BAIRRO";
+            // 
+            // bAIRROBindingSource
+            // 
+            this.bAIRROBindingSource.DataMember = "BAIRRO";
+            this.bAIRROBindingSource.DataSource = this.dB_TrabalhoDataSet;
             // 
             // cOD_CEP_FKComboBox
             // 
@@ -458,6 +470,11 @@
             this.cOD_CEP_FKComboBox.TabIndex = 13;
             this.cOD_CEP_FKComboBox.ValueMember = "COD_CEP";
             // 
+            // cEPBindingSource
+            // 
+            this.cEPBindingSource.DataMember = "CEP";
+            this.cEPBindingSource.DataSource = this.dB_TrabalhoDataSet;
+            // 
             // cOD_CIDADE_FKComboBox
             // 
             this.cOD_CIDADE_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.fUNCIONARIOSBindingSource, "COD_CIDADE_FK", true));
@@ -469,6 +486,11 @@
             this.cOD_CIDADE_FKComboBox.Size = new System.Drawing.Size(121, 24);
             this.cOD_CIDADE_FKComboBox.TabIndex = 15;
             this.cOD_CIDADE_FKComboBox.ValueMember = "COD_CIDADE";
+            // 
+            // cIDADEBindingSource
+            // 
+            this.cIDADEBindingSource.DataMember = "CIDADE";
+            this.cIDADEBindingSource.DataSource = this.dB_TrabalhoDataSet;
             // 
             // cOD_FUNCAO_FKComboBox
             // 
@@ -482,6 +504,11 @@
             this.cOD_FUNCAO_FKComboBox.TabIndex = 17;
             this.cOD_FUNCAO_FKComboBox.ValueMember = "COD_FUNCAO";
             // 
+            // fUNCAOBindingSource
+            // 
+            this.fUNCAOBindingSource.DataMember = "FUNCAO";
+            this.fUNCAOBindingSource.DataSource = this.dB_TrabalhoDataSet;
+            // 
             // cOD_LOJA_FKComboBox
             // 
             this.cOD_LOJA_FKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.fUNCIONARIOSBindingSource, "COD_LOJA_FK", true));
@@ -493,6 +520,11 @@
             this.cOD_LOJA_FKComboBox.Size = new System.Drawing.Size(121, 24);
             this.cOD_LOJA_FKComboBox.TabIndex = 19;
             this.cOD_LOJA_FKComboBox.ValueMember = "COD_LOJA";
+            // 
+            // lOJABindingSource
+            // 
+            this.lOJABindingSource.DataMember = "LOJA";
+            this.lOJABindingSource.DataSource = this.dB_TrabalhoDataSet;
             // 
             // sALARIOTextBox
             // 
@@ -522,8 +554,9 @@
             this.fUNCIONARIOSDataGridView.Name = "fUNCIONARIOSDataGridView";
             this.fUNCIONARIOSDataGridView.RowHeadersWidth = 51;
             this.fUNCIONARIOSDataGridView.RowTemplate.Height = 24;
-            this.fUNCIONARIOSDataGridView.Size = new System.Drawing.Size(465, 422);
+            this.fUNCIONARIOSDataGridView.Size = new System.Drawing.Size(465, 528);
             this.fUNCIONARIOSDataGridView.TabIndex = 21;
+            this.fUNCIONARIOSDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.fUNCIONARIOSDataGridView_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -666,65 +699,47 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // rUABindingSource
-            // 
-            this.rUABindingSource.DataMember = "RUA";
-            this.rUABindingSource.DataSource = this.dB_TrabalhoDataSet;
-            // 
             // rUATableAdapter
             // 
             this.rUATableAdapter.ClearBeforeFill = true;
-            // 
-            // bAIRROBindingSource
-            // 
-            this.bAIRROBindingSource.DataMember = "BAIRRO";
-            this.bAIRROBindingSource.DataSource = this.dB_TrabalhoDataSet;
             // 
             // bAIRROTableAdapter
             // 
             this.bAIRROTableAdapter.ClearBeforeFill = true;
             // 
-            // cEPBindingSource
-            // 
-            this.cEPBindingSource.DataMember = "CEP";
-            this.cEPBindingSource.DataSource = this.dB_TrabalhoDataSet;
-            // 
             // cEPTableAdapter
             // 
             this.cEPTableAdapter.ClearBeforeFill = true;
-            // 
-            // cIDADEBindingSource
-            // 
-            this.cIDADEBindingSource.DataMember = "CIDADE";
-            this.cIDADEBindingSource.DataSource = this.dB_TrabalhoDataSet;
             // 
             // cIDADETableAdapter
             // 
             this.cIDADETableAdapter.ClearBeforeFill = true;
             // 
-            // fUNCAOBindingSource
-            // 
-            this.fUNCAOBindingSource.DataMember = "FUNCAO";
-            this.fUNCAOBindingSource.DataSource = this.dB_TrabalhoDataSet;
-            // 
             // fUNCAOTableAdapter
             // 
             this.fUNCAOTableAdapter.ClearBeforeFill = true;
-            // 
-            // lOJABindingSource
-            // 
-            this.lOJABindingSource.DataMember = "LOJA";
-            this.lOJABindingSource.DataSource = this.dB_TrabalhoDataSet;
             // 
             // lOJATableAdapter
             // 
             this.lOJATableAdapter.ClearBeforeFill = true;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.Menu;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(86, 413);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(302, 112);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 35;
+            this.pictureBox2.TabStop = false;
+            // 
             // FrmFuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(928, 450);
+            this.ClientSize = new System.Drawing.Size(928, 559);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -762,13 +777,14 @@
             this.fUNCIONARIOSBindingNavigator.ResumeLayout(false);
             this.fUNCIONARIOSBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dadosFuncionariosBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fUNCIONARIOSDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rUABindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bAIRROBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cEPBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cIDADEBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fUNCAOBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOJABindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fUNCIONARIOSDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -834,5 +850,6 @@
         private DB_TrabalhoDataSetTableAdapters.FUNCAOTableAdapter fUNCAOTableAdapter;
         private System.Windows.Forms.BindingSource lOJABindingSource;
         private DB_TrabalhoDataSetTableAdapters.LOJATableAdapter lOJATableAdapter;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
